@@ -4,6 +4,8 @@ Replace with your credentials
 
 `dotnet kentico-xperience-dbmanager -- -s "xperience-dev-db.cq4bh95s90ww.us-east-2.rds.amazonaws.com" -d "Designo" -u "admin" -a "MyStr0ngPa$$word" -p "MyStr0ngPa$$word" --license-file "./license.txt"`
 
+[Database Manager Reference](https://docs.xperience.io/xp/developers-and-admins/installation)
+
 ### Commands to start local database instance if one is not created
 
 Replace with your credentials and make sure to have Docker installed
