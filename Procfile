@@ -1,1 +1,1 @@
-web: dotnet exec xk-boilerplate.dll
+web: dotnet exec XK-Boilerplate.dll
