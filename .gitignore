@@ -1,0 +1,8 @@
+*.vs
+*.user
+*.cache
+bin/
+obj/
+build_output
+license.txt
+node_modules/
