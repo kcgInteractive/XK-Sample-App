@@ -1,1 +1,1 @@
-web: dotnet exec MultiSite.dll
+web: dotnet exec xk-boilerplate.dll
