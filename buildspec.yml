@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    PROJECT: xk-boilerplate
+    PROJECT: XK-Boilerplate
     DOTNET_FRAMEWORK: 6.0
 
 phases:
