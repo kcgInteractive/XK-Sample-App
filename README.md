@@ -29,3 +29,17 @@ sudo docker run -e "ACCEPT_EULA=Y" \
 [Codegen Reference](https://docs.xperience.io/xp/developers-and-admins/api/generate-code-files-for-system-objects)
 
 ### [Widget Properties Reference](https://docs.xperience.io/xp/developers-and-admins/customization/extend-the-administration-interface/ui-form-components/reference-admin-ui-form-components)
+
+### [Continuous Deployment Reference](https://docs.xperience.io/xp/developers-and-admins/ci-cd/continuous-deployment)
+
+### Command to generate CD configuration file
+
+`dotnet run --no-build -- --kxp-cd-config --path "C:\CD_configs\Production\repository.config"`
+
+### Command to add retrieve sync files from database
+
+`dotnet run --no-build --kxp-ci-store`
+
+### Command to restore sync files to database
+
+`dotnet run -- --kxp-cd-restore --repository-path "C:\Xperience_Deployments\Production\CDRepository"`

@@ -1,0 +1,12 @@
+***Database Setup***
+
+dotnet kentico-xperience-dbmanager -- -s "[SQL Server Host]" -d "[DatabaseName]" -u "[Username]" -a "[Username]" -p "[Your password]" --license-file "./license.txt"
+
+***CI/CD***
+
+Store to code repository
+dotnet run --no-build --kxp-ci-store
+
+The action deserializes the objects stored in the CI repository and creates, overwrites or removes corresponding data in the database. Objects are restored to the database specified by the CMSConnectionString in the application's configuration file
+dotnet run --kxp-ci-restore
+

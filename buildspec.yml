@@ -16,15 +16,15 @@ phases:
       - npm install webpack-cli webpack
   build:
     commands:
+      -
       - echo Build started on `date`
       - dotnet build -c Release
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish -c Release -r linux-x64 -o ./build_output ./${PROJECT}.csproj --self-contained false
-      - cp Procfile ./build_output
+      - dotnet publish -c Release -o ./build_output ./${PROJECT}.csproj --self-contained false
 artifacts:
   files:
     - "**/*"
-  base-directory: ./build_output
+  base-directory: build_output
   discard-paths: no
