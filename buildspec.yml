@@ -16,7 +16,6 @@ phases:
       - npm install webpack-cli webpack
   build:
     commands:
-      -
       - echo Build started on `date`
       - dotnet build -c Release
   post_build:
