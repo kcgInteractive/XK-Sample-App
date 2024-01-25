@@ -16,7 +16,7 @@ phases:
       - npm install webpack-cli webpack json
   build:
     commands:
-      - npx json -I -f appsettings.json -e "this.ConnectionStrings.CMSConnectionString=${CONNECTION_STRING}"
+      - npx json -I -f appsettings.json -e "this.ConnectionStrings.CMSConnectionString='${CONNECTION_STRING}'"
       - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
       - echo Build started on `date`
       - dotnet build -c Release
