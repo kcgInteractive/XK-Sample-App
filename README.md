@@ -5,7 +5,7 @@ Replace with your credentials
 Local:
 `dotnet kentico-xperience-dbmanager -- -s "localhost" -d "SampleApp" -u "SA" -a "Passw0rd123" -p "Passw0rd123" --license-file "./license.txt" --hash-string-salt "3ead0e85-df41-4ad0-bd64-37c7422eb28e" --recreate-existing-database`
 
-Live:
+Stage:
 `dotnet kentico-xperience-dbmanager -- -s "xk-database-stage-express.cq4bh95s90ww.us-east-2.rds.amazonaws.com" -d "SampleApp" -u "admin" -a "Passw0rd123" -p "Passw0rd123" --license-file "./license-stage.txt" --hash-string-salt "3ead0e85-df41-4ad0-bd64-37c7422eb28e" --recreate-existing-database`
 
 [Database Manager Reference](https://docs.xperience.io/xp/developers-and-admins/installation)
@@ -44,3 +44,5 @@ Store all supported objects from the database to a CD repository
 
 Transfer objects from the CD repository to the database of your deployment target
 `dotnet run --no-build --kxp-cd-restore --repository-path "./App_Data/CDRepository"`
+
+[CI/CD Reference](https://docs.xperience.io/xp/developers-and-admins/ci-cd)
