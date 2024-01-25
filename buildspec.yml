@@ -13,9 +13,10 @@ phases:
     commands:
       - echo Restore started on `date`
       - dotnet restore
-      - npm install webpack-cli webpack
+      - npm install webpack-cli webpack json
   build:
     commands:
+      - json -I -f appsettings.json -e "this.ConnectionStrings.CMSConnectionString=${CONNECTION_STRING}"
       - echo Build started on `date`
       - dotnet build -c Release
   post_build:
