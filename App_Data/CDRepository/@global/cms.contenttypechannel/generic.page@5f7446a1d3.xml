@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttypechannel>
+  <Parent>
+    <CodeName>Generic.Page</CodeName>
+    <GUID>f0584209-574d-4537-add4-6d7203839cf4</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="cms.channel_App">
+      <ContentTypeChannelChannelID>
+        <CodeName>App</CodeName>
+        <GUID>09230c65-a21e-4279-99f5-da88402ddc20</GUID>
+        <ObjectType>cms.channel</ObjectType>
+      </ContentTypeChannelChannelID>
+    </Binding>
+  </Bindings>
+</cms.contenttypechannel>
