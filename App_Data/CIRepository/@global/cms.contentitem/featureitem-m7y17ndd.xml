@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Feature.FeatureOne</CodeName>
+    <GUID>11601bac-cc59-4d2e-838e-24eb62ddb9f5</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>29dca96a-1ee0-44a7-ab8e-12437c464617</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>FeatureItem-m7y17ndd</ContentItemName>
+</cms.contentitem>

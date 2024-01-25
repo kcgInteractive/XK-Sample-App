@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.feature.featureone>
+  <ContentItemDataCommonDataID>
+    <GUID>ffb9a083-558b-48e7-9a45-5133b381f80c</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>FeatureItem-m7y17ndd</CodeName>
+      <GUID>29dca96a-1ee0-44a7-ab8e-12437c464617</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>1ca6fa1b-4a46-4ded-9776-b9399fb0b6d2</ContentItemDataGUID>
+  <TEst>Test</TEst>
+</contentitemdata.feature.featureone>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttype>
+  <ClassContentTypeType>Reusable</ClassContentTypeType>
+  <ClassDisplayName>Feature1Type2</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="0c903df5-3626-4c5f-94e8-024305ee3e7a" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="30b17cb3-bf26-42ee-822c-4bcbac8b672b" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="1aa02153-b8e1-422d-856c-0feca603f9e6" isunique="true" system="true" />
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>ade7df86-42ab-43c4-93dc-11a115998797</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassName>Feature.Type2</ClassName>
+  <ClassTableName>Feature_Type2</ClassTableName>
+  <ClassType>Content</ClassType>
+  <ClassWebPageHasUrl>False</ClassWebPageHasUrl>
+</cms.contenttype>
