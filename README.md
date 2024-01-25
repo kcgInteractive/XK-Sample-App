@@ -1,6 +1,6 @@
 ## Command to initialize a database (local/stage)
 
-Replace with your credentials
+Replace with your credentials.
 
 Local: <br>
 `dotnet kentico-xperience-dbmanager -- -s "localhost" -d "SampleApp" -u "SA" -a "Passw0rd123" -p "Passw0rd123" --license-file "./license.txt" --hash-string-salt "3ead0e85-df41-4ad0-bd64-37c7422eb28e" --recreate-existing-database`
