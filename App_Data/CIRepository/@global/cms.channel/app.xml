@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.channel>
+  <ChannelDisplayName>SampleApp</ChannelDisplayName>
+  <ChannelGUID>09230c65-a21e-4279-99f5-da88402ddc20</ChannelGUID>
+  <ChannelName>App</ChannelName>
+  <ChannelType>Website</ChannelType>
+</cms.channel>
