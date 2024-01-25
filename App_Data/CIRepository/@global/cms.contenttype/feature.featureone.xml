@@ -7,6 +7,16 @@
       <field column="ContentItemDataID" columntype="integer" enabled="true" guid="7e494512-67c8-423a-aac1-84dbf4113b88" isPK="true" />
       <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="cc45e427-07fd-4fb7-a9b5-32dbbed4b63f" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
       <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="19422a29-fb3a-4c9b-a03a-572085882691" isunique="true" system="true" />
+      <field column="TEst" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="398d428c-8d2d-4f8c-803a-9922c9270b8d" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Test</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
     </form>
   </ClassFormDefinition>
   <ClassGUID>11601bac-cc59-4d2e-838e-24eb62ddb9f5</ClassGUID>
