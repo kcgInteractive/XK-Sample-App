@@ -9,4 +9,3 @@ license-stage.txt
 node_modules/
 appsettings.Development.json
 appsettings.Stage.json
-XK-Commands.txt
