@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.same.type>
+  <ContentItemDataCommonDataID>
+    <GUID>ebab2444-11d2-4f63-90fd-f7249d8b46cd</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>StageContentItem-dtn6cxsq</CodeName>
+      <GUID>a34341f1-3cbd-4a7a-9eb6-c292f2655c5f</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>eb2c26a5-6a03-462d-bbbb-94c235fe1eb3</ContentItemDataGUID>
+  <DateType>2024-01-26 16:20:00Z</DateType>
+</contentitemdata.same.type>

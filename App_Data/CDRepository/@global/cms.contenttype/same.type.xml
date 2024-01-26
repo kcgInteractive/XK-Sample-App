@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttype>
+  <ClassContentTypeType>Reusable</ClassContentTypeType>
+  <ClassDisplayName>SameContentType</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="6028dd83-6d10-4adb-b6cb-8c251d96cc72" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="8c402260-5e70-4405-8085-b7903b8a6ce8" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="3e8a7ea6-d1c7-4e65-85f4-b094ea656cd4" isunique="true" system="true" />
+      <field column="DateType" columnprecision="7" columntype="datetime" enabled="true" guid="802dcb21-f4d0-46ad-a9b4-206f0649716a" visible="true">
+        <properties>
+          <defaultvalue>1/26/2024 10:20:00 AM</defaultvalue>
+          <explanationtext>Enter a date: MM/DD/YYYY hh:mm AM/PM</explanationtext>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Date</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.DateTimeInput</controlname>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>bcbf06ae-fa00-4b23-bac5-1c8f1d25a6e1</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassName>Same.Type</ClassName>
+  <ClassTableName>Same_Type</ClassTableName>
+  <ClassType>Content</ClassType>
+  <ClassWebPageHasUrl>False</ClassWebPageHasUrl>
+</cms.contenttype>

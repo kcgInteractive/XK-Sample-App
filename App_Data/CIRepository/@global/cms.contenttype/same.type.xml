@@ -17,6 +17,16 @@
           <controlname>Kentico.Administration.TextInput</controlname>
         </settings>
       </field>
+      <field column="NumberField" columnprecision="0" columntype="integer" enabled="true" guid="ab9a1a41-7506-4293-9976-1a3d44dd1f7b" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Number</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.NumberInput</controlname>
+        </settings>
+      </field>
     </form>
   </ClassFormDefinition>
   <ClassGUID>ca6a90f1-b884-4a5b-bcdf-b0c0b917b1ee</ClassGUID>

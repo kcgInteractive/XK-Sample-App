@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Same.Type</CodeName>
+    <GUID>ca6a90f1-b884-4a5b-bcdf-b0c0b917b1ee</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>9e4da0de-f229-4c50-b9fe-d6029eb9c341</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>LocalContentItem-7ppkwo19</ContentItemName>
+</cms.contentitem>
