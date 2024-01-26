@@ -49,7 +49,7 @@ Transfer objects from the CD repository to the database of your deployment targe
 
 ## Commands for Codegen
 
-The code generator is command line-based. Code files are generated via the dotnet run --kxp-codegen .NET CLI command. You can run the generator from a command line interface of your choice (cmd, PowerShell, Bash). </br>
-`dotnet run --no-build -- --kxp-codegen --type "ALL"`
+The code generator is command line-based. Code files are generated via the dotnet run --kxp-codegen .NET CLI command. You can run the generator from a command line interface of your choice (cmd, PowerShell, Bash). <br>
+`dotnet run --no-build -- --kxp-codegen --type "ALL"`<br>
 
 [Codegen Reference](https://docs.xperience.io/xp/developers-and-admins/api/generate-code-files-for-system-objects)
