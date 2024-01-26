@@ -4,19 +4,27 @@
   <ClassDisplayName>SameContentType</ClassDisplayName>
   <ClassFormDefinition>
     <form>
-      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="6028dd83-6d10-4adb-b6cb-8c251d96cc72" isPK="true" />
-      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="8c402260-5e70-4405-8085-b7903b8a6ce8" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
-      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="3e8a7ea6-d1c7-4e65-85f4-b094ea656cd4" isunique="true" system="true" />
-      <field column="DateType" columnprecision="7" columntype="datetime" enabled="true" guid="802dcb21-f4d0-46ad-a9b4-206f0649716a" visible="true">
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="0aaae28e-142a-4d16-a0e8-ec1f5a265914" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="8dbcd6fa-65f3-4895-b6c0-1ec932b883b9" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="5bc8f1c0-a716-457a-a507-3ac7976748e7" isunique="true" system="true" />
+      <field column="TextField" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="9bfcaa3d-4678-41d9-a29a-d718acbdcc85" visible="true">
         <properties>
-          <defaultvalue>1/26/2024 10:20:00 AM</defaultvalue>
-          <explanationtext>Enter a date: MM/DD/YYYY hh:mm AM/PM</explanationtext>
           <explanationtextashtml>False</explanationtextashtml>
-          <fieldcaption>Date</fieldcaption>
+          <fieldcaption>Text</fieldcaption>
           <fielddescriptionashtml>False</fielddescriptionashtml>
         </properties>
         <settings>
-          <controlname>Kentico.Administration.DateTimeInput</controlname>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field column="NumberField" columnprecision="0" columntype="integer" enabled="true" guid="ab9a1a41-7506-4293-9976-1a3d44dd1f7b" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Number</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.NumberInput</controlname>
         </settings>
       </field>
     </form>
