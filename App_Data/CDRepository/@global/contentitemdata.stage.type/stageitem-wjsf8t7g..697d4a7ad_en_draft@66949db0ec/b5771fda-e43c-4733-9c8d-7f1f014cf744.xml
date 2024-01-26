@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.stage.type>
+  <ContentItemDataCommonDataID>
+    <GUID>88cc6215-2ad2-4eb9-bdbe-953697d4a7ad</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>StageItem-wjsf8t7g</CodeName>
+      <GUID>158e24ce-422c-441f-be40-a02b7217c9b5</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>b5771fda-e43c-4733-9c8d-7f1f014cf744</ContentItemDataGUID>
+  <Text>Stage</Text>
+</contentitemdata.stage.type>

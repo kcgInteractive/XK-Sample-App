@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Local.Type</CodeName>
+    <GUID>bf67f174-8651-4487-999a-9a98f9c6f350</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>42b3de27-4e3c-4265-bb81-186e6a4e979b</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>LocalItem-at3m2twt</ContentItemName>
+</cms.contentitem>

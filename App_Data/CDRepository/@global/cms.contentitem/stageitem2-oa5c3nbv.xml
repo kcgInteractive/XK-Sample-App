@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Stage.Type</CodeName>
+    <GUID>2fd524d3-7717-4e4c-823c-67d863167384</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>10c62840-c192-4707-a8e2-c999338d5dca</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>StageItem2-oa5c3nbv</ContentItemName>
+</cms.contentitem>

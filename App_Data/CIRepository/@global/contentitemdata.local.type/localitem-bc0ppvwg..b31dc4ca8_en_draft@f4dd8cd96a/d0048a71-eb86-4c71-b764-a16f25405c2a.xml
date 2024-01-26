@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.local.type>
+  <ContentItemDataCommonDataID>
+    <GUID>f9d8fe18-6d69-4911-bd6a-184b31dc4ca8</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>LocalItem-bc0ppvwg</CodeName>
+      <GUID>c26cc306-f141-4cba-9788-9a6989e3e135</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>d0048a71-eb86-4c71-b764-a16f25405c2a</ContentItemDataGUID>
+  <Local>Local</Local>
+</contentitemdata.local.type>

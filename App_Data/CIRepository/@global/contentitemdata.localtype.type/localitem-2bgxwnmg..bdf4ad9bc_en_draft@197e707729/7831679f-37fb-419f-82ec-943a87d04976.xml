@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.localtype.type>
+  <ContentItemDataCommonDataID>
+    <GUID>5b4fcf60-c291-4b46-81c5-132bdf4ad9bc</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>LocalItem-2bgxwnmg</CodeName>
+      <GUID>ba51461e-0150-4a9b-b06b-705ed22ab00d</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>7831679f-37fb-419f-82ec-943a87d04976</ContentItemDataGUID>
+  <LocalNumber>2</LocalNumber>
+</contentitemdata.localtype.type>
