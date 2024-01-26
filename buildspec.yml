@@ -13,6 +13,7 @@ phases:
     commands:
       - echo Restore started on `date`
       - dotnet restore
+      - dotnet tool restore
       - npm install webpack-cli webpack json
   build:
     commands:
