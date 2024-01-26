@@ -3,13 +3,13 @@
   <TaskAssemblyName>CMS.Scheduler</TaskAssemblyName>
   <TaskClass>CMS.Scheduler.SubscriptionLicenseRenewalTask</TaskClass>
   <TaskCondition />
-  <TaskData />
+  <TaskData>NOTEXECUTED</TaskData>
   <TaskDeleteAfterLastRun>False</TaskDeleteAfterLastRun>
   <TaskDisplayName>Subscription license renewal</TaskDisplayName>
   <TaskEnabled>True</TaskEnabled>
   <TaskGUID>be17499a-7695-4fd4-b138-ee01f3bdd196</TaskGUID>
   <TaskInterval>
-    <![CDATA[day;7/13/2011 4:44:54PM;1;Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]]>
+    <![CDATA[day;7/13/2011 1:01:02 AM;1;Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]]>
   </TaskInterval>
   <TaskName>SubscriptionLicenseRenewal</TaskName>
   <TaskRunInSeparateThread>True</TaskRunInSeparateThread>

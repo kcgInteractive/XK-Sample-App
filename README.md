@@ -14,6 +14,8 @@ sudo docker run -e "ACCEPT_EULA=Y" \
    -d mcr.microsoft.com/mssql/server:2022-latest
 ```
 
+Username will be SA by default when container gets generated.
+
 ## Command to initialize a database (local/stage)
 
 Replace with your credentials </br>
@@ -32,7 +34,7 @@ Store code to CIRepository<br>
 `dotnet run --no-build --kxp-ci-store`
 
 The action deserializes the objects stored in the CI repository and creates, overwrites or removes corresponding data in the database. Objects are restored to the database specified by the CMSConnectionString in the application's configuration file.<br>
-`dotnet run --no-build --kxp-ci-restore`
+`dotnet run --kxp-ci-restore`
 
 ## Commands for CD (Deployment Sync)
 
