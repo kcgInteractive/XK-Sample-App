@@ -13,6 +13,7 @@ module.exports = {
     library: "$",
     libraryTarget: "umd",
   },
+  target: "web",
   devtool: "source-map",
   mode: "development",
   module: {

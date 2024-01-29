@@ -17,7 +17,7 @@ phases:
       - npm install webpack-cli webpack json
   build:
     commands:
-      - dotnet kentico-xperience-dbmanager -- -s "${DB_SERVER}" -d "${DB_NAME}" -u "${DB_USER}" -a "${DB_PASSWORD}" -p "${DB_PASSWORD}" --license-file "./license.txt" --hash-string-salt "${SALT}" --use-existing-database
+      - dotnet kentico-xperience-dbmanager -- -s "${DB_SERVER}" -d "${DB_NAME}" -u "${DB_USER}" -a "${DB_PASSWORD}" -p "${DB_PASSWORD}" --license-file "./license.txt" --hash-string-salt "${SALT}" --recreate-existing-database
       - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
       - echo Build started on `date`
       - dotnet build -c Release

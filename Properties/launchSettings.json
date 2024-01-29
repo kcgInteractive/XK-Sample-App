@@ -1,7 +1,7 @@
 ﻿{
   "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:21981",
       "sslPort": 0
@@ -15,12 +15,20 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "XK_Boilerplate": {
+    "Development": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "http://localhost:21981",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Stage": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:21981",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Stage"
       }
     }
   }
