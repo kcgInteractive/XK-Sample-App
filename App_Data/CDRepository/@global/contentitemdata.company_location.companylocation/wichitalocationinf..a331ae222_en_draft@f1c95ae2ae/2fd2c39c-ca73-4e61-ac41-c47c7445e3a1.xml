@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.company_location.companylocation>
+  <CompanyLocationName>KCM Wichita</CompanyLocationName>
+  <ContentItemDataCommonDataID>
+    <GUID>2af2f48e-3f46-4ba6-a7e2-6e9a331ae222</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>WichitaLocationInformation-hicgtblx</CodeName>
+      <GUID>2dd1cd7d-b0af-4890-9405-0eeb8d008a10</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>2fd2c39c-ca73-4e61-ac41-c47c7445e3a1</ContentItemDataGUID>
+</contentitemdata.company_location.companylocation>

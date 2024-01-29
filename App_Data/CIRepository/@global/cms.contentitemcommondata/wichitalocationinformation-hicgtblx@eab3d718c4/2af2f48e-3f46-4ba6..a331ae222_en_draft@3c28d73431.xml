@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.contentitemcommondata>
   <ContentItemCommonDataContentItemID>
-    <CodeName>StageItem-hak2vv4g</CodeName>
-    <GUID>0a71eb54-b5c1-47fb-9fcf-8b43df23212a</GUID>
+    <CodeName>WichitaLocationInformation-hicgtblx</CodeName>
+    <GUID>2dd1cd7d-b0af-4890-9405-0eeb8d008a10</GUID>
     <ObjectType>cms.contentitem</ObjectType>
   </ContentItemCommonDataContentItemID>
   <ContentItemCommonDataContentLanguageID>
@@ -10,7 +10,7 @@
     <GUID>f5bf57ab-6e90-48c8-ab63-d2da61219bd0</GUID>
     <ObjectType>cms.contentlanguage</ObjectType>
   </ContentItemCommonDataContentLanguageID>
-  <ContentItemCommonDataGUID>dbc3f6be-7c77-45e3-8432-39d5aa117a35</ContentItemCommonDataGUID>
+  <ContentItemCommonDataGUID>2af2f48e-3f46-4ba6-a7e2-6e9a331ae222</ContentItemCommonDataGUID>
   <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
   <ContentItemCommonDataVersionStatus>0</ContentItemCommonDataVersionStatus>
 </cms.contentitemcommondata>
