@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Production.Item</CodeName>
+    <GUID>9b4f80b4-907c-4eab-9ad0-41fbdee708dc</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>1c96cdcb-072a-4171-9ffd-8a7e95556919</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>ProductionItem-plp328r3</ContentItemName>
+</cms.contentitem>

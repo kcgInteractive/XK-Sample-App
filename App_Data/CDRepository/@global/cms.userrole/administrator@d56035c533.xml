@@ -13,5 +13,12 @@
         <ObjectType>cms.user</ObjectType>
       </UserID>
     </Binding>
+    <Binding id="cms.user_daniel.debolt@kochcc.com">
+      <UserID>
+        <CodeName>daniel.debolt@kochcc.com</CodeName>
+        <GUID>da0dba67-aae6-423d-af63-c0d93d969ea1</GUID>
+        <ObjectType>cms.user</ObjectType>
+      </UserID>
+    </Binding>
   </Bindings>
 </cms.userrole>
