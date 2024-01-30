@@ -14,8 +14,7 @@ phases:
       - echo Restore started on `date`
       - dotnet restore
       - dotnet tool restore
-      - apt-get update
-      - apt-get install sqlcmd
+      - yum install sqlcmd
       - npm install webpack-cli webpack json
   build:
     commands:
