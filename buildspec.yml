@@ -18,8 +18,8 @@ phases:
       - npm install webpack-cli webpack json
   build:
     commands:
-      - mssql -s xk-database-prod-express.cq4bh95s90ww.us-east-2.rds.amazonaws.com -u admin -p Passw0rd123
-      - mssql use master ; alter database SampleApp set single_user with rollback immediate ; drop database SampleApp
+      - mssql-cli -S xk-database-prod-express.cq4bh95s90ww.us-east-2.rds.amazonaws.com -U admin -P Passw0rd123
+      - mssql-cli use master ; alter database SampleApp set single_user with rollback immediate ; drop database SampleApp
       # - dotnet kentico-xperience-dbmanager -- -s "${DB_SERVER}" -d "${DB_NAME}" -u "${DB_USER}" -a "${DB_PASSWORD}" -p "${DB_PASSWORD}" --license-file "./license.txt" --hash-string-salt "${SALT}" --recreate-existing-database
       # - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
       # - echo Build started on `date`
