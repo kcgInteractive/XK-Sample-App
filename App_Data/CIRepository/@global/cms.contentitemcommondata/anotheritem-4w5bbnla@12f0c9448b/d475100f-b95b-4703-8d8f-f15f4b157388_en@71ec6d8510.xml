@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.contentitemcommondata>
   <ContentItemCommonDataContentItemID>
-    <CodeName>TestingContentItem-85dffzmj</CodeName>
-    <GUID>2d03ddc2-a1e9-489a-82d3-5ccc255c4b11</GUID>
+    <CodeName>AnotherItem-4w5bbnla</CodeName>
+    <GUID>6c52ca2a-105f-4688-bdd3-a97909ee021f</GUID>
     <ObjectType>cms.contentitem</ObjectType>
   </ContentItemCommonDataContentItemID>
   <ContentItemCommonDataContentLanguageID>
@@ -10,7 +10,7 @@
     <GUID>f5bf57ab-6e90-48c8-ab63-d2da61219bd0</GUID>
     <ObjectType>cms.contentlanguage</ObjectType>
   </ContentItemCommonDataContentLanguageID>
-  <ContentItemCommonDataGUID>be81440c-7975-422b-be4d-811a904addbd</ContentItemCommonDataGUID>
+  <ContentItemCommonDataGUID>d475100f-b95b-4703-8d8f-f15f4b157388</ContentItemCommonDataGUID>
   <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
   <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
 </cms.contentitemcommondata>

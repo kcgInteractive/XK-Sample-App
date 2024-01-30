@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.contentitemlanguagemetadata>
   <ContentItemLanguageMetadataContentItemID>
-    <CodeName>TestingContentItem-85dffzmj</CodeName>
-    <GUID>2d03ddc2-a1e9-489a-82d3-5ccc255c4b11</GUID>
+    <CodeName>AnotherItem-4w5bbnla</CodeName>
+    <GUID>6c52ca2a-105f-4688-bdd3-a97909ee021f</GUID>
     <ObjectType>cms.contentitem</ObjectType>
   </ContentItemLanguageMetadataContentItemID>
   <ContentItemLanguageMetadataContentLanguageID>
@@ -15,9 +15,9 @@
     <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
     <ObjectType>cms.user</ObjectType>
   </ContentItemLanguageMetadataCreatedByUserID>
-  <ContentItemLanguageMetadataCreatedWhen>2024-01-30 16:34:10Z</ContentItemLanguageMetadataCreatedWhen>
-  <ContentItemLanguageMetadataDisplayName>Testing Content Item</ContentItemLanguageMetadataDisplayName>
-  <ContentItemLanguageMetadataGUID>87a0d449-dfdd-4c14-ae46-719908e46255</ContentItemLanguageMetadataGUID>
+  <ContentItemLanguageMetadataCreatedWhen>2024-01-30 17:35:37Z</ContentItemLanguageMetadataCreatedWhen>
+  <ContentItemLanguageMetadataDisplayName>another item</ContentItemLanguageMetadataDisplayName>
+  <ContentItemLanguageMetadataGUID>9abc711b-afc1-488b-a4c6-96d17df29a21</ContentItemLanguageMetadataGUID>
   <ContentItemLanguageMetadataHasImageAsset>False</ContentItemLanguageMetadataHasImageAsset>
   <ContentItemLanguageMetadataLatestVersionStatus>2</ContentItemLanguageMetadataLatestVersionStatus>
   <ContentItemLanguageMetadataModifiedByUserID>
