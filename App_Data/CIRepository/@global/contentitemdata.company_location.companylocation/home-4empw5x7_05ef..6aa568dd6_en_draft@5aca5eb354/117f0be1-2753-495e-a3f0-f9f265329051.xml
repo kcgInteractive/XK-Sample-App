@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.company_location.companylocation>
+  <CompanyLocationName>Home</CompanyLocationName>
+  <ContentItemDataCommonDataID>
+    <GUID>05ef7486-ea0b-4df6-9b19-1526aa568dd6</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home-4empw5x7</CodeName>
+      <GUID>0926c1db-c1b1-4374-b63a-947c812888a8</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>117f0be1-2753-495e-a3f0-f9f265329051</ContentItemDataGUID>
+</contentitemdata.company_location.companylocation>
