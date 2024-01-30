@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>company_location.CompanyLocation</CodeName>
+    <GUID>2905f804-1aca-4cba-bb0a-b074d60cf1ed</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>0926c1db-c1b1-4374-b63a-947c812888a8</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Home-4empw5x7</ContentItemName>
+</cms.contentitem>
