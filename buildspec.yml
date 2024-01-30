@@ -17,11 +17,13 @@ phases:
       - npm install webpack-cli webpack json
   build:
     commands:
-      # - npx json -I -f appsettings.json -e "this.ConnectionStrings.CMSConnectionString='${CONNECTION_STRING}'"
       - dotnet kentico-xperience-dbmanager -- -s "${DB_SERVER}" -d "${DB_NAME}" -u "${DB_USER}" -a "${DB_PASSWORD}" -p "${DB_PASSWORD}" --license-file "./license.txt" --hash-string-salt "${SALT}" --recreate-existing-database
       - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
       - echo Build started on `date`
       - dotnet build -c Release
+      - npx json -I -f appsettings.json -e "this.ConnectionStrings.CMSConnectionString='${PROD_CONNECTION_STRING}'"
+      - dotnet run --no-build -- --kxp-cd-store --repository-path "./App_Data/CDRepository" --config-path "./App_Data/CD_Configs/repository.config"
+      - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
   post_build:
     commands:
       - echo Publish started on `date`
