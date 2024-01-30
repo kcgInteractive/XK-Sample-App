@@ -14,7 +14,8 @@ phases:
       - echo Restore started on `date`
       - dotnet restore
       - dotnet tool restore
-      - pip install mssql-cli
+      - apt-get update
+      - apt-get install sqlcmd
       - npm install webpack-cli webpack json
   build:
     commands:
