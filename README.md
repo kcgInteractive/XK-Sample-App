@@ -1,4 +1,5 @@
 ## Commands to start local database instance if one is not created
+## or use sudo ./startup.sh
 
 Replace with your credentials and make sure to have Docker installed<br>
 
