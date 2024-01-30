@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.same.type>
+  <ContentItemDataCommonDataID>
+    <GUID>d475100f-b95b-4703-8d8f-f15f4b157388</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>AnotherItem-4w5bbnla</CodeName>
+      <GUID>6c52ca2a-105f-4688-bdd3-a97909ee021f</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>a2921394-b07c-4545-9cb6-65911dc2638b</ContentItemDataGUID>
+  <NumberField>2</NumberField>
+  <TextField>anotehr text</TextField>
+</contentitemdata.same.type>
