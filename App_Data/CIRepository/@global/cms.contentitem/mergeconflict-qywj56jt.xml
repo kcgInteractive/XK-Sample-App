@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Local.Type</CodeName>
+    <GUID>d61e266f-9c8c-4d02-bef3-af1fd66d782d</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>4093130d-b616-4057-95fd-f1d5edf56691</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>MergeConflict-qywj56jt</ContentItemName>
+</cms.contentitem>

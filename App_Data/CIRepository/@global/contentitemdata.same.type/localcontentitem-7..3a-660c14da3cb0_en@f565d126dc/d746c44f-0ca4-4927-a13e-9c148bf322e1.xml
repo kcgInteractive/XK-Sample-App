@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.same.type>
+  <ContentItemDataCommonDataID>
+    <GUID>132bc23a-15ac-4828-883a-660c14da3cb0</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>LocalContentItem-7ppkwo19</CodeName>
+      <GUID>9e4da0de-f229-4c50-b9fe-d6029eb9c341</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>d746c44f-0ca4-4927-a13e-9c148bf322e1</ContentItemDataGUID>
+  <NumberField>0</NumberField>
+  <TextField>Same Item</TextField>
+</contentitemdata.same.type>

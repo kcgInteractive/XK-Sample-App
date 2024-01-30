@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.contentitemlanguagemetadata>
   <ContentItemLanguageMetadataContentItemID>
-    <CodeName>WichitaLocationInformation-hicgtblx</CodeName>
-    <GUID>2dd1cd7d-b0af-4890-9405-0eeb8d008a10</GUID>
+    <CodeName>MergeConflict-qywj56jt</CodeName>
+    <GUID>4093130d-b616-4057-95fd-f1d5edf56691</GUID>
     <ObjectType>cms.contentitem</ObjectType>
   </ContentItemLanguageMetadataContentItemID>
   <ContentItemLanguageMetadataContentLanguageID>
@@ -15,9 +15,9 @@
     <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
     <ObjectType>cms.user</ObjectType>
   </ContentItemLanguageMetadataCreatedByUserID>
-  <ContentItemLanguageMetadataCreatedWhen>2024-01-27 02:51:40Z</ContentItemLanguageMetadataCreatedWhen>
-  <ContentItemLanguageMetadataDisplayName>Wichita Location Information</ContentItemLanguageMetadataDisplayName>
-  <ContentItemLanguageMetadataGUID>604f3b31-912b-40eb-afce-f26c42eeaee0</ContentItemLanguageMetadataGUID>
+  <ContentItemLanguageMetadataCreatedWhen>2024-01-30 17:20:10Z</ContentItemLanguageMetadataCreatedWhen>
+  <ContentItemLanguageMetadataDisplayName>MergeConflict</ContentItemLanguageMetadataDisplayName>
+  <ContentItemLanguageMetadataGUID>504b98bf-be9b-4d6d-b420-a14171a85fc7</ContentItemLanguageMetadataGUID>
   <ContentItemLanguageMetadataHasImageAsset>False</ContentItemLanguageMetadataHasImageAsset>
   <ContentItemLanguageMetadataLatestVersionStatus>2</ContentItemLanguageMetadataLatestVersionStatus>
   <ContentItemLanguageMetadataModifiedByUserID>
