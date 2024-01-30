@@ -17,7 +17,6 @@ phases:
       - npm install webpack-cli webpack mssql
   build:
     commands:
-      - npx mssql exec msdb.dbo.rds_cdc_enable_db 'SampleApp' ; use 'SampleApp' ; EXEC sys.sp_cdc_change_job @job_type = 'capture' ,@pollinginterval = 86399 ; exec sp_cdc_stop_job 'capture' ; exec sp_cdc_start_job 'capture'
       - dotnet kentico-xperience-dbmanager -- -s "${DB_SERVER}" -d "${DB_NAME}" -u "${DB_USER}" -a "${DB_PASSWORD}" -p "${DB_PASSWORD}" --license-file "./license.txt" --hash-string-salt "${SALT}" --recreate-existing-database
       - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
       - echo Build started on `date`
