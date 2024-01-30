@@ -17,6 +17,16 @@
           <controlname>Kentico.Administration.TextInput</controlname>
         </settings>
       </field>
+      <field column="CompanyLocation" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="12d03a44-59f4-4d6f-b465-68d8c6344f28" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Location</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
     </form>
   </ClassFormDefinition>
   <ClassGUID>2905f804-1aca-4cba-bb0a-b074d60cf1ed</ClassGUID>
