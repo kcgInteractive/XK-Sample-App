@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.shared.page>
+  <ContentItemDataCommonDataID>
+    <GUID>515a3309-2101-4330-867d-542f13b88424</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Stories-wwafia7a</CodeName>
+      <GUID>6f0025d2-f745-425a-8b60-9db3f9a42de7</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>4462d08a-94fc-47bf-94ea-f40545399b53</ContentItemDataGUID>
+  <IncludeNav>False</IncludeNav>
+</contentitemdata.shared.page>

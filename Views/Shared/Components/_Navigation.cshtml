@@ -1,0 +1,13 @@
+@using Shared;
+
+@model IEnumerable<Page>;
+
+<nav>
+    @foreach (Page pageItem in Model)
+    {
+        if (pageItem.IncludeNav)
+        {
+            <a>@pageItem.SystemFields.WebPageUrlPath</a>
+        }
+    }
+</nav>

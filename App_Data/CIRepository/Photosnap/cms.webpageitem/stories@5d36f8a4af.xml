@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageitem>
+  <WebPageItemContentItemID>
+    <CodeName>Stories-wwafia7a</CodeName>
+    <GUID>6f0025d2-f745-425a-8b60-9db3f9a42de7</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </WebPageItemContentItemID>
+  <WebPageItemGUID>b2613da3-a6b3-4a9c-aeaa-0ff8dd23fb49</WebPageItemGUID>
+  <WebPageItemName>Stories-wwafia7a</WebPageItemName>
+  <WebPageItemOrder>5</WebPageItemOrder>
+  <WebPageItemTreePath>/Stories</WebPageItemTreePath>
+  <WebPageItemWebsiteChannelID>
+    <GUID>8f77535e-1d86-4278-bb96-d2c0844b7cf0</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Photosnap</CodeName>
+      <GUID>ca1743fb-f454-4369-afbe-844f2af4aed0</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageItemWebsiteChannelID>
+</cms.webpageitem>

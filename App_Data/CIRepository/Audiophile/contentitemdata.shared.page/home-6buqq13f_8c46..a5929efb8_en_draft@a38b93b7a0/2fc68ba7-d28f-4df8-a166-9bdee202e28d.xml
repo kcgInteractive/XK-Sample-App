@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.shared.page>
+  <ContentItemDataCommonDataID>
+    <GUID>8c466731-3be5-4507-83e6-f54a5929efb8</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home-6buqq13f</CodeName>
+      <GUID>adddfd46-93a9-47fd-a43c-27c9f5a0d968</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>2fc68ba7-d28f-4df8-a166-9bdee202e28d</ContentItemDataGUID>
+  <IncludeNav>False</IncludeNav>
+</contentitemdata.shared.page>

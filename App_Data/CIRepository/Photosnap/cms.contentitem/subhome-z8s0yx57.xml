@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemChannelID>
+    <CodeName>Photosnap</CodeName>
+    <GUID>ca1743fb-f454-4369-afbe-844f2af4aed0</GUID>
+    <ObjectType>cms.channel</ObjectType>
+  </ContentItemChannelID>
+  <ContentItemContentTypeID>
+    <CodeName>Shared.Page</CodeName>
+    <GUID>db14ae9c-141d-4308-88e6-ee6641efbb9b</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>b13c670f-a600-48a5-b422-571299175d9b</ContentItemGUID>
+  <ContentItemIsReusable>False</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>SubHome-z8s0yx57</ContentItemName>
+</cms.contentitem>
