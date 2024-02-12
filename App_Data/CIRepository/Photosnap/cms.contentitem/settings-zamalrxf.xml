@@ -5,13 +5,8 @@
     <GUID>ca1743fb-f454-4369-afbe-844f2af4aed0</GUID>
     <ObjectType>cms.channel</ObjectType>
   </ContentItemChannelID>
-  <ContentItemContentTypeID>
-    <CodeName>Shared.Page</CodeName>
-    <GUID>db14ae9c-141d-4308-88e6-ee6641efbb9b</GUID>
-    <ObjectType>cms.contenttype</ObjectType>
-  </ContentItemContentTypeID>
-  <ContentItemGUID>b13c670f-a600-48a5-b422-571299175d9b</ContentItemGUID>
+  <ContentItemGUID>5d7b4c28-d4e0-441d-96d6-ad2ad8f651bf</ContentItemGUID>
   <ContentItemIsReusable>False</ContentItemIsReusable>
   <ContentItemIsSecured>False</ContentItemIsSecured>
-  <ContentItemName>SubHome-z8s0yx57</ContentItemName>
+  <ContentItemName>Settings-zamalrxf</ContentItemName>
 </cms.contentitem>

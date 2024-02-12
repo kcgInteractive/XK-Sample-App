@@ -1,6 +1,10 @@
 @addTagHelper *, Kentico.Content.Web.Mvc
 @model Shared.Models.PageViewModel
 
+@{
+    ViewBag.ChannelName = Model.ChannelContextName;
+}
+
 @section styles
 {
     @* Includes CSS necessary for page builder functionality *@
@@ -17,3 +21,4 @@
 <main>
     <editable-area area-identifier="areaSimple" />
 </main>
+@* @await Component.InvokeAsync("Footer") *@

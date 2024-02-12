@@ -10,5 +10,11 @@
     </Parent>
   </ContentItemDataCommonDataID>
   <ContentItemDataGUID>bdc3adff-be33-422e-928d-2de31a08d157</ContentItemDataGUID>
-  <IncludeNav>False</IncludeNav>
+  <IncludeNav>True</IncludeNav>
+  <LinkedItem>
+    <![CDATA[[{"Identifier":"413ce02a-6f5b-4c2e-8117-d2e85cf5c7f2"}]]]>
+  </LinkedItem>
+  <Media>
+    <![CDATA[[{"Identifier":"2386634e-8d53-4921-b57f-d06bc3b6dd1f","Name":"Photosnap-logo.svg","Size":7000,"Dimensions":{"Width":0,"Height":0}}]]]>
+  </Media>
 </contentitemdata.shared.page>

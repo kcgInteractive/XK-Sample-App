@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using CMS.Websites;
+using CMS.MediaLibrary;
 
 namespace Shared
 {
@@ -25,16 +26,20 @@ namespace Shared
 		/// </summary>
 		public const string CONTENT_TYPE_NAME = "Shared.Page";
 
-
 		/// <summary>
 		/// Represents system properties for a web page item.
 		/// </summary>
 		public WebPageFields SystemFields { get; set; }
 
-
 		/// <summary>
 		/// IncludeNav.
 		/// </summary>
 		public bool IncludeNav { get; set; }
+
+		/// <summary>
+		/// Media.
+		/// </summary>
+		public IEnumerable<AssetRelatedItem> Media { get; set; }
+
 	}
 }

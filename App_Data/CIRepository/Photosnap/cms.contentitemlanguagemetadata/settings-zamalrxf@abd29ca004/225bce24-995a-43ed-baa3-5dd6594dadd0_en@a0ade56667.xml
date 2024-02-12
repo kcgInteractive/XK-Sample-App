@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.contentitemlanguagemetadata>
   <ContentItemLanguageMetadataContentItemID>
-    <CodeName>SubHome-z8s0yx57</CodeName>
-    <GUID>b13c670f-a600-48a5-b422-571299175d9b</GUID>
+    <CodeName>Settings-zamalrxf</CodeName>
+    <GUID>5d7b4c28-d4e0-441d-96d6-ad2ad8f651bf</GUID>
     <ObjectType>cms.contentitem</ObjectType>
   </ContentItemLanguageMetadataContentItemID>
   <ContentItemLanguageMetadataContentLanguageID>
@@ -15,11 +15,11 @@
     <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
     <ObjectType>cms.user</ObjectType>
   </ContentItemLanguageMetadataCreatedByUserID>
-  <ContentItemLanguageMetadataCreatedWhen>2024-01-31 21:47:19Z</ContentItemLanguageMetadataCreatedWhen>
-  <ContentItemLanguageMetadataDisplayName>SubHome</ContentItemLanguageMetadataDisplayName>
-  <ContentItemLanguageMetadataGUID>d1be355a-87cd-43b8-ad8e-311d4e7a1de9</ContentItemLanguageMetadataGUID>
+  <ContentItemLanguageMetadataCreatedWhen>2024-02-01 21:07:12Z</ContentItemLanguageMetadataCreatedWhen>
+  <ContentItemLanguageMetadataDisplayName>Settings</ContentItemLanguageMetadataDisplayName>
+  <ContentItemLanguageMetadataGUID>225bce24-995a-43ed-baa3-5dd6594dadd0</ContentItemLanguageMetadataGUID>
   <ContentItemLanguageMetadataHasImageAsset>False</ContentItemLanguageMetadataHasImageAsset>
-  <ContentItemLanguageMetadataLatestVersionStatus>0</ContentItemLanguageMetadataLatestVersionStatus>
+  <ContentItemLanguageMetadataLatestVersionStatus>2</ContentItemLanguageMetadataLatestVersionStatus>
   <ContentItemLanguageMetadataModifiedByUserID>
     <CodeName>administrator</CodeName>
     <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>

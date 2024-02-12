@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.test.example>
+  <ContentItemDataCommonDataID>
+    <GUID>dd160160-0831-40ab-90f5-89d213135b9f</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Item-engncif9</CodeName>
+      <GUID>413ce02a-6f5b-4c2e-8117-d2e85cf5c7f2</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>9f21cc28-b3c4-483d-a0c0-c8f375761f3f</ContentItemDataGUID>
+  <Text>Test</Text>
+</contentitemdata.test.example>

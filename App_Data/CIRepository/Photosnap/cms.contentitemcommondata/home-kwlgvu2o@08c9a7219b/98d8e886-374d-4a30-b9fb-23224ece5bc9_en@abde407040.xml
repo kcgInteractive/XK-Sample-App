@@ -13,4 +13,19 @@
   <ContentItemCommonDataGUID>98d8e886-374d-4a30-b9fb-23224ece5bc9</ContentItemCommonDataGUID>
   <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
   <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
+  <ContentItemReferences>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>f75307c1-b9b6-439d-a29a-6b5bb3ada32b</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>e12b300c-9d93-4010-bf5f-11989c3ccb7f</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>98d8e886-374d-4a30-b9fb-23224ece5bc9</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>Item-engncif9</CodeName>
+        <GUID>413ce02a-6f5b-4c2e-8117-d2e85cf5c7f2</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+  </ContentItemReferences>
 </cms.contentitemcommondata>

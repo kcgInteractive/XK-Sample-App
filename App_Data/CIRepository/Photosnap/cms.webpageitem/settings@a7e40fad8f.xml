@@ -1,19 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.webpageitem>
   <WebPageItemContentItemID>
-    <CodeName>SubHome-z8s0yx57</CodeName>
-    <GUID>b13c670f-a600-48a5-b422-571299175d9b</GUID>
+    <CodeName>Settings-zamalrxf</CodeName>
+    <GUID>5d7b4c28-d4e0-441d-96d6-ad2ad8f651bf</GUID>
     <ObjectType>cms.contentitem</ObjectType>
   </WebPageItemContentItemID>
-  <WebPageItemGUID>dcfb4b5b-4471-4ee7-962a-acab89463aa4</WebPageItemGUID>
-  <WebPageItemName>SubHome-z8s0yx57</WebPageItemName>
-  <WebPageItemOrder>1</WebPageItemOrder>
-  <WebPageItemParentID>
-    <CodeName>Home-kwlgvu2o</CodeName>
-    <GUID>7912bf1c-326b-4efe-bdad-7ba7635ce69b</GUID>
-    <ObjectType>cms.webpageitem</ObjectType>
-  </WebPageItemParentID>
-  <WebPageItemTreePath>/Home/SubHome</WebPageItemTreePath>
+  <WebPageItemGUID>7bbc80a6-2168-41dd-b634-62c06b2a4405</WebPageItemGUID>
+  <WebPageItemName>Settings-zamalrxf</WebPageItemName>
+  <WebPageItemOrder>6</WebPageItemOrder>
+  <WebPageItemTreePath>/Settings</WebPageItemTreePath>
   <WebPageItemWebsiteChannelID>
     <GUID>8f77535e-1d86-4278-bb96-d2c0844b7cf0</GUID>
     <ObjectType>cms.websitechannel</ObjectType>
