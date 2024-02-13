@@ -1,0 +1,27 @@
+@addTagHelper *, Kentico.Content.Web.Mvc
+@model Shared.Models.PageViewModel
+
+@{
+    ViewBag.ChannelName = Model.ChannelName;
+    ViewBag.PageTitle = Model.PageTitle;
+    ViewBag.Logo = Model.FileUrl.RelativePath;
+}
+
+@section styles
+{
+    @* Includes CSS necessary for page builder functionality *@
+    <page-builder-styles />
+}
+
+@section scripts
+{
+    @* Includes scripts necessary for page builder functionality *@
+    <page-builder-scripts />
+}
+
+@await Component.InvokeAsync("Navigation", new { channelName = Model.ChannelName })
+<main>
+    @Model.PageTitle
+    <editable-area area-identifier="areaSimple" />
+</main>
+@* @await Component.InvokeAsync("Footer") *@

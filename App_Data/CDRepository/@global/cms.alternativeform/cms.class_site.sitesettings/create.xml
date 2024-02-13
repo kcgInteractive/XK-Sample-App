@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.alternativeform>
+  <FormClassID>
+    <CodeName>Site.SiteSettings</CodeName>
+    <GUID>cc3dc3ca-0ccd-4c2e-a380-b4a6a6e13a68</GUID>
+    <ObjectType>cms.class</ObjectType>
+  </FormClassID>
+  <FormDefinition>
+    <form>
+      <field column="SettingsID" guid="e6044613-da09-4602-a29f-1bfc7e9d7001" enabled="" />
+      <field column="ChannelName" enabled="true" guid="2aa6c838-129c-4c96-ab63-f4ff607b78e6" visible="true">
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+          <WatermarkText>Site name</WatermarkText>
+        </settings>
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Channel name</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+      </field>
+      <field column="SiteLogo" enabled="true" guid="01544bd0-91ea-49ab-8c72-c0bd6ea4916c" visible="true">
+        <settings>
+          <AllowedExtensions>_INHERITED_</AllowedExtensions>
+          <controlname>Kentico.Administration.AssetSelector</controlname>
+          <MaximumAssets>1</MaximumAssets>
+        </settings>
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Site logo</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+      </field>
+      <field column="Page" enabled="true" guid="947b67fa-57d6-4950-9b40-855b15595da4" visible="true">
+        <settings>
+          <controlname>Kentico.Administration.WebPageSelector</controlname>
+          <MaximumPages>1</MaximumPages>
+          <Sortable>False</Sortable>
+        </settings>
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Page</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+      </field>
+      <field column="SiteTitle" enabled="true" guid="7e7754f0-e0bd-4341-bc05-47c71434566d" visible="true">
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Site Title</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+      </field>
+      <field column="Codenames" enabled="true" guid="c7b572fa-bb14-48b7-afda-320765adecb2" visible="true">
+        <settings>
+          <controlname>Kentico.Administration.ObjectCodeNameSelector</controlname>
+          <MaximumItems>1</MaximumItems>
+          <ObjectType>Site.SiteSettings</ObjectType>
+        </settings>
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Codename</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+      </field>
+    </form>
+  </FormDefinition>
+  <FormDisplayName>Create Site setting</FormDisplayName>
+  <FormGUID>4ab38264-e6cc-422c-9532-2a20007e9ab7</FormGUID>
+  <FormIsCustom>True</FormIsCustom>
+  <FormName>create</FormName>
+</cms.alternativeform>

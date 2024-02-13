@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Test.Example</CodeName>
+    <GUID>c205a509-bab3-40c1-83fa-dc42cdd801d4</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>413ce02a-6f5b-4c2e-8117-d2e85cf5c7f2</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Item-engncif9</ContentItemName>
+</cms.contentitem>

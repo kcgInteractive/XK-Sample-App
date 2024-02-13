@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageitem>
+  <WebPageItemContentItemID>
+    <CodeName>Earphones-vvwzrqn9</CodeName>
+    <GUID>45d6d0bc-0855-4859-8933-dd9ef1f5ffe6</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </WebPageItemContentItemID>
+  <WebPageItemGUID>b435e406-ca30-47be-8682-cde95e73faff</WebPageItemGUID>
+  <WebPageItemName>Earphones-vvwzrqn9</WebPageItemName>
+  <WebPageItemOrder>6</WebPageItemOrder>
+  <WebPageItemTreePath>/Earphones</WebPageItemTreePath>
+  <WebPageItemWebsiteChannelID>
+    <GUID>5c471aae-4b1e-4555-a7fe-77c2e3ba1dda</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Audiophile</CodeName>
+      <GUID>9ff9e686-3647-4b14-91f3-806fc9797244</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageItemWebsiteChannelID>
+</cms.webpageitem>

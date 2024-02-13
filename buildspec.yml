@@ -21,9 +21,9 @@ phases:
       - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
       - echo Build started on `date`
       - dotnet build -c Release
-      - npx json -I -f appsettings.json -e "this.ConnectionStrings.CMSConnectionString='${PROD_CONNECTION_STRING}'"
-      - dotnet run --no-build -- --kxp-cd-store --repository-path "./App_Data/CDRepository" --config-path "./App_Data/CD_Configs/repository.config"
-      - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
+      # - npx json -I -f appsettings.json -e "this.ConnectionStrings.CMSConnectionString='${PROD_CONNECTION_STRING}'"
+      # - dotnet run --no-build -- --kxp-cd-store --repository-path "./App_Data/CDRepository" --config-path "./App_Data/CD_Configs/repository.config"
+      # - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
   post_build:
     commands:
       - echo Publish started on `date`
