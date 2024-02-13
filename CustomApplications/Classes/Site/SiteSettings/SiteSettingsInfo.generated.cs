@@ -23,20 +23,21 @@ namespace SiteSettingsModule
         /// </summary>
         public const string OBJECT_TYPE = "site.sitesettings";
 
-
         /// <summary>
         /// Type information.
         /// </summary>
 #warning "You will need to configure the type info."
         public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(SiteSettingsInfoProvider), OBJECT_TYPE, "Site.SiteSettings", "SettingsID", null, null, null, null, null, null, null)
         {
+            ContinuousIntegrationSettings = {
+                Enabled = true
+            },
             TouchCacheDependencies = true,
             DependsOn = new List<ObjectDependency>()
             {
                 new ObjectDependency("Index", "site.sitesettings", ObjectDependencyEnum.Required),
             },
         };
-
 
         /// <summary>
         /// Settings ID.
@@ -48,7 +49,6 @@ namespace SiteSettingsModule
             set => SetValue(nameof(SettingsID), value);
         }
 
-
         /// <summary>
         /// Channel name.
         /// </summary>
@@ -58,7 +58,6 @@ namespace SiteSettingsModule
             get => ValidationHelper.GetString(GetValue(nameof(ChannelName)), String.Empty);
             set => SetValue(nameof(ChannelName), value);
         }
-
 
         /// <summary>
         /// Site logo.
@@ -70,7 +69,6 @@ namespace SiteSettingsModule
             set => SetValue(nameof(SiteLogo), value);
         }
 
-
         /// <summary>
         /// Site logo.
         /// </summary>
@@ -79,7 +77,6 @@ namespace SiteSettingsModule
             get => global::CMS.DataEngine.Internal.JsonDataTypeConverter.ConvertToModels<string>(mSiteLogo);
         }
         
-
         /// <summary>
         /// Page.
         /// </summary>
@@ -90,7 +87,6 @@ namespace SiteSettingsModule
             set => SetValue(nameof(Page), value);
         }
 
-
         /// <summary>
         /// Page.
         /// </summary>
@@ -99,7 +95,6 @@ namespace SiteSettingsModule
             get => global::CMS.DataEngine.Internal.JsonDataTypeConverter.ConvertToModels<global::CMS.Websites.WebPageRelatedItem>(mPage);
         }
         
-
         /// <summary>
         /// Site title.
         /// </summary>
@@ -109,7 +104,6 @@ namespace SiteSettingsModule
             get => ValidationHelper.GetString(GetValue(nameof(SiteTitle)), String.Empty);
             set => SetValue(nameof(SiteTitle), value);
         }
-
 
         /// <summary>
         /// Codenames.
@@ -121,7 +115,6 @@ namespace SiteSettingsModule
             set => SetValue(nameof(Codenames), value);
         }
 
-
         /// <summary>
         /// Codenames.
         /// </summary>
@@ -130,7 +123,6 @@ namespace SiteSettingsModule
             get => global::CMS.DataEngine.Internal.JsonDataTypeConverter.ConvertToModels<string>(mCodenames);
         }
         
-
         /// <summary>
         /// Index.
         /// </summary>
@@ -141,7 +133,6 @@ namespace SiteSettingsModule
             set => SetValue(nameof(Index), value);
         }
 
-
         /// <summary>
         /// Deletes the object using appropriate provider.
         /// </summary>
@@ -150,7 +141,6 @@ namespace SiteSettingsModule
             Provider.Delete(this);
         }
 
-
         /// <summary>
         /// Updates the object using appropriate provider.
         /// </summary>
@@ -158,7 +148,6 @@ namespace SiteSettingsModule
         {
             Provider.Set(this);
         }
-
 
         /// <summary>
         /// Constructor for de-serialization.
@@ -170,7 +159,6 @@ namespace SiteSettingsModule
         {
         }
 
-
         /// <summary>
         /// Creates an empty instance of the <see cref="SiteSettingsInfo"/> class.
         /// </summary>
@@ -178,7 +166,6 @@ namespace SiteSettingsModule
             : base(TYPEINFO)
         {
         }
-
 
         /// <summary>
         /// Creates a new instances of the <see cref="SiteSettingsInfo"/> class from the given <see cref="DataRow"/>.
