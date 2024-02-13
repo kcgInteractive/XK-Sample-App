@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.contentitemcommondata>
   <ContentItemCommonDataContentItemID>
-    <CodeName>Features-77575t93</CodeName>
-    <GUID>2f33efd5-f936-40f5-ac2f-103e973a89d2</GUID>
+    <CodeName>Pricing-2jxud8ig</CodeName>
+    <GUID>224e0639-a5a4-46eb-8b2f-6ec18f95fa6c</GUID>
     <ObjectType>cms.contentitem</ObjectType>
   </ContentItemCommonDataContentItemID>
   <ContentItemCommonDataContentLanguageID>
@@ -10,7 +10,7 @@
     <GUID>f5bf57ab-6e90-48c8-ab63-d2da61219bd0</GUID>
     <ObjectType>cms.contentlanguage</ObjectType>
   </ContentItemCommonDataContentLanguageID>
-  <ContentItemCommonDataGUID>96c5c244-541d-481e-a364-ee9f4087fdbe</ContentItemCommonDataGUID>
+  <ContentItemCommonDataGUID>6da86c55-18d6-484e-bd8e-1da1cd75083f</ContentItemCommonDataGUID>
   <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
-  <ContentItemCommonDataVersionStatus>0</ContentItemCommonDataVersionStatus>
+  <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
 </cms.contentitemcommondata>

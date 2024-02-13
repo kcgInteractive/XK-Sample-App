@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CMS.ContentEngine;
 using CMS.DataEngine.Internal;
 using CMS.MediaLibrary;
+using CMS.Websites;
 using CMS.Websites.Routing;
 using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
@@ -28,26 +29,56 @@ public class PageController : Controller
 
     private readonly IMediaFileInfoProvider mediaFileInfoProvider;
     private readonly IMediaFileUrlRetriever mediaFileUrlRetriever;
+    private readonly IContentQueryExecutor executor;
+
+    private readonly IWebPageQueryResultMapper mapper;
 
     public PageController(
         IWebsiteChannelContext websiteChannelContext,
         IMediaFileUrlRetriever mediaFileUrlRetriever,
-        IMediaFileInfoProvider mediaFileInfoProvider
+        IMediaFileInfoProvider mediaFileInfoProvider,
+        IContentQueryExecutor executor,
+        IWebPageQueryResultMapper mapper
     )
     {
         this.websiteChannelContext = websiteChannelContext;
         this.mediaFileUrlRetriever = mediaFileUrlRetriever;
         this.mediaFileInfoProvider = mediaFileInfoProvider;
+        this.executor = executor;
+        this.mapper = mapper;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
         string ChannelContextName = websiteChannelContext.WebsiteChannelName;
 
-        IEnumerable<SiteSettingsInfo> siteSettings = SiteSettingsInfo.Provider.Get();
+        //Content Query
+        var builder = new ContentItemQueryBuilder().ForContentType(
+            "Shared.Page",
+            config => config.ForWebsite(ChannelContextName, PathMatch.Single(Request.Path))
+        );
+
+        var queryOptions = new ContentQueryExecutionOptions()
+        {
+            ForPreview = websiteChannelContext.IsPreview
+        };
+
+        IEnumerable<Page> page = await executor.GetWebPageResult(
+            builder,
+            container => mapper.Map<Page>(container),
+            options: queryOptions
+        );
+
+        string pageUrl = page.FirstOrDefault().SystemFields.WebPageUrlPath;
+
+        //Custom Module Query
+        SiteSettingsInfo siteSettings = SiteSettingsInfo
+            .Provider.Get()
+            .WhereEquals("ChannelName", ChannelContextName)
+            .FirstOrDefault();
 
         AssetRelatedItem item = JsonDataTypeConverter
-            .ConvertToModels<AssetRelatedItem>(siteSettings.FirstOrDefault().mSiteLogo)
+            .ConvertToModels<AssetRelatedItem>(siteSettings.mSiteLogo)
             .FirstOrDefault();
 
         MediaFileInfo mediaInfo = mediaFileInfoProvider
@@ -57,7 +88,7 @@ public class PageController : Controller
 
         IMediaFileUrl fileUrl = mediaFileUrlRetriever.Retrieve(mediaInfo);
 
-        System.Diagnostics.Debug.WriteLine(fileUrl.RelativePath);
+        // var builder = new ContentItemQueryBuilder().ForContentType("")
 
         // System.Diagnostics.Debug.WriteLine(siteSettings?.FirstOrDefault().SiteLogo);
 
@@ -75,6 +106,13 @@ public class PageController : Controller
         //     IEnumerable<MediaFileInfo> mediaFiles = new ObjectQuery<MediaFileInfo>()
         // }
 
-        return View("~/Views/Shared/Page.cshtml", new PageViewModel(ChannelContextName));
+        return View(
+            "~/Views/Shared/Page.cshtml",
+            new PageViewModel(
+                ChannelName: siteSettings.ChannelName,
+                FileUrl: fileUrl,
+                PageTitle: siteSettings.SiteTitle
+            )
+        );
     }
 }

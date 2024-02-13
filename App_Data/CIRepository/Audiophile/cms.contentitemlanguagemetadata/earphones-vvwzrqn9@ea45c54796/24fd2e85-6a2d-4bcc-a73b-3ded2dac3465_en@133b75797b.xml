@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.contentitemlanguagemetadata>
   <ContentItemLanguageMetadataContentItemID>
-    <CodeName>Settings-zamalrxf</CodeName>
-    <GUID>5d7b4c28-d4e0-441d-96d6-ad2ad8f651bf</GUID>
+    <CodeName>Earphones-vvwzrqn9</CodeName>
+    <GUID>45d6d0bc-0855-4859-8933-dd9ef1f5ffe6</GUID>
     <ObjectType>cms.contentitem</ObjectType>
   </ContentItemLanguageMetadataContentItemID>
   <ContentItemLanguageMetadataContentLanguageID>
@@ -15,9 +15,9 @@
     <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
     <ObjectType>cms.user</ObjectType>
   </ContentItemLanguageMetadataCreatedByUserID>
-  <ContentItemLanguageMetadataCreatedWhen>2024-02-01 21:07:12Z</ContentItemLanguageMetadataCreatedWhen>
-  <ContentItemLanguageMetadataDisplayName>Settings</ContentItemLanguageMetadataDisplayName>
-  <ContentItemLanguageMetadataGUID>225bce24-995a-43ed-baa3-5dd6594dadd0</ContentItemLanguageMetadataGUID>
+  <ContentItemLanguageMetadataCreatedWhen>2024-02-12 18:39:06Z</ContentItemLanguageMetadataCreatedWhen>
+  <ContentItemLanguageMetadataDisplayName>Earphones</ContentItemLanguageMetadataDisplayName>
+  <ContentItemLanguageMetadataGUID>24fd2e85-6a2d-4bcc-a73b-3ded2dac3465</ContentItemLanguageMetadataGUID>
   <ContentItemLanguageMetadataHasImageAsset>False</ContentItemLanguageMetadataHasImageAsset>
   <ContentItemLanguageMetadataLatestVersionStatus>2</ContentItemLanguageMetadataLatestVersionStatus>
   <ContentItemLanguageMetadataModifiedByUserID>

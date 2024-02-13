@@ -19,7 +19,7 @@
           <fielddescriptionashtml>False</fielddescriptionashtml>
         </properties>
       </field>
-      <field column="OfficeType" enabled="true" guid="0f5e5fff-37bd-462f-aa70-45236d0a9d81" visible="true" order="2">
+      <field column="OfficeType" enabled="true" guid="3d477d1c-1e11-4010-96f5-ec9eee23b5aa" visible="true" order="2">
         <settings>
           <controlname>Kentico.Administration.NumberInput</controlname>
         </settings>

@@ -4,7 +4,7 @@
   <ClassFormDefinition>
     <form>
       <field column="OfficeID" columntype="integer" enabled="true" guid="220c32a4-d83a-4a5b-8fea-e003858fefec" isPK="true" />
-      <field allowempty="true" column="OfficeType" columnprecision="0" columntype="integer" enabled="true" guid="3d477d1c-1e11-4010-96f5-ec9eee23b5aa">
+      <field allowempty="true" column="OfficeType" columnprecision="0" columntype="integer" enabled="true" guid="3d477d1c-1e11-4010-96f5-ec9eee23b5aa" refobjtype="cms.websitechannel" reftype="Required">
         <properties>
           <defaultvalue>0</defaultvalue>
         </properties>

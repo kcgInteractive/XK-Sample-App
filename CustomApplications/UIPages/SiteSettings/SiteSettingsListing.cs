@@ -22,7 +22,7 @@ public class SiteSettingsListing : ListingPage
     {
         PageConfiguration.HeaderActions.AddLink<SiteSettingsCreate>("New site setting");
         PageConfiguration.ColumnConfigurations.AddColumn(
-            nameof(SiteSettingsInfo.SiteName),
+            nameof(SiteSettingsInfo.ChannelName),
             "Site name"
         );
 

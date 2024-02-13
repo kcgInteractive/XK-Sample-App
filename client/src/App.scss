@@ -1,1 +1,7 @@
-@use "./PhotosnapStyles/base";
+@use "./PhotosnapStyles/base" as Photosnap;
+@use "./AudiophileStyles/base" as Audiophile;
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

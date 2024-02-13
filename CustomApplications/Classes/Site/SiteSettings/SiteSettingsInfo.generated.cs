@@ -28,11 +28,12 @@ namespace SiteSettingsModule
         /// Type information.
         /// </summary>
 #warning "You will need to configure the type info."
-        public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(SiteSettingsInfoProvider), OBJECT_TYPE, "Site.SiteSettings", "SettingsID", null, null, "SiteName", null, null, null, null)
+        public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(SiteSettingsInfoProvider), OBJECT_TYPE, "Site.SiteSettings", "SettingsID", null, null, null, null, null, null, null)
         {
             TouchCacheDependencies = true,
             DependsOn = new List<ObjectDependency>()
             {
+                new ObjectDependency("Index", "site.sitesettings", ObjectDependencyEnum.Required),
             },
         };
 
@@ -49,13 +50,13 @@ namespace SiteSettingsModule
 
 
         /// <summary>
-        /// Site name.
+        /// Channel name.
         /// </summary>
         [DatabaseField]
-        public virtual string SiteName
+        public virtual string ChannelName
         {
-            get => ValidationHelper.GetString(GetValue(nameof(SiteName)), String.Empty);
-            set => SetValue(nameof(SiteName), value);
+            get => ValidationHelper.GetString(GetValue(nameof(ChannelName)), String.Empty);
+            set => SetValue(nameof(ChannelName), value);
         }
 
 
@@ -78,6 +79,68 @@ namespace SiteSettingsModule
             get => global::CMS.DataEngine.Internal.JsonDataTypeConverter.ConvertToModels<string>(mSiteLogo);
         }
         
+
+        /// <summary>
+        /// Page.
+        /// </summary>
+        [DatabaseField]
+        public virtual string mPage
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(Page)), String.Empty);
+            set => SetValue(nameof(Page), value);
+        }
+
+
+        /// <summary>
+        /// Page.
+        /// </summary>
+        public IEnumerable<global::CMS.Websites.WebPageRelatedItem> Page
+        {
+            get => global::CMS.DataEngine.Internal.JsonDataTypeConverter.ConvertToModels<global::CMS.Websites.WebPageRelatedItem>(mPage);
+        }
+        
+
+        /// <summary>
+        /// Site title.
+        /// </summary>
+        [DatabaseField]
+        public virtual string SiteTitle
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(SiteTitle)), String.Empty);
+            set => SetValue(nameof(SiteTitle), value);
+        }
+
+
+        /// <summary>
+        /// Codenames.
+        /// </summary>
+        [DatabaseField]
+        public virtual string mCodenames
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(Codenames)), String.Empty);
+            set => SetValue(nameof(Codenames), value);
+        }
+
+
+        /// <summary>
+        /// Codenames.
+        /// </summary>
+        public IEnumerable<string> Codenames
+        {
+            get => global::CMS.DataEngine.Internal.JsonDataTypeConverter.ConvertToModels<string>(mCodenames);
+        }
+        
+
+        /// <summary>
+        /// Index.
+        /// </summary>
+        [DatabaseField]
+        public virtual int Index
+        {
+            get => ValidationHelper.GetInteger(GetValue(nameof(Index)), 0);
+            set => SetValue(nameof(Index), value);
+        }
+
 
         /// <summary>
         /// Deletes the object using appropriate provider.

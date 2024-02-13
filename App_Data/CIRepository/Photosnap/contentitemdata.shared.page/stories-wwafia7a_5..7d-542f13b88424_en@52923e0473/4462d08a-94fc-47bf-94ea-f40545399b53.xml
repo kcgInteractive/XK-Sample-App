@@ -10,6 +10,6 @@
     </Parent>
   </ContentItemDataCommonDataID>
   <ContentItemDataGUID>4462d08a-94fc-47bf-94ea-f40545399b53</ContentItemDataGUID>
-  <IncludeNav>False</IncludeNav>
+  <IncludeNav>True</IncludeNav>
   <Media />
 </contentitemdata.shared.page>

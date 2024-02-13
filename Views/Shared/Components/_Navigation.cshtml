@@ -3,12 +3,17 @@
 @model IEnumerable<Page>;
 
 <nav class="navigation">
-    <img src="" alt="">
-    @foreach (Page pageItem in Model)
-    {
-        if (pageItem.IncludeNav)
+    <div class="image-frame">
+        <img src=@Url.Content(ViewBag.Logo) />
+    </div>
+    <div class="link-container">
+        @foreach (Page pageItem in Model)
         {
-            <a>@pageItem.SystemFields.WebPageUrlPath</a>
+            if (pageItem.IncludeNav)
+            {
+                <a class="nav-item" href=@(
+            $"/{pageItem.SystemFields.WebPageUrlPath.ToLower()}")>@pageItem.SystemFields.WebPageUrlPath</a>
+            }
         }
-    }
+    </div>
 </nav>

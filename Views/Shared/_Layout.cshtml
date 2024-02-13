@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     @* Dynamically resolves the page's title *@
-    <title>Photosnap - @ViewBag.Title</title>
+    <title>@ViewBag.ChannelName | @ViewBag.PageTitle</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700italic&subset=latin,latin-ext" rel="stylesheet"
         type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="icon" href=@Url.Content(ViewBag.Logo)>
     <link href="~/dist/site.css" rel="stylesheet" type="text/css" />
     <script defer src="~/dist/site.entry.js"></script>
     @* Razor section for additional page-specific styles *@

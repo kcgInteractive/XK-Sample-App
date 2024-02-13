@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentitemdata.shared.page>
   <ContentItemDataCommonDataID>
-    <GUID>6da86c55-18d6-484e-bd8e-1da1cd75083f</GUID>
+    <GUID>ac443d87-2e15-43ef-a37a-10e97bb54c76</GUID>
     <ObjectType>cms.contentitemcommondata</ObjectType>
     <Parent>
-      <CodeName>Pricing-2jxud8ig</CodeName>
-      <GUID>224e0639-a5a4-46eb-8b2f-6ec18f95fa6c</GUID>
+      <CodeName>Headphones-m0zk7kee</CodeName>
+      <GUID>b690248f-7a15-48c5-ae51-f87706cb7458</GUID>
       <ObjectType>cms.contentitem</ObjectType>
     </Parent>
   </ContentItemDataCommonDataID>
-  <ContentItemDataGUID>3ed12047-49f0-4179-a199-6dd369b44ec5</ContentItemDataGUID>
-  <IncludeNav>False</IncludeNav>
-  <Media />
+  <ContentItemDataGUID>7397110a-bafd-4c5f-9196-3aa9ddc963b2</ContentItemDataGUID>
+  <IncludeNav>True</IncludeNav>
 </contentitemdata.shared.page>

@@ -1,11 +1,18 @@
+using Kentico.Content.Web.Mvc;
+
 namespace Shared.Models;
 
 public class PageViewModel
 {
-    public string ChannelContextName { get; init; }
+    public string ChannelName { get; init; }
+    public IMediaFileUrl FileUrl { get; init; }
 
-    public PageViewModel(string ChannelContextName)
+    public string PageTitle { get; init; }
+
+    public PageViewModel(string ChannelName, IMediaFileUrl FileUrl, string PageTitle)
     {
-        this.ChannelContextName = ChannelContextName;
+        this.ChannelName = ChannelName;
+        this.FileUrl = FileUrl;
+        this.PageTitle = PageTitle;
     }
 }
