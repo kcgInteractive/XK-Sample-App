@@ -53,5 +53,8 @@
     <PackageReference Include="kentico.xperience.imageprocessing" Version="28.0.3" />
     <PackageReference Include="kentico.xperience.webapp" Version="28.0.3" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\admin\AdminCustomization.csproj" />
+  </ItemGroup>
 
 </Project>
