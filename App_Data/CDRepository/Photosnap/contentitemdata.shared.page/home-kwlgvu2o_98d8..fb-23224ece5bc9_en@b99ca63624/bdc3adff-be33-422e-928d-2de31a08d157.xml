@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.shared.page>
+  <ContentItemDataCommonDataID>
+    <GUID>98d8e886-374d-4a30-b9fb-23224ece5bc9</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home-kwlgvu2o</CodeName>
+      <GUID>ad902f33-9bfb-4e89-80a0-d27602a6f372</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>bdc3adff-be33-422e-928d-2de31a08d157</ContentItemDataGUID>
+  <IncludeNav>False</IncludeNav>
+  <Media>[]</Media>
+</contentitemdata.shared.page>
