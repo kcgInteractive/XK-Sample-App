@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Test.Example</CodeName>
+    <GUID>c205a509-bab3-40c1-83fa-dc42cdd801d4</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>6b83b4e5-ff23-43b9-bd09-0bacd41af4d3</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Item2-ioraydes</ContentItemName>
+</cms.contentitem>

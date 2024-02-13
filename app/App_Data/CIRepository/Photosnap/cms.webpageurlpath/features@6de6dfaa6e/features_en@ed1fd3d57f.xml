@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageurlpath>
+  <WebPageUrlPath>Features</WebPageUrlPath>
+  <WebPageUrlPathContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>f5bf57ab-6e90-48c8-ab63-d2da61219bd0</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </WebPageUrlPathContentLanguageID>
+  <WebPageUrlPathGUID>ffa565af-7d81-48ec-a4c2-19aca2a00d21</WebPageUrlPathGUID>
+  <WebPageUrlPathHash>
+    <![CDATA[43270579B52CAB6177D6DC1D32CB37C9CD9279F0FB83824CB83A0ED974FDFB57]]>
+  </WebPageUrlPathHash>
+  <WebPageUrlPathIsDraft>False</WebPageUrlPathIsDraft>
+  <WebPageUrlPathIsLatest>True</WebPageUrlPathIsLatest>
+  <WebPageUrlPathWebPageItemID>
+    <CodeName>Features-77575t93</CodeName>
+    <GUID>cb3fe798-408f-4c51-89a2-0f854a1ded96</GUID>
+    <ObjectType>cms.webpageitem</ObjectType>
+  </WebPageUrlPathWebPageItemID>
+  <WebPageUrlPathWebsiteChannelID>
+    <GUID>8f77535e-1d86-4278-bb96-d2c0844b7cf0</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Photosnap</CodeName>
+      <GUID>ca1743fb-f454-4369-afbe-844f2af4aed0</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageUrlPathWebsiteChannelID>
+</cms.webpageurlpath>

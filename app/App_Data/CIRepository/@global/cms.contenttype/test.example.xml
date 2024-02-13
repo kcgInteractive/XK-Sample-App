@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttype>
+  <ClassContentTypeType>Reusable</ClassContentTypeType>
+  <ClassDisplayName>ContentItem</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="ad86e70d-0649-41d2-b6e4-7553e51160fa" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="ba6f6190-f7da-4942-b60f-13f1cc9e2af5" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="5545dea8-7dc9-453f-823a-89052606cd75" isunique="true" system="true" />
+      <field column="Text" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="0e1c6534-87a9-4fde-a37f-1177293aba09" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Text</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>
+            <![CDATA[Custom.UIFormComponents.WebsiteChannelFormComponent]]>
+          </controlname>
+        </settings>
+      </field>
+      <field column="Color" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="ac9886e1-c03f-4f99-984d-f9a986c49e68" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Pick color</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Sample.UIFormComponents.ColorSelector</controlname>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>c205a509-bab3-40c1-83fa-dc42cdd801d4</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassName>Test.Example</ClassName>
+  <ClassTableName>Test_Type</ClassTableName>
+  <ClassType>Content</ClassType>
+  <ClassWebPageHasUrl>False</ClassWebPageHasUrl>
+</cms.contenttype>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.test.example>
+  <Color>#912b2b</Color>
+  <ContentItemDataCommonDataID>
+    <GUID>6d55e0a0-bfb1-4d80-a5d3-12a9c44ff5fb</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Item-3osv3l6k</CodeName>
+      <GUID>52b5d645-8a72-4db7-a2e2-0290a37bc177</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>66354bec-e058-4a36-8094-1864d4db4a32</ContentItemDataGUID>
+  <Text>1</Text>
+</contentitemdata.test.example>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.shared.page>
+  <ContentItemDataCommonDataID>
+    <GUID>96c5c244-541d-481e-a364-ee9f4087fdbe</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Features-77575t93</CodeName>
+      <GUID>2f33efd5-f936-40f5-ac2f-103e973a89d2</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>2c5a1456-c21e-42df-98ea-1e0aeef3bbb8</ContentItemDataGUID>
+  <IncludeNav>True</IncludeNav>
+</contentitemdata.shared.page>

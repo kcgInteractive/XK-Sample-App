@@ -1,0 +1,35 @@
+version: 0.2
+env:
+  variables:
+    PROJECT: XK-Sample-App
+    DOTNET_FRAMEWORK: 6.0
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: ${DOTNET_FRAMEWORK}
+      nodejs: latest
+  pre_build:
+    commands:
+      - echo Restore started on `date`
+      - dotnet restore
+      - dotnet tool restore
+      - npm install webpack-cli webpack
+  build:
+    commands:
+      - dotnet kentico-xperience-dbmanager -- -s "${DB_SERVER}" -d "${DB_NAME}" -u "${DB_USER}" -a "${DB_PASSWORD}" -p "${DB_PASSWORD}" --license-file "./license.txt" --hash-string-salt "${SALT}" --use-existing-database
+      - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
+      - echo Build started on `date`
+      - dotnet build -c Release
+      # - npx json -I -f appsettings.json -e "this.ConnectionStrings.CMSConnectionString='${PROD_CONNECTION_STRING}'"
+      # - dotnet run --no-build -- --kxp-cd-store --repository-path "./App_Data/CDRepository" --config-path "./App_Data/CD_Configs/repository.config"
+      # - dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"
+  post_build:
+    commands:
+      - echo Publish started on `date`
+      - dotnet publish -c Release -o ./build_output ./${PROJECT}.csproj --self-contained false
+artifacts:
+  files:
+    - "**/*"
+  base-directory: build_output
+  discard-paths: no

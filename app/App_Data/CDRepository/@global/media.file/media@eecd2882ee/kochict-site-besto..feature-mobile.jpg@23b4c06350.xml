@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<media.file>
+  <FileCreatedByUserID>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </FileCreatedByUserID>
+  <FileCreatedWhen>2024-02-01 23:00:30Z</FileCreatedWhen>
+  <FileDescription />
+  <FileExtension>.jpg</FileExtension>
+  <FileGUID>ce77433c-8db0-4d79-8679-c918542c4fd1</FileGUID>
+  <FileImageHeight>1000</FileImageHeight>
+  <FileImageWidth>1500</FileImageWidth>
+  <FileLibraryID>
+    <CodeName>Media</CodeName>
+    <GUID>34e8ba8d-573a-4376-961f-c5290f5f71a9</GUID>
+    <ObjectType>media.library</ObjectType>
+  </FileLibraryID>
+  <FileMimeType>image/jpeg</FileMimeType>
+  <FileModifiedByUserID>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </FileModifiedByUserID>
+  <FileName>KochICT-site-BestofWichita-Feature-mobile</FileName>
+  <FilePath>KochICT-site-BestofWichita-Feature-mobile.jpg</FilePath>
+  <FileSize>710554</FileSize>
+  <FileTitle />
+</media.file>

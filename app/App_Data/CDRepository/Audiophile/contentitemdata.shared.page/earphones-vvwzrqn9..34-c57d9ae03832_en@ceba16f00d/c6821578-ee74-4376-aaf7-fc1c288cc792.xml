@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.shared.page>
+  <ContentItemDataCommonDataID>
+    <GUID>198a3302-c2d9-40bf-8234-c57d9ae03832</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Earphones-vvwzrqn9</CodeName>
+      <GUID>45d6d0bc-0855-4859-8933-dd9ef1f5ffe6</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>c6821578-ee74-4376-aaf7-fc1c288cc792</ContentItemDataGUID>
+  <IncludeNav>True</IncludeNav>
+</contentitemdata.shared.page>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitemcommondata>
+  <ContentItemCommonDataContentItemID>
+    <CodeName>Item-3osv3l6k</CodeName>
+    <GUID>52b5d645-8a72-4db7-a2e2-0290a37bc177</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </ContentItemCommonDataContentItemID>
+  <ContentItemCommonDataContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>f5bf57ab-6e90-48c8-ab63-d2da61219bd0</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </ContentItemCommonDataContentLanguageID>
+  <ContentItemCommonDataGUID>6d55e0a0-bfb1-4d80-a5d3-12a9c44ff5fb</ContentItemCommonDataGUID>
+  <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
+  <ContentItemCommonDataVersionStatus>0</ContentItemCommonDataVersionStatus>
+</cms.contentitemcommondata>
