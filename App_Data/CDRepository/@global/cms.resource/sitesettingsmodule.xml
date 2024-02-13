@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<cms.resource>
-  <ResourceDisplayName>Site Settings</ResourceDisplayName>
-  <ResourceGUID>e94b19de-01d1-44d2-b1ae-59e2306966c3</ResourceGUID>
-  <ResourceIsInDevelopment>False</ResourceIsInDevelopment>
-  <ResourceName>SiteSettingsModule</ResourceName>
-</cms.resource>
