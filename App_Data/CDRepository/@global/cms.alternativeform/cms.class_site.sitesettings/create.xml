@@ -8,6 +8,7 @@
   <FormDefinition>
     <form>
       <field column="SettingsID" guid="e6044613-da09-4602-a29f-1bfc7e9d7001" enabled="" />
+      <field column="GUID" guid="b6670173-a69b-4fcf-9e03-e1fb01deb588" enabled="" />
       <field column="ChannelName" enabled="true" guid="2aa6c838-129c-4c96-ab63-f4ff607b78e6" visible="true">
         <settings>
           <controlname>Kentico.Administration.TextInput</controlname>
@@ -50,18 +51,6 @@
         <properties>
           <explanationtextashtml>False</explanationtextashtml>
           <fieldcaption>Site Title</fieldcaption>
-          <fielddescriptionashtml>False</fielddescriptionashtml>
-        </properties>
-      </field>
-      <field column="Codenames" enabled="true" guid="c7b572fa-bb14-48b7-afda-320765adecb2" visible="true">
-        <settings>
-          <controlname>Kentico.Administration.ObjectCodeNameSelector</controlname>
-          <MaximumItems>1</MaximumItems>
-          <ObjectType>Site.SiteSettings</ObjectType>
-        </settings>
-        <properties>
-          <explanationtextashtml>False</explanationtextashtml>
-          <fieldcaption>Codename</fieldcaption>
           <fielddescriptionashtml>False</fielddescriptionashtml>
         </properties>
       </field>

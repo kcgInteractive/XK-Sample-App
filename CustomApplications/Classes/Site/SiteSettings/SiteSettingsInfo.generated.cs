@@ -35,7 +35,6 @@ namespace SiteSettingsModule
             TouchCacheDependencies = true,
             DependsOn = new List<ObjectDependency>()
             {
-                new ObjectDependency("Index", "site.sitesettings", ObjectDependencyEnum.Required),
             },
         };
 
@@ -47,6 +46,16 @@ namespace SiteSettingsModule
         {
             get => ValidationHelper.GetInteger(GetValue(nameof(SettingsID)), 0);
             set => SetValue(nameof(SettingsID), value);
+        }
+
+        /// <summary>
+        /// GUID.
+        /// </summary>
+        [DatabaseField]
+        public virtual Guid GUID
+        {
+            get => ValidationHelper.GetGuid(GetValue(nameof(GUID)), Guid.Empty);
+            set => SetValue(nameof(GUID), value);
         }
 
         /// <summary>
@@ -103,34 +112,6 @@ namespace SiteSettingsModule
         {
             get => ValidationHelper.GetString(GetValue(nameof(SiteTitle)), String.Empty);
             set => SetValue(nameof(SiteTitle), value);
-        }
-
-        /// <summary>
-        /// Codenames.
-        /// </summary>
-        [DatabaseField]
-        public virtual string mCodenames
-        {
-            get => ValidationHelper.GetString(GetValue(nameof(Codenames)), String.Empty);
-            set => SetValue(nameof(Codenames), value);
-        }
-
-        /// <summary>
-        /// Codenames.
-        /// </summary>
-        public IEnumerable<string> Codenames
-        {
-            get => global::CMS.DataEngine.Internal.JsonDataTypeConverter.ConvertToModels<string>(mCodenames);
-        }
-        
-        /// <summary>
-        /// Index.
-        /// </summary>
-        [DatabaseField]
-        public virtual int Index
-        {
-            get => ValidationHelper.GetInteger(GetValue(nameof(Index)), 0);
-            set => SetValue(nameof(Index), value);
         }
 
         /// <summary>
