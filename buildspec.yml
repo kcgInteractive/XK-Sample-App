@@ -11,7 +11,10 @@ phases:
       nodejs: latest
   pre_build:
     commands:
-      - cd app
+      - cd admin/Client
+      - npm install
+      - npm run build
+      - cd ../../app
       - echo Restore started on `date`
       - dotnet restore
       - dotnet tool restore
