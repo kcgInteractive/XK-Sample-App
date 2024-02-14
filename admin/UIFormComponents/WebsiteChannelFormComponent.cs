@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CMS.ContentEngine;
 using CMS.DataEngine;
-using CMS.Membership;
-using CMS.Websites;
 using Kentico.Xperience.Admin.Base.Forms;
 
 [assembly: RegisterFormComponent(
@@ -25,26 +24,26 @@ public class MyComponentClientProperties : FormComponentClientProperties<string>
 
 public class WebsiteChannelFormComponent : FormComponent<MyComponentClientProperties, string>
 {
-    private readonly IInfoProvider<WebsiteChannelInfo> websiteChannelInfo;
+    private readonly IInfoProvider<ChannelInfo> channelInfo;
 
-    public WebsiteChannelFormComponent(IInfoProvider<WebsiteChannelInfo> websiteChannelInfo)
+    public WebsiteChannelFormComponent(IInfoProvider<ChannelInfo> channelInfo)
     {
-        this.websiteChannelInfo = websiteChannelInfo;
+        this.channelInfo = channelInfo;
     }
 
-    public override string ClientComponentName => "@custom/web-admin/WebsiteChannel";
+    public override string ClientComponentName => "@sample/web-admin/WebsiteChannel";
 
     protected override Task ConfigureClientProperties(MyComponentClientProperties clientProperties)
     {
-        clientProperties.Options = websiteChannelInfo
+        clientProperties.Options = channelInfo
             .Get()
             .GetEnumerableTypedResult()
             .Select(
                 channelInfo =>
                     new DropDownOption()
                     {
-                        Value = channelInfo.WebsiteChannelID.ToString(),
-                        Text = channelInfo.WebsiteChannelDomain
+                        Value = channelInfo.ChannelName,
+                        Text = channelInfo.ChannelName
                     }
             );
 

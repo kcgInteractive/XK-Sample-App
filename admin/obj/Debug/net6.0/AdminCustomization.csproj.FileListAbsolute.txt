@@ -1,0 +1,13 @@
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/bin/Debug/net6.0/AdminCustomization.deps.json
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/bin/Debug/net6.0/AdminCustomization.dll
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/bin/Debug/net6.0/AdminCustomization.pdb
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/AdminCustomization.csproj.AssemblyReference.cache
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/AdminCustomization.EmbeddedFilesManifest.cache
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/AdminCustomization.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/AdminCustomization.AssemblyInfoInputs.cache
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/AdminCustomization.AssemblyInfo.cs
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/AdminCustomization.csproj.CoreCompileInputs.cache
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/AdminCustomization.dll
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/refint/AdminCustomization.dll
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/AdminCustomization.pdb
+/Users/kevindavis/Projects/Xperience-Examples/xk-sample-app/admin/obj/Debug/net6.0/ref/AdminCustomization.dll
