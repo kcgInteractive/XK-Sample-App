@@ -19,9 +19,9 @@ ViewBag.Logo = Model.FileUrl.RelativePath; *@
     <page-builder-scripts />
 }
 
-@* @await Component.InvokeAsync("Navigation", new { channelName = Model.ChannelName }) *@
+@await Component.InvokeAsync("Navigation", new { channelName = Model.ChannelName })
 <main>
     @Model.PageTitle
     <editable-area area-identifier="areaSimple" />
 </main>
-@* @await Component.InvokeAsync("Footer") *@
+@await Component.InvokeAsync("Footer")
