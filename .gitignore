@@ -1,8 +1,8 @@
 *.vs
 *.user
 *.cache
-bin/
-obj/
+*/bin/
+*/obj/
 build_output
 */node_modules/
 package-lock.json
