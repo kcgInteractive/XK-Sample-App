@@ -15,6 +15,10 @@ phases:
       - dotnet restore
       - dotnet tool restore
       - npm install webpack-cli webpack
+      - cd ../admin/Client
+      - npm install
+      - npm run build
+      - cd ../../app
   build:
     commands:
       - dotnet kentico-xperience-dbmanager -- -s "${DB_SERVER}" -d "${DB_NAME}" -u "${DB_USER}" -a "${DB_PASSWORD}" -p "${DB_PASSWORD}" --license-file "./license.txt" --hash-string-salt "${SALT}" --use-existing-database

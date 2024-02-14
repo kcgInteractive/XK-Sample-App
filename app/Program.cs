@@ -41,6 +41,4 @@ app.UseKentico();
 
 app.Kentico().MapRoutes();
 
-// app.MapGet("/", () => "The XK_Boilerplate site has not been configured yet.");
-
 app.Run();

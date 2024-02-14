@@ -29,6 +29,16 @@
           <controlname>Sample.UIFormComponents.ColorSelector</controlname>
         </settings>
       </field>
+      <field column="Media" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="85d74348-024a-4542-817a-4c3845e9c3dd" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Asset Selector</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Custom.UIFormComponents.AssetSelectorFormComponent</controlname>
+        </settings>
+      </field>
     </form>
   </ClassFormDefinition>
   <ClassGUID>c205a509-bab3-40c1-83fa-dc42cdd801d4</ClassGUID>

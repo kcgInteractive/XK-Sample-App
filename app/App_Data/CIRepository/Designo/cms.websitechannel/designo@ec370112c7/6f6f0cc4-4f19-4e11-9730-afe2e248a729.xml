@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.websitechannel>
+  <WebsiteChannelChannelID>
+    <CodeName>Designo</CodeName>
+    <GUID>00fd362a-c6e7-43a1-b15f-f0642112bef8</GUID>
+    <ObjectType>cms.channel</ObjectType>
+  </WebsiteChannelChannelID>
+  <WebsiteChannelDefaultCookieLevel>1000</WebsiteChannelDefaultCookieLevel>
+  <WebsiteChannelDomain>localhost:3000</WebsiteChannelDomain>
+  <WebsiteChannelGUID>6f6f0cc4-4f19-4e11-9730-afe2e248a729</WebsiteChannelGUID>
+  <WebsiteChannelPrimaryContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>f5bf57ab-6e90-48c8-ab63-d2da61219bd0</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </WebsiteChannelPrimaryContentLanguageID>
+  <WebsiteChannelStoreFormerUrls>True</WebsiteChannelStoreFormerUrls>
+</cms.websitechannel>
