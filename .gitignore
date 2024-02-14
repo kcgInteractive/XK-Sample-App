@@ -1,12 +1,10 @@
 *.vs
 *.user
 *.cache
-*/bin/
-*/obj/
+bin/
+obj/
 build_output
-*/node_modules/
+node_modules/
 package-lock.json
 appsettings.Development.json
 appsettings.Stage.json
-/Client/node_modules
-
