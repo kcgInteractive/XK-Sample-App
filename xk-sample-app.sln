@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XK-Sample-App", "app\XK-Sample-App.csproj", "{86E35697-354C-4853-A9BD-05A6873287B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminCustomization", "admin\AdminCustomization.csproj", "{2C8447B1-8E66-4F74-AC8C-4F21918489B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86E35697-354C-4853-A9BD-05A6873287B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E35697-354C-4853-A9BD-05A6873287B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E35697-354C-4853-A9BD-05A6873287B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E35697-354C-4853-A9BD-05A6873287B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8447B1-8E66-4F74-AC8C-4F21918489B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8447B1-8E66-4F74-AC8C-4F21918489B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8447B1-8E66-4F74-AC8C-4F21918489B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8447B1-8E66-4F74-AC8C-4F21918489B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA8D7307-776C-4901-B08D-45B2EE743DE5}
+	EndGlobalSection
+EndGlobal
