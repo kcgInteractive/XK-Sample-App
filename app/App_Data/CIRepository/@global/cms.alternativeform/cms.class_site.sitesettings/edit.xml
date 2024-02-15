@@ -20,18 +20,6 @@
           <fielddescriptionashtml>False</fielddescriptionashtml>
         </properties>
       </field>
-      <field column="SiteLogo" enabled="true" guid="01544bd0-91ea-49ab-8c72-c0bd6ea4916c" visible="true">
-        <settings>
-          <AllowedExtensions>_INHERITED_</AllowedExtensions>
-          <controlname>Kentico.Administration.AssetSelector</controlname>
-          <MaximumAssets>1</MaximumAssets>
-        </settings>
-        <properties>
-          <explanationtextashtml>False</explanationtextashtml>
-          <fieldcaption>Site logo</fieldcaption>
-          <fielddescriptionashtml>False</fielddescriptionashtml>
-        </properties>
-      </field>
     </form>
   </FormDefinition>
   <FormDisplayName>Edit site setting</FormDisplayName>

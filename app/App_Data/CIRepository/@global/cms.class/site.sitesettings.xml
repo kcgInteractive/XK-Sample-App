@@ -14,7 +14,6 @@
     <form>
       <field column="SettingsID" columntype="integer" enabled="true" guid="e6044613-da09-4602-a29f-1bfc7e9d7001" isPK="true" />
       <field column="ChannelName" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="2aa6c838-129c-4c96-ab63-f4ff607b78e6" />
-      <field column="SiteLogo" columnprecision="0" columntype="assets" enabled="true" guid="01544bd0-91ea-49ab-8c72-c0bd6ea4916c" />
     </form>
   </ClassFormDefinition>
   <ClassGUID>cc3dc3ca-0ccd-4c2e-a380-b4a6a6e13a68</ClassGUID>
