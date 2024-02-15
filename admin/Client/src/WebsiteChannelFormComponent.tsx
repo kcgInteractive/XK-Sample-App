@@ -21,6 +21,7 @@ export const WebsiteChannelFormComponent = (props: MyFormComponentProps) => {
       validationMessage={props.validationMessage}
       markAsRequired={props.required}
       placeholder="Choose a channel"
+      value={props.value}
     >
       {props.options?.map((item, index) => {
         return (
