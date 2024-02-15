@@ -2,19 +2,36 @@
 
 @model IEnumerable<Page>;
 
-<nav class="navigation">
-    <div class="image-frame">
-        <img src=@Url.Content(ViewBag.Logo) />
-    </div>
-    <div class="link-container">
-        @foreach (Page pageItem in Model)
-        {
-            if (pageItem.IncludeNav)
-            {
-                <a class="nav-item" href=@(
-            $"/{pageItem.SystemFields.WebPageUrlPath.ToLower()}")>@pageItem.SystemFields.WebPageUrlPath</a>
-            }
-        }
-    </div>
-    <button>Get An Invite</button>
-</nav>
+@* <nav class="navigation">
+<div class="image-frame">
+<img src=@Url.Content(ViewBag.Logo) />
+</div>
+<div class="link-container">
+@foreach (Page pageItem in Model)
+{
+if (pageItem.IncludeNav)
+{
+<a class="nav-item" href=@(
+$"/{pageItem.SystemFields.WebPageUrlPath.ToLower()}")>@pageItem.SystemFields.WebPageUrlPath</a>
+}
+}
+</div>
+<button>Get An Invite</button>
+</nav> *@
+<div class="navigation-container">
+    <nav class="navigation">
+        <img src="/dev-assets/photosnap-logo.svg" />
+        <ul class="nav-links">
+            <li class="nav-link">
+                <a href="#">Stories</a>
+            </li>
+            <li class="nav-link">
+                <a href="#">Features</a>
+            </li>
+            <li class="nav-link">
+                <a href="#">Pricing</a>
+            </li>
+        </ul>
+        <button class="nav-btn">Get An Invite</button>
+    </nav>
+</div>

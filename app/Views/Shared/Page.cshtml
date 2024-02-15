@@ -2,9 +2,8 @@
 @model Shared.Models.PageViewModel
 
 @{
-    @* ViewBag.ChannelName = Model.ChannelName;
-ViewBag.PageTitle = Model.PageTitle;
-ViewBag.Logo = Model.FileUrl.RelativePath; *@
+    ViewBag.ChannelName = Model.ChannelName;
+    ViewBag.PageTitle = Model.PageTitle;
 }
 
 @section styles
@@ -19,9 +18,10 @@ ViewBag.Logo = Model.FileUrl.RelativePath; *@
     <page-builder-scripts />
 }
 
+@* @await Component.InvokeAsync("Navigation", new { channelName = Model.ChannelName }) *@
 @await Component.InvokeAsync("Navigation", new { channelName = Model.ChannelName })
 <main>
-    @Model.PageTitle
-    <editable-area area-identifier="areaSimple" />
+    <editable-area area-identifier="sections" />
+
 </main>
 @await Component.InvokeAsync("Footer")

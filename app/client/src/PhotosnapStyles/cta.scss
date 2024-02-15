@@ -1,0 +1,76 @@
+@mixin styles {
+  .cta {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1.5fr;
+
+    .text-container {
+      background-color: black;
+      color: white;
+      padding: 0 10rem;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+
+      h1 {
+        font-size: 5rem;
+        max-width: 500px;
+        text-transform: uppercase;
+        line-height: 1.5;
+        margin-bottom: 4rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        max-width: 400px;
+        opacity: 0.6;
+        margin-bottom: 5rem;
+      }
+    }
+
+    .image-container {
+      img {
+        display: flex;
+        width: 100%;
+      }
+    }
+
+    &.flip {
+      grid-template-columns: 1.5fr 1fr;
+      .text-container {
+        order: 2;
+      }
+    }
+
+    &.invert {
+      .text-container {
+        background-color: white;
+        color: black;
+
+        path {
+          stroke: black;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .cta {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .cta {
+      .text-container h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 675px) {
+    .cta {
+      grid-template-columns: 1fr;
+    }
+  }
+}

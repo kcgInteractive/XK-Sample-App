@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.class>
+  <ClassDisplayName>Product Taxonomies</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="TaxonomiesID" columntype="integer" enabled="true" guid="59c78b53-48f5-4fd8-86aa-f99f80fd2870" isPK="true" />
+      <field column="TaxonomyName" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="e63c3c98-fec8-41d6-961f-9ff38dbf8eb2" />
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>b9ab7f12-032e-490c-bbaf-bc3c9169f1b9</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassName>Product.Taxonomies</ClassName>
+  <ClassResourceID>
+    <CodeName>Taxonomies</CodeName>
+    <GUID>f64181f0-2e73-4539-aeb9-fed127493800</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ClassResourceID>
+  <ClassTableName>Product_Taxonomies</ClassTableName>
+  <ClassType>Other</ClassType>
+</cms.class>

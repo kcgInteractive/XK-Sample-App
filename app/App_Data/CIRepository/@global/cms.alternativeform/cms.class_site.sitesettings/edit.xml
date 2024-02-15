@@ -10,8 +10,9 @@
       <field column="SettingsID" guid="e6044613-da09-4602-a29f-1bfc7e9d7001" enabled="" />
       <field column="ChannelName" enabled="true" guid="2aa6c838-129c-4c96-ab63-f4ff607b78e6" visible="true">
         <settings>
-          <controlname>Kentico.Administration.TextInput</controlname>
-          <WatermarkText>Site name</WatermarkText>
+          <controlname>
+            <![CDATA[Custom.UIFormComponents.WebsiteChannelFormComponent]]>
+          </controlname>
         </settings>
         <properties>
           <explanationtextashtml>False</explanationtextashtml>

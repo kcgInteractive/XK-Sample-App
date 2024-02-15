@@ -109,6 +109,6 @@ public class PageController : Controller
         //     IEnumerable<MediaFileInfo> mediaFiles = new ObjectQuery<MediaFileInfo>()
         // }
 
-        return View("~/Views/Shared/Page.cshtml", new PageViewModel());
+        return View("~/Views/Shared/Page.cshtml", new PageViewModel(ChannelContextName, pageUrl));
     }
 }

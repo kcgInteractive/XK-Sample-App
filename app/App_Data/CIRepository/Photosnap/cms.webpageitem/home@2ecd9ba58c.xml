@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageitem>
+  <WebPageItemContentItemID>
+    <CodeName>Home-tixwyg9l</CodeName>
+    <GUID>23dbba4e-b2af-4b56-9460-48067bbd0df1</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </WebPageItemContentItemID>
+  <WebPageItemGUID>84bd133a-05be-4acb-b7b3-1fc3f1076d59</WebPageItemGUID>
+  <WebPageItemName>Home-tixwyg9l</WebPageItemName>
+  <WebPageItemOrder>2</WebPageItemOrder>
+  <WebPageItemTreePath>/Home</WebPageItemTreePath>
+  <WebPageItemWebsiteChannelID>
+    <GUID>8f77535e-1d86-4278-bb96-d2c0844b7cf0</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Photosnap</CodeName>
+      <GUID>ca1743fb-f454-4369-afbe-844f2af4aed0</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageItemWebsiteChannelID>
+</cms.webpageitem>

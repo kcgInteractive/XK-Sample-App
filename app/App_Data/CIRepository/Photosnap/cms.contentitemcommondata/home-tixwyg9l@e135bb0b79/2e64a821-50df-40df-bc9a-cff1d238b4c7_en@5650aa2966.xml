@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitemcommondata>
+  <ContentItemCommonDataContentItemID>
+    <CodeName>Home-tixwyg9l</CodeName>
+    <GUID>23dbba4e-b2af-4b56-9460-48067bbd0df1</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </ContentItemCommonDataContentItemID>
+  <ContentItemCommonDataContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>f5bf57ab-6e90-48c8-ab63-d2da61219bd0</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </ContentItemCommonDataContentLanguageID>
+  <ContentItemCommonDataGUID>2e64a821-50df-40df-bc9a-cff1d238b4c7</ContentItemCommonDataGUID>
+  <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
+  <ContentItemCommonDataPageBuilderWidgets>
+    <![CDATA[{"editableAreas":[{"identifier":"sections","sections":[{"identifier":"5c7938d5-334b-4aab-adef-0692579addfd","type":"Kentico.DefaultSection","properties":null,"zones":[{"identifier":"61e18b5c-731a-4117-850f-c2e46458134e","widgets":[{"identifier":"601dea4c-42a1-4515-8592-d21ad1796b54","type":"Photosnap.CTASection","variants":[{"identifier":"f9ef42ee-87fd-4c20-96f7-566c13f2d425","properties":null,"fieldIdentifiers":{}}]},{"identifier":"8d9e1490-0ff1-4581-b8d5-d47bc73a2b62","type":"Photosnap.FeaturesSection","variants":[{"identifier":"6cbf0148-f498-401b-a2b8-785feea0219d","properties":null,"fieldIdentifiers":{}}]}]}],"fieldIdentifiers":{}}]}]}]]>
+  </ContentItemCommonDataPageBuilderWidgets>
+  <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
+</cms.contentitemcommondata>
