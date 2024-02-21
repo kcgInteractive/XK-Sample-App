@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttype>
+  <ClassContentTypeType>Reusable</ClassContentTypeType>
+  <ClassDisplayName>Locations</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="87271694-8a56-4e83-97a1-20bcd9ed6c10" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="2ee2a36c-0dfc-48e8-b276-4498446a3a73" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="fef9ef30-8c41-465b-92bc-ae4e40b9de9b" isunique="true" system="true" />
+      <field column="Business_Location_Name" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="d1f14d7d-f789-40c4-9446-f45f3fda330f" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Business Name</fieldcaption>
+          <fielddescription>Enter The Business NAme</fielddescription>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>ecda34ca-c92e-4ecb-a5e7-acfd4f310857</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassIconClass>xp-building</ClassIconClass>
+  <ClassName>business_locations.BusinessLocations</ClassName>
+  <ClassTableName>Business_locations_BusinessLocations</ClassTableName>
+  <ClassType>Content</ClassType>
+  <ClassWebPageHasUrl>False</ClassWebPageHasUrl>
+</cms.contenttype>

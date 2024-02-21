@@ -6,6 +6,13 @@
     <ObjectType>cms.contenttype</ObjectType>
   </Parent>
   <Bindings>
+    <Binding id="cms.channel_Audiophile">
+      <ContentTypeChannelChannelID>
+        <CodeName>Audiophile</CodeName>
+        <GUID>44e5ff64-c4bf-4af8-ae91-98571aea505c</GUID>
+        <ObjectType>cms.channel</ObjectType>
+      </ContentTypeChannelChannelID>
+    </Binding>
     <Binding id="cms.channel_Photosnap">
       <ContentTypeChannelChannelID>
         <CodeName>Photosnap</CodeName>

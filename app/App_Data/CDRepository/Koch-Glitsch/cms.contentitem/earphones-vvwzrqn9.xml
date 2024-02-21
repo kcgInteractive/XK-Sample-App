@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemChannelID>
+    <CodeName>Koch-Glitsch</CodeName>
+    <GUID>9ff9e686-3647-4b14-91f3-806fc9797244</GUID>
+    <ObjectType>cms.channel</ObjectType>
+  </ContentItemChannelID>
+  <ContentItemContentTypeID>
+    <CodeName>Shared.Page</CodeName>
+    <GUID>db14ae9c-141d-4308-88e6-ee6641efbb9b</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>45d6d0bc-0855-4859-8933-dd9ef1f5ffe6</ContentItemGUID>
+  <ContentItemIsReusable>False</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Earphones-vvwzrqn9</ContentItemName>
+</cms.contentitem>

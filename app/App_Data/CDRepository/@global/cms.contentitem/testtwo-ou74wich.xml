@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>SampleApp.TestContentType</CodeName>
+    <GUID>967e50ab-8cc3-4aeb-86fd-553fe362ea2e</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>3359a528-bc07-4e82-b622-dbca81d2b8bf</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Testtwo-ou74wich</ContentItemName>
+</cms.contentitem>

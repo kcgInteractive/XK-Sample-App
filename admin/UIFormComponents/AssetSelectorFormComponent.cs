@@ -18,5 +18,5 @@ public class AssetSelectorFormComponent
 {
     private readonly IInfoProvider<ChannelInfo> channelInfo;
 
-    public override string ClientComponentName => "@sample/web-admin/AssetSelector";
+    public override string ClientComponentName => "@site/web-admin/AssetSelector";
 }

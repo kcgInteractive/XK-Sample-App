@@ -17,12 +17,13 @@ public class DropDownOption
     public string Text { get; set; }
 }
 
-public class MyComponentClientProperties : FormComponentClientProperties<string>
+public class WebsiteChannelComponentClientProperties : FormComponentClientProperties<string>
 {
     public IEnumerable<DropDownOption> Options { get; set; }
 }
 
-public class WebsiteChannelFormComponent : FormComponent<MyComponentClientProperties, string>
+public class WebsiteChannelFormComponent
+    : FormComponent<WebsiteChannelComponentClientProperties, string>
 {
     private readonly IInfoProvider<ChannelInfo> channelInfo;
 
@@ -33,7 +34,9 @@ public class WebsiteChannelFormComponent : FormComponent<MyComponentClientProper
 
     public override string ClientComponentName => "@sample/web-admin/WebsiteChannel";
 
-    protected override Task ConfigureClientProperties(MyComponentClientProperties clientProperties)
+    protected override Task ConfigureClientProperties(
+        WebsiteChannelComponentClientProperties clientProperties
+    )
     {
         clientProperties.Options = channelInfo
             .Get()

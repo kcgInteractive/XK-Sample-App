@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemChannelID>
+    <CodeName>Koch-Glitsch</CodeName>
+    <GUID>9ff9e686-3647-4b14-91f3-806fc9797244</GUID>
+    <ObjectType>cms.channel</ObjectType>
+  </ContentItemChannelID>
+  <ContentItemContentTypeID>
+    <CodeName>Shared.Page</CodeName>
+    <GUID>db14ae9c-141d-4308-88e6-ee6641efbb9b</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>adddfd46-93a9-47fd-a43c-27c9f5a0d968</ContentItemGUID>
+  <ContentItemIsReusable>False</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Home-6buqq13f</ContentItemName>
+</cms.contentitem>

@@ -1,14 +1,6 @@
 using Kentico.Xperience.Admin.Base;
 using Site.Web.Admin.UIPages.SiteSettings;
 
-// Registers a new category for custom admin UI applications
-[assembly: UICategory(
-    codeName: SiteSettingsApplication.CUSTOM_CATEGORY,
-    name: "Custom applications",
-    icon: Icons.CustomElement,
-    order: 400
-)]
-
 [assembly: UIApplication(
     identifier: SiteSettingsApplication.IDENTIFIER,
     type: typeof(SiteSettingsApplication),

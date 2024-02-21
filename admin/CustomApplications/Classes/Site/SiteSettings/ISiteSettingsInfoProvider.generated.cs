@@ -5,7 +5,7 @@ namespace SiteSettingsModule
     /// <summary>
     /// Declares members for <see cref="SiteSettingsInfo"/> management.
     /// </summary>
-    public partial interface ISiteSettingsInfoProvider : IInfoProvider<SiteSettingsInfo>, IInfoByIdProvider<SiteSettingsInfo>
+    public partial interface ISiteSettingsInfoProvider : IInfoProvider<SiteSettingsInfo>, IInfoByIdProvider<SiteSettingsInfo>, IInfoByGuidProvider<SiteSettingsInfo>
     {
     }
 }

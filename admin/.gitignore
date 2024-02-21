@@ -1,0 +1,11 @@
+*.vs
+*.user
+*.cache
+bin/
+obj/
+dist/
+build_output
+node_modules/
+package-lock.json
+appsettings.Development.json
+appsettings.Stage.json

@@ -8,27 +8,15 @@
   <FormDefinition>
     <form>
       <field column="SettingsID" guid="e6044613-da09-4602-a29f-1bfc7e9d7001" enabled="" />
-      <field column="GUID" allowempty="true" guid="b6670173-a69b-4fcf-9e03-e1fb01deb588" enabled="" />
       <field column="ChannelName" enabled="true" guid="2aa6c838-129c-4c96-ab63-f4ff607b78e6" visible="true">
         <settings>
-          <controlname>Kentico.Administration.TextInput</controlname>
-          <WatermarkText>Site name</WatermarkText>
+          <controlname>
+            <![CDATA[Custom.UIFormComponents.WebsiteChannelFormComponent]]>
+          </controlname>
         </settings>
         <properties>
           <explanationtextashtml>False</explanationtextashtml>
           <fieldcaption>Channel name</fieldcaption>
-          <fielddescriptionashtml>False</fielddescriptionashtml>
-        </properties>
-      </field>
-      <field column="SiteLogo" enabled="true" guid="01544bd0-91ea-49ab-8c72-c0bd6ea4916c" visible="true">
-        <settings>
-          <AllowedExtensions>_INHERITED_</AllowedExtensions>
-          <controlname>Kentico.Administration.AssetSelector</controlname>
-          <MaximumAssets>1</MaximumAssets>
-        </settings>
-        <properties>
-          <explanationtextashtml>False</explanationtextashtml>
-          <fieldcaption>Site logo</fieldcaption>
           <fielddescriptionashtml>False</fielddescriptionashtml>
         </properties>
       </field>
