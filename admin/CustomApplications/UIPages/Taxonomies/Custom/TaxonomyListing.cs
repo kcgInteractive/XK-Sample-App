@@ -69,7 +69,8 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
                     ParentID = taxonomy.ParentID,
                     DisplayName = taxonomy.DisplayName,
                     Value = taxonomy.Value,
-                    ParentValue = taxonomy.ParentValue
+                    ParentValue = taxonomy.ParentValue,
+                    Description = taxonomy.Description
                 };
             }
         );
@@ -112,7 +113,8 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
                     DisplayName = taxonomy.DisplayName,
                     Value = taxonomy.Value,
                     ParentValue = taxonomy.ParentValue,
-                    ParentID = taxonomy.ParentID
+                    ParentID = taxonomy.ParentID,
+                    Description = taxonomy.Description
                 };
             }
         );

@@ -315,6 +315,7 @@ export const TaxonomiesTemplate = ({
                     editingNode.displayName = formData.displayName;
                     editingNode.parentValue = formData.parentValue;
                     editingNode.parentID = formData.parentID;
+                    editingNode.description = formData.description;
                     editingNode.value = createTaxonomyValue(
                       taxonomies,
                       editingNode,
