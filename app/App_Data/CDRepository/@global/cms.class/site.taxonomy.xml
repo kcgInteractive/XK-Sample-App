@@ -17,6 +17,7 @@
       <field column="ParentValue" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="f9a03f46-6a56-4086-9191-46a329d6cf57" />
       <field column="DisplayName" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="af40450b-aa9f-42d8-9b5e-e9f68ac65d73" />
       <field column="Value" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="2734800b-f2db-40d6-93e9-342d5ee39882" />
+      <field column="Description" columnprecision="0" columntype="longtext" enabled="true" guid="72a28fac-e5b0-40e7-b9a6-29983945cb6b" />
     </form>
   </ClassFormDefinition>
   <ClassGUID>8371aa9b-e6a4-410e-8e19-bdd6958f8029</ClassGUID>
