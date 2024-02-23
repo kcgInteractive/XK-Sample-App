@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.contenttypechannel>
   <Parent>
-    <CodeName>Shared.Page</CodeName>
-    <GUID>db14ae9c-141d-4308-88e6-ee6641efbb9b</GUID>
+    <CodeName>Settings.Website</CodeName>
+    <GUID>84fa458a-0942-4c74-81e2-c367597b97fc</GUID>
     <ObjectType>cms.contenttype</ObjectType>
   </Parent>
   <Bindings>
-    <Binding id="cms.channel_Koch-Glitsch">
+    <Binding id="cms.channel_Audiophile">
       <ContentTypeChannelChannelID>
-        <CodeName>Koch-Glitsch</CodeName>
-        <GUID>9ff9e686-3647-4b14-91f3-806fc9797244</GUID>
+        <CodeName>Audiophile</CodeName>
+        <GUID>44e5ff64-c4bf-4af8-ae91-98571aea505c</GUID>
         <ObjectType>cms.channel</ObjectType>
       </ContentTypeChannelChannelID>
     </Binding>

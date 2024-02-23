@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemChannelID>
+    <CodeName>Photosnap</CodeName>
+    <GUID>ca1743fb-f454-4369-afbe-844f2af4aed0</GUID>
+    <ObjectType>cms.channel</ObjectType>
+  </ContentItemChannelID>
+  <ContentItemContentTypeID>
+    <CodeName>Settings.Website</CodeName>
+    <GUID>84fa458a-0942-4c74-81e2-c367597b97fc</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>0b16fbd6-dbc5-43d7-b6be-fc293d07c168</ContentItemGUID>
+  <ContentItemIsReusable>False</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Settings-tvp9ojge</ContentItemName>
+</cms.contentitem>

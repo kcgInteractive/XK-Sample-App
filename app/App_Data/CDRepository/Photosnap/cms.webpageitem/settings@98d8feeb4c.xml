@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageitem>
+  <WebPageItemContentItemID>
+    <CodeName>Settings-tvp9ojge</CodeName>
+    <GUID>0b16fbd6-dbc5-43d7-b6be-fc293d07c168</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </WebPageItemContentItemID>
+  <WebPageItemGUID>ba418691-cceb-4112-ba01-8778863aa41a</WebPageItemGUID>
+  <WebPageItemName>Settings-tvp9ojge</WebPageItemName>
+  <WebPageItemOrder>3</WebPageItemOrder>
+  <WebPageItemTreePath>/Settings</WebPageItemTreePath>
+  <WebPageItemWebsiteChannelID>
+    <GUID>8f77535e-1d86-4278-bb96-d2c0844b7cf0</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Photosnap</CodeName>
+      <GUID>ca1743fb-f454-4369-afbe-844f2af4aed0</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageItemWebsiteChannelID>
+</cms.webpageitem>

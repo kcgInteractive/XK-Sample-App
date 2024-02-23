@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageitem>
+  <WebPageItemContentItemID>
+    <CodeName>Settings-eoi9wedr</CodeName>
+    <GUID>21c86550-a38f-4e1d-b021-5736a6b569e3</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </WebPageItemContentItemID>
+  <WebPageItemGUID>bd7735ce-9410-4900-920b-ded57e1898b2</WebPageItemGUID>
+  <WebPageItemName>Settings-eoi9wedr</WebPageItemName>
+  <WebPageItemOrder>1</WebPageItemOrder>
+  <WebPageItemTreePath>/Settings</WebPageItemTreePath>
+  <WebPageItemWebsiteChannelID>
+    <GUID>58d28079-7ab1-4c0d-a9ce-bef8a4844f50</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Audiophile</CodeName>
+      <GUID>44e5ff64-c4bf-4af8-ae91-98571aea505c</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageItemWebsiteChannelID>
+</cms.webpageitem>

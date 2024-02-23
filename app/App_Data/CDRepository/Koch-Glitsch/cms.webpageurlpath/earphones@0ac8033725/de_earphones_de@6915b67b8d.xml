@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageurlpath>
+  <WebPageUrlPath>de/Earphones</WebPageUrlPath>
+  <WebPageUrlPathContentLanguageID>
+    <CodeName>de</CodeName>
+    <GUID>9682b098-0753-4a83-ac96-d43b0104e3b2</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </WebPageUrlPathContentLanguageID>
+  <WebPageUrlPathGUID>92879ae7-bde5-4cfa-b924-9d85318ca69b</WebPageUrlPathGUID>
+  <WebPageUrlPathHash>
+    <![CDATA[A3E491CDAF87D88F64A23FF4102198CA8302487C57641CDD2E5EB2E88048BCE3]]>
+  </WebPageUrlPathHash>
+  <WebPageUrlPathIsDraft>False</WebPageUrlPathIsDraft>
+  <WebPageUrlPathIsLatest>True</WebPageUrlPathIsLatest>
+  <WebPageUrlPathWebPageItemID>
+    <CodeName>Earphones-vvwzrqn9</CodeName>
+    <GUID>b435e406-ca30-47be-8682-cde95e73faff</GUID>
+    <ObjectType>cms.webpageitem</ObjectType>
+  </WebPageUrlPathWebPageItemID>
+  <WebPageUrlPathWebsiteChannelID>
+    <GUID>5c471aae-4b1e-4555-a7fe-77c2e3ba1dda</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Koch-Glitsch</CodeName>
+      <GUID>9ff9e686-3647-4b14-91f3-806fc9797244</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageUrlPathWebsiteChannelID>
+</cms.webpageurlpath>
