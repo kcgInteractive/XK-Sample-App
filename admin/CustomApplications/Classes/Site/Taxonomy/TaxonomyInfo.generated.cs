@@ -22,7 +22,6 @@ namespace Taxonomies
         /// </summary>
         public const string OBJECT_TYPE = "site.taxonomy";
 
-
         /// <summary>
         /// Type information.
         /// </summary>
@@ -30,8 +29,8 @@ namespace Taxonomies
         public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(TaxonomyInfoProvider), OBJECT_TYPE, "Site.Taxonomy", "TaxonomyID", null, null, null, "DisplayName", null, null, null)
         {
             TouchCacheDependencies = true,
+            ContinuousIntegrationSettings = {Enabled = true}
         };
-
 
         /// <summary>
         /// Taxonomy ID.
@@ -43,7 +42,6 @@ namespace Taxonomies
             set => SetValue(nameof(TaxonomyID), value);
         }
 
-
         /// <summary>
         /// Parent ID.
         /// </summary>
@@ -53,7 +51,6 @@ namespace Taxonomies
             get => ValidationHelper.GetInteger(GetValue(nameof(ParentID)), 0);
             set => SetValue(nameof(ParentID), value);
         }
-
 
         /// <summary>
         /// Parent value.
@@ -65,7 +62,6 @@ namespace Taxonomies
             set => SetValue(nameof(ParentValue), value);
         }
 
-
         /// <summary>
         /// Display name.
         /// </summary>
@@ -75,7 +71,6 @@ namespace Taxonomies
             get => ValidationHelper.GetString(GetValue(nameof(DisplayName)), String.Empty);
             set => SetValue(nameof(DisplayName), value);
         }
-
 
         /// <summary>
         /// Value.
@@ -87,7 +82,6 @@ namespace Taxonomies
             set => SetValue(nameof(Value), value);
         }
 
-
         /// <summary>
         /// Deletes the object using appropriate provider.
         /// </summary>
@@ -96,7 +90,6 @@ namespace Taxonomies
             Provider.Delete(this);
         }
 
-
         /// <summary>
         /// Updates the object using appropriate provider.
         /// </summary>
@@ -104,7 +97,6 @@ namespace Taxonomies
         {
             Provider.Set(this);
         }
-
 
         /// <summary>
         /// Constructor for de-serialization.
@@ -116,7 +108,6 @@ namespace Taxonomies
         {
         }
 
-
         /// <summary>
         /// Creates an empty instance of the <see cref="TaxonomyInfo"/> class.
         /// </summary>
@@ -124,7 +115,6 @@ namespace Taxonomies
             : base(TYPEINFO)
         {
         }
-
 
         /// <summary>
         /// Creates a new instances of the <see cref="TaxonomyInfo"/> class from the given <see cref="DataRow"/>.
