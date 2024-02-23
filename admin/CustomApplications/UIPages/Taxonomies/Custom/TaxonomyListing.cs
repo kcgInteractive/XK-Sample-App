@@ -11,9 +11,9 @@ using Taxonomies;
 
 [assembly: UIPage(
     parentType: typeof(TaxonomiesApplication),
-    slug: "names",
+    slug: "categories",
     uiPageType: typeof(TaxonomiesPage),
-    name: "Taxonomy names",
+    name: "Categories",
     templateName: "@sample/web-admin/Taxonomies",
     order: 300
 )]

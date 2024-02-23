@@ -4,8 +4,8 @@ using Site.Web.Admin.UIPages.Taxonomies;
 [assembly: UIApplication(
     identifier: TaxonomiesApplication.IDENTIFIER,
     type: typeof(TaxonomiesApplication),
-    slug: "taxonomies",
-    name: "Taxonomies",
+    slug: "taxonomy",
+    name: "Taxonomy",
     category: TaxonomiesApplication.CUSTOM_CATEGORY,
     icon: Icons.ProjectScheme,
     templateName: TemplateNames.SECTION_LAYOUT
