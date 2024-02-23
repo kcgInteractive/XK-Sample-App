@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<site.taxonomy>
+  <Codename />
+  <Description />
+  <DisplayName>regulations</DisplayName>
+  <GUID>69c07873-cf0c-4f58-b384-b624f7763d65</GUID>
+  <ParentID>98</ParentID>
+  <ParentValue>----industry terms</ParentValue>
+  <Value>------regulations</Value>
+</site.taxonomy>

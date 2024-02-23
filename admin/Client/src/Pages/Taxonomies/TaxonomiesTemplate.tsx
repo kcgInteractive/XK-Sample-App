@@ -41,14 +41,14 @@ const createTaxonomyValue = (
 
   const siblingsWithSameValue = taxonomies.filter((taxonomy) => {
     return (
-      taxonomy.parentID === node.parentID &&
+      taxonomy.parentGUID === node.parentGUID &&
       taxonomy.value.startsWith(taxonomyValue)
     );
   });
 
   if (
     isEditing &&
-    siblingsWithSameValue.some((element) => element.id === node.id)
+    siblingsWithSameValue.some((element) => element.guid === node.guid)
   ) {
     return node.value;
   }
@@ -61,8 +61,8 @@ const createTaxonomyValue = (
 };
 
 const initialFormData = {
-  id: 0,
-  parentID: 0,
+  guid: "",
+  parentGUID: "",
   displayName: "",
   value: "",
   parentValue: "",
@@ -70,10 +70,11 @@ const initialFormData = {
 };
 
 const ROOT_NAME = "root";
+const EMPTY_GUID = "00000000-0000-0000-0000-000000000000";
 
 const rootNode = {
-  id: 0,
-  parentID: 0,
+  guid: EMPTY_GUID,
+  parentGUID: EMPTY_GUID,
   displayName: "Category",
   value: ROOT_NAME,
   parentValue: ROOT_NAME,
@@ -84,9 +85,9 @@ const getAllChildren = (
   selectedNode: TaxonomyCategory,
   taxonomies: TaxonomyCategory[]
 ) => {
-  const children = [];
+  const children: TaxonomyCategory[] = [];
   const nodeQueue = taxonomies.filter((taxonomy) => {
-    return taxonomy.parentID === selectedNode.id;
+    return taxonomy.parentGUID === selectedNode.guid;
   });
 
   while (nodeQueue.length > 0) {
@@ -95,7 +96,7 @@ const getAllChildren = (
     if (!currentNode) return;
     taxonomies
       .filter((taxonomy) => {
-        return currentNode.id === taxonomy.parentID;
+        return currentNode.guid === taxonomy.parentGUID;
       })
       .forEach((child) => {
         nodeQueue.push(child);
@@ -119,8 +120,6 @@ export const TaxonomiesTemplate = ({
   const [hasError, setHasError] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
-  console.log(formData);
-
   const { execute: invokeGetAll } = usePageCommand<ResponseResult>(
     "GetAllTaxonomies",
     {
@@ -143,11 +142,11 @@ export const TaxonomiesTemplate = ({
 
   const renderChildNodes = (
     taxonomies: (TaxonomyCategory | undefined)[],
-    parentID: number,
+    parentGUID: string,
     level: number
   ) => {
     const nodesToRender: any[] = taxonomies.filter(
-      (taxonomy) => taxonomy?.parentID === parentID
+      (taxonomy) => taxonomy?.parentGUID === parentGUID
     );
 
     return nodesToRender.map((node: TaxonomyCategory, i) => {
@@ -162,7 +161,7 @@ export const TaxonomiesTemplate = ({
           setIsEditing={setIsEditing}
           setFormData={setFormData}
         >
-          {renderChildNodes(taxonomies, node.id, level + 1)}
+          {renderChildNodes(taxonomies, node.guid, level + 1)}
         </TaxonomyNode>
       );
     });
@@ -186,6 +185,7 @@ export const TaxonomiesTemplate = ({
 
             const nodesToDelete = getAllChildren(activeNode, taxonomies);
             nodesToDelete?.unshift({ ...activeNode });
+
             await invokeDelete(nodesToDelete);
             await invokeGetAll();
             setActiveNode(rootNode);
@@ -256,13 +256,13 @@ export const TaxonomiesTemplate = ({
                     <Title
                       title={"Categories"}
                       activeNode={activeNode}
-                      identifier={rootNode.id}
+                      identifier={rootNode.guid}
                     />
                   );
                 }}
                 nodeIdentifier={ROOT_NAME}
               >
-                {renderChildNodes(taxonomies, rootNode.parentID, 2)}
+                {renderChildNodes(taxonomies, rootNode.parentGUID, 2)}
               </TreeNode>
             </TreeView>
           </div>
@@ -279,8 +279,8 @@ export const TaxonomiesTemplate = ({
                   setHasError(false);
                   if (isCreating) {
                     const data = {
-                      id: 0,
-                      parentID: activeNode.id,
+                      guid: "",
+                      parentGUID: activeNode.guid,
                       displayName: formData.displayName,
                       value: "",
                       parentValue: activeNode.value,
@@ -296,6 +296,7 @@ export const TaxonomiesTemplate = ({
                       setHasError(true);
                       return;
                     }
+
                     await invokeSave(data);
                     await invokeGetAll();
 
@@ -308,13 +309,13 @@ export const TaxonomiesTemplate = ({
 
                     const editingNodeDirectChildren = taxonomies.filter(
                       (taxonomy) => {
-                        return taxonomy.parentID === editingNode.id;
+                        return taxonomy.parentGUID === editingNode.guid;
                       }
                     );
 
                     editingNode.displayName = formData.displayName;
                     editingNode.parentValue = formData.parentValue;
-                    editingNode.parentID = formData.parentID;
+                    editingNode.parentGUID = formData.parentGUID;
                     editingNode.description = formData.description;
                     editingNode.value = createTaxonomyValue(
                       taxonomies,
@@ -331,7 +332,7 @@ export const TaxonomiesTemplate = ({
 
                       if (!currentNode) return;
                       const parentNode = taxonomies.find((taxonomy) => {
-                        return taxonomy.id === currentNode.parentID;
+                        return taxonomy.guid === currentNode.parentGUID;
                       });
 
                       currentNode.parentValue = parentNode!.value;
@@ -343,7 +344,7 @@ export const TaxonomiesTemplate = ({
 
                       taxonomies
                         .filter((taxonomy) => {
-                          return taxonomy.parentID === currentNode.id;
+                          return taxonomy.parentGUID === currentNode.guid;
                         })
                         .forEach((child) => {
                           nodesToEdit.push(child);
@@ -401,28 +402,24 @@ export const TaxonomiesTemplate = ({
                   <Select
                     onChange={(val) => {
                       setFormData((data) => {
-                        const ID = parseInt(val!);
                         const parentValue =
-                          taxonomies.find((taxonomy) => taxonomy.id === ID)
+                          taxonomies.find((taxonomy) => taxonomy.guid === val)
                             ?.value || ROOT_NAME;
 
                         return {
                           ...data,
                           parentValue,
-                          parentID: ID,
+                          parentGUID: val!,
                         };
                       });
                     }}
                     label="Parent Category"
-                    value={formData.parentID.toString()}
+                    value={formData.parentGUID}
                   >
-                    <MenuItem
-                      primaryLabel={ROOT_NAME}
-                      value={rootNode.id.toString()}
-                    />
+                    <MenuItem primaryLabel={ROOT_NAME} value={rootNode.guid} />
                     {taxonomies.map((taxonomy, i) => {
                       if (
-                        taxonomy.id === activeNode.id &&
+                        taxonomy.guid === activeNode.guid &&
                         taxonomy.value !== ROOT_NAME
                       )
                         return;
@@ -440,7 +437,7 @@ export const TaxonomiesTemplate = ({
                           <MenuItem
                             key={i}
                             primaryLabel={taxonomy.value}
-                            value={taxonomy.id.toString()}
+                            value={taxonomy.guid}
                           />
                         );
                       }

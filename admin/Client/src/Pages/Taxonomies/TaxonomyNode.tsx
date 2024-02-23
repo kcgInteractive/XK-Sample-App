@@ -2,8 +2,8 @@ import { TreeNode } from "@kentico/xperience-admin-components";
 import React, { Dispatch, SetStateAction, useState } from "react";
 
 export interface TaxonomyCategory {
-  id: number;
-  parentID: number;
+  guid: string;
+  parentGUID: string;
   displayName: string;
   value: string;
   parentValue: string;
@@ -27,10 +27,10 @@ export const Title = ({
   activeNode,
 }: {
   title?: string;
-  identifier?: number;
+  identifier?: string;
   activeNode: TaxonomyCategory;
 }) => {
-  const isActive = identifier === activeNode.id;
+  const isActive = identifier === activeNode.guid;
   return (
     <div className={`main___eWnyJ ${isActive ? "selected___q9To5" : ""}`}>
       <div className={`title___kyvsR ${isActive ? "selected___c22Xv" : ""}`}>
@@ -52,6 +52,8 @@ export const TaxonomyNode = ({
 }: TaxonomyNode) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  console.log(taxonomyData);
+
   return (
     <TreeNode
       isToggleable={children.length > 0}
@@ -72,11 +74,11 @@ export const TaxonomyNode = ({
           <Title
             title={taxonomyData.displayName}
             activeNode={activeNode}
-            identifier={taxonomyData.id}
+            identifier={taxonomyData.guid}
           />
         );
       }}
-      nodeIdentifier={taxonomyData.id.toString() || "default"}
+      nodeIdentifier={taxonomyData.guid || "default"}
     >
       {children}
     </TreeNode>

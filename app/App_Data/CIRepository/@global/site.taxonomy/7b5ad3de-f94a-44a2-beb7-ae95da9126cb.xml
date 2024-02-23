@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<site.taxonomy>
+  <Codename />
+  <Description />
+  <DisplayName>emissions</DisplayName>
+  <GUID>7b5ad3de-f94a-44a2-beb7-ae95da9126cb</GUID>
+  <ParentID>98</ParentID>
+  <ParentValue>----industry terms</ParentValue>
+  <Value>------emissions</Value>
+</site.taxonomy>

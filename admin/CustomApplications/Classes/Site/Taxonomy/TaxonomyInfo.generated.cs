@@ -22,15 +22,16 @@ namespace Taxonomies
         /// </summary>
         public const string OBJECT_TYPE = "site.taxonomy";
 
+
         /// <summary>
         /// Type information.
         /// </summary>
 #warning "You will need to configure the type info."
-        public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(TaxonomyInfoProvider), OBJECT_TYPE, "Site.Taxonomy", "TaxonomyID", null, null, null, "DisplayName", null, null, null)
+        public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(TaxonomyInfoProvider), OBJECT_TYPE, "Site.Taxonomy", "TaxonomyID", null, "GUID", null, "DisplayName", null, null, null)
         {
             TouchCacheDependencies = true,
-            ContinuousIntegrationSettings = {Enabled = true}
         };
+
 
         /// <summary>
         /// Taxonomy ID.
@@ -42,25 +43,28 @@ namespace Taxonomies
             set => SetValue(nameof(TaxonomyID), value);
         }
 
-        /// <summary>
-        /// Parent ID.
-        /// </summary>
-        [DatabaseField]
-        public virtual int ParentID
-        {
-            get => ValidationHelper.GetInteger(GetValue(nameof(ParentID)), 0);
-            set => SetValue(nameof(ParentID), value);
-        }
 
         /// <summary>
-        /// Parent value.
+        /// Parent GUID.
         /// </summary>
         [DatabaseField]
-        public virtual string ParentValue
+        public virtual Guid ParentGUID
         {
-            get => ValidationHelper.GetString(GetValue(nameof(ParentValue)), String.Empty);
-            set => SetValue(nameof(ParentValue), value);
+            get => ValidationHelper.GetGuid(GetValue(nameof(ParentGUID)), Guid.Empty);
+            set => SetValue(nameof(ParentGUID), value);
         }
+
+
+        /// <summary>
+        /// GUID.
+        /// </summary>
+        [DatabaseField]
+        public virtual Guid GUID
+        {
+            get => ValidationHelper.GetGuid(GetValue(nameof(GUID)), Guid.Empty);
+            set => SetValue(nameof(GUID), value);
+        }
+
 
         /// <summary>
         /// Display name.
@@ -72,6 +76,18 @@ namespace Taxonomies
             set => SetValue(nameof(DisplayName), value);
         }
 
+
+        /// <summary>
+        /// Parent value.
+        /// </summary>
+        [DatabaseField]
+        public virtual string ParentValue
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(ParentValue)), String.Empty);
+            set => SetValue(nameof(ParentValue), value);
+        }
+
+
         /// <summary>
         /// Value.
         /// </summary>
@@ -82,6 +98,7 @@ namespace Taxonomies
             set => SetValue(nameof(Value), value);
         }
 
+
         /// <summary>
         /// Description.
         /// </summary>
@@ -89,8 +106,9 @@ namespace Taxonomies
         public virtual string Description
         {
             get => ValidationHelper.GetString(GetValue(nameof(Description)), String.Empty);
-            set => SetValue(nameof(Description), value);
+            set => SetValue(nameof(Description), value, String.Empty);
         }
+
 
         /// <summary>
         /// Deletes the object using appropriate provider.
@@ -100,6 +118,7 @@ namespace Taxonomies
             Provider.Delete(this);
         }
 
+
         /// <summary>
         /// Updates the object using appropriate provider.
         /// </summary>
@@ -107,6 +126,7 @@ namespace Taxonomies
         {
             Provider.Set(this);
         }
+
 
         /// <summary>
         /// Constructor for de-serialization.
@@ -118,6 +138,7 @@ namespace Taxonomies
         {
         }
 
+
         /// <summary>
         /// Creates an empty instance of the <see cref="TaxonomyInfo"/> class.
         /// </summary>
@@ -125,6 +146,7 @@ namespace Taxonomies
             : base(TYPEINFO)
         {
         }
+
 
         /// <summary>
         /// Creates a new instances of the <see cref="TaxonomyInfo"/> class from the given <see cref="DataRow"/>.

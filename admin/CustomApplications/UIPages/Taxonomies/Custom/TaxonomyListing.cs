@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -32,12 +33,13 @@ public class CommandResult
 
 public class TaxonomyCategory
 {
-    public int ID { get; set; }
-    public int ParentID { get; set; }
+    public string GUID { get; set; }
+
     public string Value { get; set; }
     public string DisplayName { get; set; }
     public string ParentValue { get; set; }
     public string Description { get; set; }
+    public string ParentGUID { get; set; }
 }
 
 public class PageTemplateClientProperties : TemplateClientProperties
@@ -65,12 +67,12 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
             {
                 return new TaxonomyCategory
                 {
-                    ID = taxonomy.TaxonomyID,
-                    ParentID = taxonomy.ParentID,
+                    GUID = taxonomy.GUID.ToString(),
+                    ParentGUID = taxonomy.ParentGUID.ToString(),
                     DisplayName = taxonomy.DisplayName,
                     Value = taxonomy.Value,
                     ParentValue = taxonomy.ParentValue,
-                    Description = taxonomy.Description
+                    Description = taxonomy.Description,
                 };
             }
         );
@@ -89,8 +91,9 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
                 DisplayName = data.DisplayName,
                 Value = data.Value,
                 ParentValue = data.ParentValue,
-                ParentID = data.ParentID,
-                Description = data.Description
+                ParentGUID = Guid.Parse(data.ParentGUID),
+                Description = data.Description,
+                GUID = Guid.NewGuid()
             }
         );
 
@@ -109,11 +112,11 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
             {
                 return new TaxonomyCategory
                 {
-                    ID = taxonomy.TaxonomyID,
+                    GUID = taxonomy.GUID.ToString(),
                     DisplayName = taxonomy.DisplayName,
                     Value = taxonomy.Value,
                     ParentValue = taxonomy.ParentValue,
-                    ParentID = taxonomy.ParentID,
+                    ParentGUID = taxonomy.ParentGUID.ToString(),
                     Description = taxonomy.Description
                 };
             }
@@ -129,10 +132,10 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
         {
             TaxonomyInfo taxonomy = taxonomyProvider
                 .Get()
-                .WhereEquals("TaxonomyID", item.ID)
+                .WhereEquals("GUID", item.GUID)
                 .FirstOrDefault();
             taxonomy.DisplayName = item.DisplayName;
-            taxonomy.ParentID = item.ParentID;
+            taxonomy.ParentGUID = Guid.Parse(item.ParentGUID);
             taxonomy.Value = item.Value;
             taxonomy.ParentValue = item.ParentValue;
             taxonomy.Description = item.Description;
@@ -150,7 +153,7 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
         {
             TaxonomyInfo taxonomy = taxonomyProvider
                 .Get()
-                .WhereEquals("TaxonomyID", item.ID)
+                .WhereEquals("GUID", item.GUID)
                 .FirstOrDefault();
 
             taxonomyProvider.Delete(taxonomy);
