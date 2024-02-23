@@ -52,8 +52,6 @@ export const TaxonomyNode = ({
 }: TaxonomyNode) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  console.log(taxonomyData);
-
   return (
     <TreeNode
       isToggleable={children.length > 0}
