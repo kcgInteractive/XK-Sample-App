@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageurlpath>
+  <WebPageUrlPath>de/Headphones</WebPageUrlPath>
+  <WebPageUrlPathContentLanguageID>
+    <CodeName>de</CodeName>
+    <GUID>9682b098-0753-4a83-ac96-d43b0104e3b2</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </WebPageUrlPathContentLanguageID>
+  <WebPageUrlPathGUID>fddfac48-040a-49d2-a41d-20927f70b801</WebPageUrlPathGUID>
+  <WebPageUrlPathHash>
+    <![CDATA[83F40798877FAD9CAAE227DAC9D30F343F5434E8793299D322974D48A8618288]]>
+  </WebPageUrlPathHash>
+  <WebPageUrlPathIsDraft>False</WebPageUrlPathIsDraft>
+  <WebPageUrlPathIsLatest>True</WebPageUrlPathIsLatest>
+  <WebPageUrlPathWebPageItemID>
+    <CodeName>Headphones-m0zk7kee</CodeName>
+    <GUID>8082f9c2-9d2b-491c-aedc-b1ba044dc6a1</GUID>
+    <ObjectType>cms.webpageitem</ObjectType>
+  </WebPageUrlPathWebPageItemID>
+  <WebPageUrlPathWebsiteChannelID>
+    <GUID>5c471aae-4b1e-4555-a7fe-77c2e3ba1dda</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Koch-Glitsch</CodeName>
+      <GUID>9ff9e686-3647-4b14-91f3-806fc9797244</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageUrlPathWebsiteChannelID>
+</cms.webpageurlpath>

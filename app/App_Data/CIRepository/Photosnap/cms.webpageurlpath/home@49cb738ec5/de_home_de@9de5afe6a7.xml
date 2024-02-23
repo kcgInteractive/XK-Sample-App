@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageurlpath>
+  <WebPageUrlPath>de/Home</WebPageUrlPath>
+  <WebPageUrlPathContentLanguageID>
+    <CodeName>de</CodeName>
+    <GUID>9682b098-0753-4a83-ac96-d43b0104e3b2</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </WebPageUrlPathContentLanguageID>
+  <WebPageUrlPathGUID>a3238ac8-071a-4e9b-b1be-cd185aab39fa</WebPageUrlPathGUID>
+  <WebPageUrlPathHash>
+    <![CDATA[F89431E12DDF866712B65BD6F2F6CC7EA7957F2F4950A2DCFABC2DE82BCC3983]]>
+  </WebPageUrlPathHash>
+  <WebPageUrlPathIsDraft>False</WebPageUrlPathIsDraft>
+  <WebPageUrlPathIsLatest>True</WebPageUrlPathIsLatest>
+  <WebPageUrlPathWebPageItemID>
+    <CodeName>Home-tixwyg9l</CodeName>
+    <GUID>84bd133a-05be-4acb-b7b3-1fc3f1076d59</GUID>
+    <ObjectType>cms.webpageitem</ObjectType>
+  </WebPageUrlPathWebPageItemID>
+  <WebPageUrlPathWebsiteChannelID>
+    <GUID>8f77535e-1d86-4278-bb96-d2c0844b7cf0</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Photosnap</CodeName>
+      <GUID>ca1743fb-f454-4369-afbe-844f2af4aed0</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageUrlPathWebsiteChannelID>
+</cms.webpageurlpath>

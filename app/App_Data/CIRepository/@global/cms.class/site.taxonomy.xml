@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.class>
+  <ClassDisplayName>Taxonomy</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="TaxonomyID" columntype="integer" enabled="true" guid="fb458153-a7b4-49be-968e-5567bdeb9b1d" isPK="true" />
+      <field column="ParentID" columnprecision="0" columntype="integer" enabled="true" guid="4e5cc554-2799-4c65-bdc0-e0f79800b1ff" />
+      <field column="ParentValue" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="f9a03f46-6a56-4086-9191-46a329d6cf57" />
+      <field column="DisplayName" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="af40450b-aa9f-42d8-9b5e-e9f68ac65d73" />
+      <field column="Value" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="2734800b-f2db-40d6-93e9-342d5ee39882" />
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>8371aa9b-e6a4-410e-8e19-bdd6958f8029</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassName>Site.Taxonomy</ClassName>
+  <ClassResourceID>
+    <CodeName>Taxonomies</CodeName>
+    <GUID>2711a668-4306-4d8f-9a80-a969b202beb2</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ClassResourceID>
+  <ClassTableName>Site_Taxonomy</ClassTableName>
+  <ClassType>Other</ClassType>
+</cms.class>
