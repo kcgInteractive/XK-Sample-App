@@ -117,6 +117,8 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
                 }
             );
         }
+
+        return Response().AddSuccessMessage("Created Taxonomies");
     }
 
     [PageCommand]
