@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>regulations</DisplayName>
-  <GUID>69c07873-cf0c-4f58-b384-b624f7763d65</GUID>
-  <ParentID>98</ParentID>
+  <GUID>81bae60b-54bb-4219-905f-e033632e019c</GUID>
+  <ParentGUID>35173fdd-8532-4597-8c43-4977e2f4a93d</ParentGUID>
   <ParentValue>----industry terms</ParentValue>
   <Value>------regulations</Value>
 </site.taxonomy>

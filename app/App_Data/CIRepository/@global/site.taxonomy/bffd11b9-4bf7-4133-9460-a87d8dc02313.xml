@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>production</DisplayName>
-  <GUID>bb9aed7a-f08a-4f2b-bbb2-62f07ba0da34</GUID>
-  <ParentID>98</ParentID>
+  <GUID>bffd11b9-4bf7-4133-9460-a87d8dc02313</GUID>
+  <ParentGUID>35173fdd-8532-4597-8c43-4977e2f4a93d</ParentGUID>
   <ParentValue>----industry terms</ParentValue>
   <Value>------production</Value>
 </site.taxonomy>

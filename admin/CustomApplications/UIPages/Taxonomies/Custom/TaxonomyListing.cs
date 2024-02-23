@@ -101,6 +101,25 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
+    public async Task<ICommandResponse> SaveTaxonomies(IEnumerable<TaxonomyCategory> data)
+    {
+        foreach (TaxonomyCategory item in data)
+        {
+            taxonomyProvider.Set(
+                new TaxonomyInfo
+                {
+                    DisplayName = item.DisplayName,
+                    Value = item.Value,
+                    ParentValue = item.ParentValue,
+                    ParentGUID = Guid.Parse(item.ParentGUID),
+                    Description = item.Description,
+                    GUID = Guid.NewGuid()
+                }
+            );
+        }
+    }
+
+    [PageCommand]
     public async Task<ICommandResponse<CommandResult>> GetAllTaxonomies()
     {
         IEnumerable<TaxonomyInfo> taxonomyInfo = await taxonomyProvider

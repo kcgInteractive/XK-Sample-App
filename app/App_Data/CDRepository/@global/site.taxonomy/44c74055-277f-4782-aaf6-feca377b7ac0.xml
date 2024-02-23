@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>Koch-Glitsch</DisplayName>
-  <GUID>793eb6be-4794-4206-94da-5088dce807b6</GUID>
-  <ParentID>0</ParentID>
+  <GUID>44c74055-277f-4782-aaf6-feca377b7ac0</GUID>
+  <ParentGUID>00000000-0000-0000-0000-000000000000</ParentGUID>
   <ParentValue>root</ParentValue>
   <Value>--koch-glitsch</Value>
 </site.taxonomy>

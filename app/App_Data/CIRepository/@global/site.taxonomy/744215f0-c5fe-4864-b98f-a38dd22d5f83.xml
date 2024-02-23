@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>sustainability</DisplayName>
-  <GUID>0909ab69-b8eb-41d1-8ba1-ac68c23300bb</GUID>
-  <ParentID>98</ParentID>
+  <GUID>744215f0-c5fe-4864-b98f-a38dd22d5f83</GUID>
+  <ParentGUID>35173fdd-8532-4597-8c43-4977e2f4a93d</ParentGUID>
   <ParentValue>----industry terms</ParentValue>
   <Value>------sustainability</Value>
 </site.taxonomy>

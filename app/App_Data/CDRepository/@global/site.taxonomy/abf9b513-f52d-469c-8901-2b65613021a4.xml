@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>Koch Engineered Solutions</DisplayName>
-  <GUID>517556b9-ec5d-4520-befb-f5a240dca7cb</GUID>
-  <ParentID>0</ParentID>
+  <GUID>abf9b513-f52d-469c-8901-2b65613021a4</GUID>
+  <ParentGUID>00000000-0000-0000-0000-000000000000</ParentGUID>
   <ParentValue>root</ParentValue>
   <Value>--koch engineered solutions</Value>
 </site.taxonomy>

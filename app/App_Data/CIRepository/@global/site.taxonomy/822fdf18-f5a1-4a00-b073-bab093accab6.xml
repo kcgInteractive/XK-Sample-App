@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>emissions</DisplayName>
-  <GUID>7b5ad3de-f94a-44a2-beb7-ae95da9126cb</GUID>
-  <ParentID>98</ParentID>
+  <GUID>822fdf18-f5a1-4a00-b073-bab093accab6</GUID>
+  <ParentGUID>35173fdd-8532-4597-8c43-4977e2f4a93d</ParentGUID>
   <ParentValue>----industry terms</ParentValue>
   <Value>------emissions</Value>
 </site.taxonomy>

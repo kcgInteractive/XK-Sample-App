@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>efficiency</DisplayName>
-  <GUID>effb3b68-d9ba-4272-9c4b-eafe9281b68e</GUID>
-  <ParentID>98</ParentID>
+  <GUID>f7112f72-be1e-404c-9c20-8675795b4389</GUID>
+  <ParentGUID>35173fdd-8532-4597-8c43-4977e2f4a93d</ParentGUID>
   <ParentValue>----industry terms</ParentValue>
   <Value>------efficiency</Value>
 </site.taxonomy>

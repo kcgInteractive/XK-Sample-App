@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>ESG</DisplayName>
-  <GUID>be81ffa2-1416-431c-9f50-a891344838ea</GUID>
-  <ParentID>98</ParentID>
+  <GUID>bd5d24d5-48cc-4ebb-890a-900b5c6b0276</GUID>
+  <ParentGUID>35173fdd-8532-4597-8c43-4977e2f4a93d</ParentGUID>
   <ParentValue>----industry terms</ParentValue>
   <Value>------esg</Value>
 </site.taxonomy>

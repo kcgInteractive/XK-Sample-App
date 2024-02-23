@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>ultra low nox</DisplayName>
-  <GUID>a6d2e7b7-1e88-4c0c-942f-1469997ad08c</GUID>
-  <ParentID>98</ParentID>
+  <GUID>f0bc8f43-ee13-4c4e-947e-458e56212952</GUID>
+  <ParentGUID>35173fdd-8532-4597-8c43-4977e2f4a93d</ParentGUID>
   <ParentValue>----industry terms</ParentValue>
   <Value>------ultra low nox</Value>
 </site.taxonomy>

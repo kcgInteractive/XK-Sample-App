@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <site.taxonomy>
-  <Description />
   <DisplayName>fuel</DisplayName>
-  <GUID>1a4a63fb-b1bc-451c-b522-63ec8def6491</GUID>
-  <ParentID>98</ParentID>
+  <GUID>de5ed9e1-2ca2-4b18-b2f6-a694b161fe40</GUID>
+  <ParentGUID>35173fdd-8532-4597-8c43-4977e2f4a93d</ParentGUID>
   <ParentValue>----industry terms</ParentValue>
   <Value>------fuel</Value>
 </site.taxonomy>
