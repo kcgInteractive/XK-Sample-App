@@ -7,6 +7,7 @@ export interface TaxonomyCategory {
   displayName: string;
   value: string;
   parentValue: string;
+  description: string;
 }
 
 export interface TaxonomyNode {

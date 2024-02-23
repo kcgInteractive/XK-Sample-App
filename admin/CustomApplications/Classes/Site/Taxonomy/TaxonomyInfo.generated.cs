@@ -83,6 +83,16 @@ namespace Taxonomies
         }
 
         /// <summary>
+        /// Description.
+        /// </summary>
+        [DatabaseField]
+        public virtual string Description
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(Description)), String.Empty);
+            set => SetValue(nameof(Description), value);
+        }
+
+        /// <summary>
         /// Deletes the object using appropriate provider.
         /// </summary>
         protected override void DeleteObject()

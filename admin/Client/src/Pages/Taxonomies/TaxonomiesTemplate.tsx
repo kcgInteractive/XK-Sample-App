@@ -13,6 +13,7 @@ import {
   Paper,
   Row,
   Select,
+  TextArea,
   TreeNode,
   TreeView,
 } from "@kentico/xperience-admin-components";
@@ -65,6 +66,7 @@ const initialFormData = {
   displayName: "",
   value: "",
   parentValue: "",
+  description: "",
 };
 
 const ROOT_NAME = "root";
@@ -75,6 +77,7 @@ const rootNode = {
   displayName: "Category",
   value: ROOT_NAME,
   parentValue: ROOT_NAME,
+  description: "",
 };
 
 const getAllChildren = (
@@ -115,6 +118,8 @@ export const TaxonomiesTemplate = ({
   const [formData, setFormData] = useState<TaxonomyCategory>(initialFormData);
   const [hasError, setHasError] = useState(false);
   const [openModal, setOpenModal] = useState(false);
+
+  console.log(formData);
 
   const { execute: invokeGetAll } = usePageCommand<ResponseResult>(
     "GetAllTaxonomies",
@@ -165,6 +170,37 @@ export const TaxonomiesTemplate = ({
 
   return (
     <Row>
+      <Dialog
+        isOpen={openModal}
+        headline={"Delete"}
+        onClose={() => {
+          setOpenModal(false);
+        }}
+        headerCloseButton={{ tooltipText: "Close" }}
+        isDismissable={true}
+        confirmAction={{
+          label: "confirm",
+          onClick: async () => {
+            setIsCreating(false);
+            setIsEditing(false);
+
+            const nodesToDelete = getAllChildren(activeNode, taxonomies);
+            nodesToDelete?.unshift({ ...activeNode });
+            await invokeDelete(nodesToDelete);
+            await invokeGetAll();
+            setActiveNode(rootNode);
+            setOpenModal(false);
+          },
+        }}
+        cancelAction={{
+          label: "cancel",
+          onClick: () => {
+            setOpenModal(false);
+          },
+        }}
+      >
+        {`Are you sure you want to delete '${activeNode.displayName}' ?`}
+      </Dialog>
       <Column width={40}>
         <Paper>
           <div style={{ padding: "16px" }}>
@@ -199,37 +235,6 @@ export const TaxonomiesTemplate = ({
                 }}
               />
             </div>
-            <Dialog
-              isOpen={openModal}
-              headline={"Delete"}
-              onClose={() => {
-                setOpenModal(false);
-              }}
-              headerCloseButton={{ tooltipText: "Close" }}
-              isDismissable={true}
-              confirmAction={{
-                label: "confirm",
-                onClick: async () => {
-                  setIsCreating(false);
-                  setIsEditing(false);
-
-                  const nodesToDelete = getAllChildren(activeNode, taxonomies);
-                  nodesToDelete?.unshift({ ...activeNode });
-                  await invokeDelete(nodesToDelete);
-                  await invokeGetAll();
-                  setActiveNode(rootNode);
-                  setOpenModal(false);
-                },
-              }}
-              cancelAction={{
-                label: "cancel",
-                onClick: () => {
-                  setOpenModal(false);
-                },
-              }}
-            >
-              {`Are you sure you want to delete '${activeNode.displayName}' ?`}
-            </Dialog>
 
             <ActionMenuDivider />
             <TreeView>
@@ -279,6 +284,7 @@ export const TaxonomiesTemplate = ({
                       displayName: formData.displayName,
                       value: "",
                       parentValue: activeNode.value,
+                      description: formData.description,
                     };
 
                     data.value = createTaxonomyValue(
@@ -376,6 +382,18 @@ export const TaxonomiesTemplate = ({
                     value={formData.displayName}
                   />
                 )}
+
+                <br />
+                <TextArea
+                  label="Description"
+                  onChange={(evt) => {
+                    setFormData((data) => ({
+                      ...data,
+                      description: evt.target.value,
+                    }));
+                  }}
+                  value={formData.description}
+                />
 
                 <br />
                 {isEditing && (

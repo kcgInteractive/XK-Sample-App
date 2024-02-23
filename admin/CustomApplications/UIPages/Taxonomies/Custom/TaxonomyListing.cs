@@ -37,6 +37,7 @@ public class TaxonomyCategory
     public string Value { get; set; }
     public string DisplayName { get; set; }
     public string ParentValue { get; set; }
+    public string Description { get; set; }
 }
 
 public class PageTemplateClientProperties : TemplateClientProperties
@@ -87,7 +88,8 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
                 DisplayName = data.DisplayName,
                 Value = data.Value,
                 ParentValue = data.ParentValue,
-                ParentID = data.ParentID
+                ParentID = data.ParentID,
+                Description = data.Description
             }
         );
 
@@ -131,6 +133,7 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
             taxonomy.ParentID = item.ParentID;
             taxonomy.Value = item.Value;
             taxonomy.ParentValue = item.ParentValue;
+            taxonomy.Description = item.Description;
 
             taxonomyProvider.Set(taxonomy);
         }
