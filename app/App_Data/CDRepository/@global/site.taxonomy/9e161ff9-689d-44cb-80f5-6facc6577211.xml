@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<site.taxonomy>
+  <DisplayName>
+    <![CDATA[food & beverage]]>
+  </DisplayName>
+  <GUID>9e161ff9-689d-44cb-80f5-6facc6577211</GUID>
+  <ParentGUID>1bd79cb1-7cdb-4a16-9501-eda29bb4413f</ParentGUID>
+  <ParentValue>----markets</ParentValue>
+  <Value>
+    <![CDATA[------food & beverage]]>
+  </Value>
+</site.taxonomy>

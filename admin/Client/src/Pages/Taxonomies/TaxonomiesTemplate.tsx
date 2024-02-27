@@ -202,7 +202,7 @@ export const TaxonomiesTemplate = ({
       >
         {`Are you sure you want to delete '${activeNode.displayName}' ?`}
       </Dialog>
-      <Column width={40}>
+      <Column width={50}>
         <Paper>
           <div style={{ padding: "16px" }}>
             <div
