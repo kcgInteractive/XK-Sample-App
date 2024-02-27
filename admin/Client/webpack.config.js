@@ -1,6 +1,8 @@
 const webpackMerge = require("webpack-merge");
 
 const baseWebpackConfig = require("@kentico/xperience-webpack-config");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = (opts, argv) => {
   const baseConfig = (webpackConfigEnv, argv) => {
@@ -22,8 +24,13 @@ module.exports = (opts, argv) => {
           exclude: [/node_modules/],
           loader: "babel-loader",
         },
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
       ],
     },
+
     output: {
       clean: true,
     },

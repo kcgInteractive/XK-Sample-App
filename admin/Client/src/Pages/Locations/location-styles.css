@@ -1,0 +1,8 @@
+.dropdown-custom {
+  width: 100%;
+  color: #151515;
+}
+
+.dropdown-custom input {
+  cursor: pointer !important;
+}

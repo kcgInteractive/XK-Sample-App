@@ -18,7 +18,8 @@ import {
   TreeView,
 } from "@kentico/xperience-admin-components";
 import { usePageCommand } from "@kentico/xperience-admin-base";
-import { TaxonomyCategory, TaxonomyNode, Title } from "./TaxonomyNode";
+import { Title } from "../Shared/Title";
+import { TaxonomyCategory, TaxonomyNode } from "./TaxonomyNode";
 
 interface ClientPageTemplateProperties {
   readonly initialTaxonomies: TaxonomyCategory[];
@@ -212,7 +213,7 @@ export const TaxonomiesTemplate = ({
               }}
             >
               <Button
-                label="New Taxonomy"
+                label="New Term"
                 size={ButtonSize.S}
                 color={ButtonColor.Secondary}
                 onClick={() => {

@@ -1,4 +1,5 @@
 ## Commands to start local database instance if one is not created
+
 ## or use sudo ./startup.sh
 
 Replace with your credentials and make sure to have Docker installed<br>
@@ -56,3 +57,13 @@ The code generator is command line-based. Code files are generated via the dotne
 `dotnet run --no-build -- --kxp-codegen --type "All"`<br>
 
 [Codegen Reference](https://docs.xperience.io/xp/developers-and-admins/api/generate-code-files-for-system-objects)
+
+## Commands for Re-Salting Macros
+
+Whenever macro expressions are saved in the administration, the system automatically adds a security signature. Signatures ensure the integrity of macros and identify the user who entered the macro.
+
+`dotnet run --no-build -- --kxp-resign-macros --old-salt "Old_Salt" --new-salt "New_Salt"`
+
+`dotnet run --no-build -- --kxp-resign-macros --sign-all`
+
+[Re-Salt Reference](https://docs.kentico.com/developers-and-admins/configuration/macro-expressions/macro-signatures)

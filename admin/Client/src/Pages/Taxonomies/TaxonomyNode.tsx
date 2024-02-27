@@ -1,4 +1,5 @@
 import { TreeNode } from "@kentico/xperience-admin-components";
+import { Title } from "../Shared/Title";
 import React, { Dispatch, SetStateAction, useState } from "react";
 
 export interface TaxonomyCategory {
@@ -21,24 +22,24 @@ export interface TaxonomyNode {
   setFormData: Dispatch<SetStateAction<TaxonomyCategory>>;
 }
 
-export const Title = ({
-  title,
-  identifier,
-  activeNode,
-}: {
-  title?: string;
-  identifier?: string;
-  activeNode: TaxonomyCategory;
-}) => {
-  const isActive = identifier === activeNode.guid;
-  return (
-    <div className={`main___eWnyJ ${isActive ? "selected___q9To5" : ""}`}>
-      <div className={`title___kyvsR ${isActive ? "selected___c22Xv" : ""}`}>
-        {title}
-      </div>
-    </div>
-  );
-};
+// export const Title = ({
+//   title,
+//   identifier,
+//   activeNode,
+// }: {
+//   title?: string;
+//   identifier?: string;
+//   activeNode: TaxonomyCategory;
+// }) => {
+//   const isActive = identifier === activeNode.guid;
+//   return (
+//     <div className={`main___eWnyJ ${isActive ? "selected___q9To5" : ""}`}>
+//       <div className={`title___kyvsR ${isActive ? "selected___c22Xv" : ""}`}>
+//         {title}
+//       </div>
+//     </div>
+//   );
+// };
 
 export const TaxonomyNode = ({
   taxonomyData,
