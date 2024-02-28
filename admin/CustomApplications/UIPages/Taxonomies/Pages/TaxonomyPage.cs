@@ -117,7 +117,7 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
             );
         }
 
-        return Response().AddSuccessMessage("Created Taxonomies");
+        return Response().AddSuccessMessage("Term Created");
     }
 
     [PageCommand]
@@ -148,22 +148,29 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     [PageCommand]
     public async Task<ICommandResponse> EditTaxonomies(IEnumerable<TaxonomyCategory> data)
     {
-        foreach (TaxonomyCategory item in data)
+        try
         {
-            TaxonomyInfo taxonomy = taxonomyProvider
-                .Get()
-                .WhereEquals("GUID", item.GUID)
-                .FirstOrDefault();
-            taxonomy.DisplayName = item.DisplayName;
-            taxonomy.ParentGUID = Guid.Parse(item.ParentGUID);
-            taxonomy.Value = item.Value;
-            taxonomy.ParentValue = item.ParentValue;
-            taxonomy.Description = item.Description;
+            foreach (TaxonomyCategory item in data)
+            {
+                TaxonomyInfo taxonomy = taxonomyProvider
+                    .Get()
+                    .WhereEquals("GUID", item.GUID)
+                    .FirstOrDefault();
+                taxonomy.DisplayName = item.DisplayName;
+                taxonomy.ParentGUID = Guid.Parse(item.ParentGUID);
+                taxonomy.Value = item.Value;
+                taxonomy.ParentValue = item.ParentValue;
+                taxonomy.Description = item.Description;
 
-            taxonomyProvider.Set(taxonomy);
+                taxonomyProvider.Set(taxonomy);
+            }
+
+            return Response().AddSuccessMessage("Term Updated");
         }
-
-        return Response().AddSuccessMessage("Updated Taxonomy");
+        catch (Exception e)
+        {
+            return Response().AddErrorMessage(e.Message);
+        }
     }
 
     [PageCommand]
@@ -179,6 +186,6 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
             taxonomyProvider.Delete(taxonomy);
         }
 
-        return Response().AddSuccessMessage("Taxonomies Deleted");
+        return Response().AddSuccessMessage("Term Deleted");
     }
 }

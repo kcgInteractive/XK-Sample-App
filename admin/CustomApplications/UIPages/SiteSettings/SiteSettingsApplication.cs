@@ -16,5 +16,5 @@ namespace Site.Web.Admin.UIPages.SiteSettings;
 public class SiteSettingsApplication : ApplicationPage
 {
     public const string IDENTIFIER = "Site.Web.Application.SiteSettings";
-    public const string CUSTOM_CATEGORY = "site.web.admin.category";
+    public const string CUSTOM_CATEGORY = "site.web.admin.nothing";
 }

@@ -20,12 +20,13 @@ import {
 import { usePageCommand } from "@kentico/xperience-admin-base";
 import { Title } from "../Shared/Title";
 import { TaxonomyCategory, TaxonomyNode } from "./TaxonomyNode";
+import { EMPTY_GUID } from "../../contants";
 
 interface ClientPageTemplateProperties {
   readonly initialTaxonomies: TaxonomyCategory[];
 }
 
-interface ResponseResult {
+export interface ResponseResult {
   taxonomies: TaxonomyCategory[];
 }
 
@@ -71,7 +72,6 @@ const initialFormData = {
 };
 
 const ROOT_NAME = "root";
-const EMPTY_GUID = "00000000-0000-0000-0000-000000000000";
 
 const rootNode = {
   guid: EMPTY_GUID,
@@ -256,7 +256,7 @@ export const TaxonomiesTemplate = ({
                   return (
                     <Title
                       title={"Categories"}
-                      activeNode={activeNode}
+                      activeNodeID={activeNode.guid}
                       identifier={rootNode.guid}
                     />
                   );

@@ -22,15 +22,16 @@ namespace Site.Location
         /// </summary>
         public const string OBJECT_TYPE = "site.locations";
 
+
         /// <summary>
         /// Type information.
         /// </summary>
 #warning "You will need to configure the type info."
-        public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(LocationsInfoProvider), OBJECT_TYPE, "Site.Locations", "LocationsID", null, "LocationGUID", "CompanyLocationName", null, null, null, null)
+        public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(LocationsInfoProvider), OBJECT_TYPE, "Site.Locations", "LocationsID", null, "LocationGUID", null, null, null, null, null)
         {
             TouchCacheDependencies = true,
-            ContinuousIntegrationSettings = {Enabled = true}
         };
+
 
         /// <summary>
         /// Locations ID.
@@ -42,6 +43,7 @@ namespace Site.Location
             set => SetValue(nameof(LocationsID), value);
         }
 
+
         /// <summary>
         /// Channel GUID.
         /// </summary>
@@ -51,6 +53,7 @@ namespace Site.Location
             get => ValidationHelper.GetGuid(GetValue(nameof(ChannelGUID)), Guid.Empty);
             set => SetValue(nameof(ChannelGUID), value);
         }
+
 
         /// <summary>
         /// Location GUID.
@@ -62,6 +65,7 @@ namespace Site.Location
             set => SetValue(nameof(LocationGUID), value);
         }
 
+
         /// <summary>
         /// Company location name.
         /// </summary>
@@ -72,6 +76,7 @@ namespace Site.Location
             set => SetValue(nameof(CompanyLocationName), value);
         }
 
+
         /// <summary>
         /// Region.
         /// </summary>
@@ -79,8 +84,20 @@ namespace Site.Location
         public virtual string Region
         {
             get => ValidationHelper.GetString(GetValue(nameof(Region)), String.Empty);
-            set => SetValue(nameof(Region), value);
+            set => SetValue(nameof(Region), value, String.Empty);
         }
+
+
+        /// <summary>
+        /// Country code.
+        /// </summary>
+        [DatabaseField]
+        public virtual string CountryCode
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(CountryCode)), String.Empty);
+            set => SetValue(nameof(CountryCode), value, String.Empty);
+        }
+
 
         /// <summary>
         /// Country.
@@ -89,8 +106,9 @@ namespace Site.Location
         public virtual string Country
         {
             get => ValidationHelper.GetString(GetValue(nameof(Country)), String.Empty);
-            set => SetValue(nameof(Country), value);
+            set => SetValue(nameof(Country), value, String.Empty);
         }
+
 
         /// <summary>
         /// State.
@@ -102,6 +120,7 @@ namespace Site.Location
             set => SetValue(nameof(State), value, String.Empty);
         }
 
+
         /// <summary>
         /// City.
         /// </summary>
@@ -109,8 +128,9 @@ namespace Site.Location
         public virtual string City
         {
             get => ValidationHelper.GetString(GetValue(nameof(City)), String.Empty);
-            set => SetValue(nameof(City), value);
+            set => SetValue(nameof(City), value, String.Empty);
         }
+
 
         /// <summary>
         /// Street.
@@ -119,8 +139,9 @@ namespace Site.Location
         public virtual string Street
         {
             get => ValidationHelper.GetString(GetValue(nameof(Street)), String.Empty);
-            set => SetValue(nameof(Street), value);
+            set => SetValue(nameof(Street), value, String.Empty);
         }
+
 
         /// <summary>
         /// Phone.
@@ -132,6 +153,18 @@ namespace Site.Location
             set => SetValue(nameof(Phone), value, String.Empty);
         }
 
+
+        /// <summary>
+        /// Tags.
+        /// </summary>
+        [DatabaseField]
+        public virtual string Tags
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(Tags)), "[]");
+            set => SetValue(nameof(Tags), value, String.Empty);
+        }
+
+
         /// <summary>
         /// Deletes the object using appropriate provider.
         /// </summary>
@@ -140,6 +173,7 @@ namespace Site.Location
             Provider.Delete(this);
         }
 
+
         /// <summary>
         /// Updates the object using appropriate provider.
         /// </summary>
@@ -147,6 +181,7 @@ namespace Site.Location
         {
             Provider.Set(this);
         }
+
 
         /// <summary>
         /// Constructor for de-serialization.
@@ -158,6 +193,7 @@ namespace Site.Location
         {
         }
 
+
         /// <summary>
         /// Creates an empty instance of the <see cref="LocationsInfo"/> class.
         /// </summary>
@@ -165,6 +201,7 @@ namespace Site.Location
             : base(TYPEINFO)
         {
         }
+
 
         /// <summary>
         /// Creates a new instances of the <see cref="LocationsInfo"/> class from the given <see cref="DataRow"/>.

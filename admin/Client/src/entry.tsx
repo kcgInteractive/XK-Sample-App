@@ -2,3 +2,4 @@
 export * from "./FormComponents/WebsiteChannelFormComponent";
 export * from "./Pages/Taxonomies/TaxonomiesTemplate";
 export * from "./Pages/Locations/LocationsTemplate";
+export * from "./FormComponents/TagSelectorFormComponent";

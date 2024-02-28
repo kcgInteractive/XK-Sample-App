@@ -3,13 +3,13 @@ import React from "react";
 export const Title = ({
   title,
   identifier,
-  activeNode,
+  activeNodeID,
 }: {
   title?: string;
-  identifier?: string;
-  activeNode: { guid: string };
+  identifier: string;
+  activeNodeID: string;
 }) => {
-  const isActive = identifier === activeNode.guid;
+  const isActive = identifier === activeNodeID;
   return (
     <div className={`main___eWnyJ ${isActive ? "selected___q9To5" : ""}`}>
       <div className={`title___kyvsR ${isActive ? "selected___c22Xv" : ""}`}>
