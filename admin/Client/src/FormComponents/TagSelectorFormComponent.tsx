@@ -6,11 +6,6 @@ import { FormItemWrapper } from "@kentico/xperience-admin-components";
 import { TreeSelect } from "primereact/treeselect";
 import "primereact/resources/themes/lara-light-blue/theme.css";
 import { EMPTY_GUID } from "../contants";
-import { IconOptions, IconType } from "primereact/utils";
-import { PrimeIcons } from "primereact/api";
-import { TreeNode } from "primereact/treenode";
-
-import "primeicons/primeicons.css";
 
 export interface TagSelectorFormComponentProps extends FormComponentProps {
   tags: TaxonomyCategory[];

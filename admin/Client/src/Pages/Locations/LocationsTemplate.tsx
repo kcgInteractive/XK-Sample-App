@@ -28,6 +28,7 @@ import {
 } from "react-international-phone";
 import "react-international-phone/style.css";
 import { usePageCommand } from "@kentico/xperience-admin-base";
+import * as crypto from "crypto";
 import {
   TagNode,
   TagSelectorFormComponent,
