@@ -28,7 +28,6 @@ import {
 } from "react-international-phone";
 import "react-international-phone/style.css";
 import { usePageCommand } from "@kentico/xperience-admin-base";
-import * as crypto from "crypto";
 import {
   TagNode,
   TagSelectorFormComponent,
@@ -486,7 +485,7 @@ export const LocationsTemplate = ({
                         }));
                       }}
                       hasDependencies={false}
-                      guid={crypto?.randomUUID()}
+                      guid={"28287532-56e1-467c-af38-d830c5142fb6"}
                       componentName={"@sample/web-admin/TagSelector"}
                       name={"Tag Selector"}
                       fieldValues={{}}
