@@ -485,7 +485,7 @@ export const LocationsTemplate = ({
                         }));
                       }}
                       hasDependencies={false}
-                      guid={crypto.randomUUID()}
+                      guid={crypto?.randomUUID()}
                       componentName={"@sample/web-admin/TagSelector"}
                       name={"Tag Selector"}
                       fieldValues={{}}
