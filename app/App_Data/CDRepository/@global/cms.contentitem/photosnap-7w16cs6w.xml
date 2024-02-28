@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Photosnap.CTAContent</CodeName>
+    <GUID>864a954d-a1a2-4199-9aaf-c69013f03e83</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>509a64eb-fd89-4e69-8c2c-ff608be31606</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Photosnap-7w16cs6w</ContentItemName>
+</cms.contentitem>
