@@ -17,6 +17,16 @@
           <controlname>Kentico.Administration.TextInput</controlname>
         </settings>
       </field>
+      <field column="Categories" columnprecision="0" columntype="longtext" enabled="true" guid="9bfd9d1c-4a19-40e4-8622-e1d0d9d0c5ad" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Tags</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Custom.UIFormComponents.TagSelectorFormComponent</controlname>
+        </settings>
+      </field>
     </form>
   </ClassFormDefinition>
   <ClassGUID>9b4f80b4-907c-4eab-9ad0-41fbdee708dc</ClassGUID>

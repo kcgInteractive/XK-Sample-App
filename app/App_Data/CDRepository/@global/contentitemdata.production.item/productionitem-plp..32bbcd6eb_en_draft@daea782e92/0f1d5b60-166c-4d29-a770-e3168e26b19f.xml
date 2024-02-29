@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentitemdata.production.item>
+  <Categories>
+    <![CDATA[{"44c74055-277f-4782-aaf6-feca377b7ac0":{"checked":true,"partialChecked":false},"3006a32d-ef95-405c-ad6f-a9f17c1b4f44":{"checked":true,"partialChecked":false}}]]>
+  </Categories>
   <ContentItemDataCommonDataID>
     <GUID>09a61953-9bbb-4a51-bf62-a3532bbcd6eb</GUID>
     <ObjectType>cms.contentitemcommondata</ObjectType>
