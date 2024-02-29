@@ -82,7 +82,9 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public ICommandResponse SaveTaxonomy(TaxonomyCategory data)
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
+    public async Task<ICommandResponse> SaveTaxonomy(TaxonomyCategory data)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
     {
         try
         {
@@ -107,7 +109,9 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public ICommandResponse SaveTaxonomies(IEnumerable<TaxonomyCategory> data)
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
+    public async Task<ICommandResponse> SaveTaxonomies(IEnumerable<TaxonomyCategory> data)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
     {
         try
         {
@@ -160,7 +164,9 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public ICommandResponse EditTaxonomies(IEnumerable<TaxonomyCategory> data)
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
+    public async Task<ICommandResponse> EditTaxonomies(IEnumerable<TaxonomyCategory> data)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
     {
         try
         {
@@ -188,7 +194,9 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public ICommandResponse DeleteTaxonomies(IEnumerable<TaxonomyCategory> data)
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
+    public async Task<ICommandResponse> DeleteTaxonomies(IEnumerable<TaxonomyCategory> data)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
     {
         try
         {

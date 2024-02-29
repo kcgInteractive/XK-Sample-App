@@ -148,7 +148,9 @@ public class LocationsPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public ICommandResponse SaveLocation(Location data)
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
+    public async Task<ICommandResponse> SaveLocation(Location data)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
     {
         try
         {
@@ -217,7 +219,9 @@ public class LocationsPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public ICommandResponse EditLocation(Location data)
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
+    public async Task<ICommandResponse> EditLocation(Location data)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
     {
         try
         {
@@ -248,7 +252,9 @@ public class LocationsPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public ICommandResponse DeleteLocation(Location data)
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
+    public async Task<ICommandResponse> DeleteLocation(Location data)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
     {
         try
         {
