@@ -22,7 +22,6 @@ namespace SiteSettingsModule
         /// </summary>
         public const string OBJECT_TYPE = "site.sitesettings";
 
-
         /// <summary>
         /// Type information.
         /// </summary>
@@ -30,8 +29,8 @@ namespace SiteSettingsModule
         public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(SiteSettingsInfoProvider), OBJECT_TYPE, "Site.SiteSettings", "SettingsID", null, "GUID", null, null, null, null, null)
         {
             TouchCacheDependencies = true,
+             ContinuousIntegrationSettings = {Enabled = true}
         };
-
 
         /// <summary>
         /// Settings ID.
@@ -43,7 +42,6 @@ namespace SiteSettingsModule
             set => SetValue(nameof(SettingsID), value);
         }
 
-
         /// <summary>
         /// Channel name.
         /// </summary>
@@ -54,7 +52,6 @@ namespace SiteSettingsModule
             set => SetValue(nameof(ChannelName), value);
         }
 
-
         /// <summary>
         /// Deletes the object using appropriate provider.
         /// </summary>
@@ -63,7 +60,6 @@ namespace SiteSettingsModule
             Provider.Delete(this);
         }
 
-
         /// <summary>
         /// Updates the object using appropriate provider.
         /// </summary>
@@ -71,7 +67,6 @@ namespace SiteSettingsModule
         {
             Provider.Set(this);
         }
-
 
         /// <summary>
         /// Constructor for de-serialization.
@@ -83,7 +78,6 @@ namespace SiteSettingsModule
         {
         }
 
-
         /// <summary>
         /// Creates an empty instance of the <see cref="SiteSettingsInfo"/> class.
         /// </summary>
@@ -91,7 +85,6 @@ namespace SiteSettingsModule
             : base(TYPEINFO)
         {
         }
-
 
         /// <summary>
         /// Creates a new instances of the <see cref="SiteSettingsInfo"/> class from the given <see cref="DataRow"/>.

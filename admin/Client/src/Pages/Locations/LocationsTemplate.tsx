@@ -18,21 +18,14 @@ import {
 
 import React, { useRef, useState } from "react";
 import SearchSelect from "react-select";
-import states from "states-us";
 import { Title } from "../Shared/Title";
-import { TContinents, TCountries, continents, countries } from "countries-list";
-import {
-  CountryIso2,
-  PhoneInput,
-  PhoneInputRefType,
-} from "react-international-phone";
+import { continents, countries } from "countries-list";
+import { PhoneInput, PhoneInputRefType } from "react-international-phone";
 import "react-international-phone/style.css";
 import { usePageCommand } from "@kentico/xperience-admin-base";
-import {
-  TagNode,
-  TagSelectorFormComponent,
-} from "../../FormComponents/TagSelectorFormComponent";
+import { TagSelectorFormComponent } from "../../FormComponents/TagSelectorFormComponent";
 import { TaxonomyCategory } from "../Taxonomies/TaxonomyNode";
+import { State } from "country-state-city";
 
 interface ClientPageTemplateProperties {
   initialLocations: Location[];
@@ -52,12 +45,13 @@ interface Channel {
 interface Location {
   locationGUID: string;
   channelGUID: string;
-  companyLocationName: string;
-  region: string | null;
-  countryCode: string | null;
-  country: string | null;
-  state: string | null;
-  city: string | null;
+  companyLocationName: string | null;
+  region: string;
+  countryCode: string;
+  country: string;
+  stateProvince: string | null;
+  stateProvinceCode: string | null;
+  city: string;
   street: string | null;
   phone: string | null;
   tags: string | null;
@@ -66,24 +60,39 @@ interface Location {
 const initialFormData: Location = {
   locationGUID: "",
   channelGUID: "",
-  companyLocationName: "",
-  region: null,
-  countryCode: null,
-  country: null,
-  state: null,
-  city: null,
+  companyLocationName: null,
+  region: "",
+  countryCode: "",
+  country: "",
+  stateProvince: null,
+  stateProvinceCode: null,
+  city: "",
   street: null,
   phone: null,
   tags: null,
 };
 
 const initialValidation = {
-  companyLocationName: {
+  region: {
+    hasError: false,
+  },
+  country: {
+    hasError: false,
+  },
+  city: {
+    hasError: false,
+  },
+
+  stateProvince: {
     hasError: false,
   },
 };
 
-const getCountriesBasedOnContinent = () => {};
+const createTitleName = (data: Location) => {
+  return `${data.region} | ${data.countryCode} | ${
+    data.stateProvince ? data.stateProvince + " | " : ""
+  } ${data.city}`;
+};
 
 export const LocationsTemplate = ({
   initialLocations = [],
@@ -100,6 +109,7 @@ export const LocationsTemplate = ({
   const [activeNode, setActiveNode] = useState<Channel | Location>(
     initialFormData
   );
+
   const [formData, setFormData] = useState<Location>(initialFormData);
 
   const phoneRef = useRef<PhoneInputRefType>(null);
@@ -153,7 +163,11 @@ export const LocationsTemplate = ({
           },
         }}
       >
-        {`Are you sure you want to delete '${formData.companyLocationName}' ?`}
+        {`Are you sure you want to delete '${
+          formData.companyLocationName
+            ? formData.companyLocationName
+            : createTitleName(formData)
+        }' ?`}
       </Dialog>
       <Column width={40}>
         <Paper>
@@ -172,10 +186,10 @@ export const LocationsTemplate = ({
                     "channelGUID" in activeNode
                   ) {
                     setIsCreating(true);
-                    setFormData((data) => ({
+                    setFormData({
                       ...initialFormData,
                       channelGUID: activeNode.channelGUID,
-                    }));
+                    });
                   }
                 }}
                 disabled={
@@ -270,7 +284,10 @@ export const LocationsTemplate = ({
                             renderNode={() => {
                               return (
                                 <Title
-                                  title={location.companyLocationName}
+                                  title={
+                                    location?.companyLocationName ||
+                                    createTitleName(location)
+                                  }
                                   activeNodeID={
                                     (activeNode as Location).locationGUID
                                   }
@@ -298,16 +315,49 @@ export const LocationsTemplate = ({
                 color={ButtonColor.Primary}
                 onClick={async () => {
                   setValidation(initialValidation);
-                  if (formData.companyLocationName === "") {
+                  let formHasErrors = false;
+                  if (formData.region === "") {
                     setValidation((data) => ({
                       ...data,
-                      companyLocationName: {
+                      region: {
                         hasError: true,
                       },
                     }));
 
-                    return;
+                    formHasErrors = true;
                   }
+
+                  if (formData.region && formData.country === "") {
+                    setValidation((data) => ({
+                      ...data,
+                      country: { hasError: true },
+                    }));
+
+                    formHasErrors = true;
+                  }
+
+                  if (formData.country && formData.city === "") {
+                    setValidation((data) => ({
+                      ...data,
+                      city: { hasError: true },
+                    }));
+
+                    formHasErrors = true;
+                  }
+
+                  if (
+                    State.getStatesOfCountry(formData.countryCode).length > 0 &&
+                    !formData.stateProvince
+                  ) {
+                    setValidation((data) => ({
+                      ...data,
+                      stateProvince: { hasError: true },
+                    }));
+
+                    formHasErrors = true;
+                  }
+
+                  if (formHasErrors) return;
 
                   if (isCreating) {
                     await invokeSave(formData);
@@ -322,28 +372,21 @@ export const LocationsTemplate = ({
             </div>
             <Paper>
               <div style={{ padding: "16px" }}>
-                <Input
-                  label="Company Location Name"
-                  type="text"
-                  validationMessage="Cannot be empty"
-                  markAsRequired
-                  invalid={validation.companyLocationName.hasError}
-                  onChange={(evt) => {
-                    setFormData((data) => ({
-                      ...data,
-                      companyLocationName: evt.target.value,
-                    }));
-                  }}
-                  value={formData.companyLocationName}
-                />
-                <br />
                 <Select
+                  invalid={validation.region.hasError}
+                  markAsRequired
+                  validationMessage="Please select a region"
                   placeholder="Select a region"
                   label="Region"
                   onChange={(val) => {
                     if (val) {
                       setFormData((data) => {
-                        return { ...data, region: val! };
+                        return {
+                          ...data,
+                          region: val!,
+                          country: "",
+                          countryCode: "",
+                        };
                       });
                     }
                   }}
@@ -362,56 +405,92 @@ export const LocationsTemplate = ({
                 <br />
 
                 {formData.region && (
-                  <FormItemWrapper label="Country">
-                    <SearchSelect
-                      value={{
-                        value: formData.countryCode,
-                        label: formData.country,
-                      }}
-                      onChange={(inputData) => {
-                        phoneRef.current?.setCountry(
-                          (inputData?.value as string).toLowerCase()
-                        );
+                  <>
+                    <FormItemWrapper
+                      markAsRequired
+                      label="Country"
+                      invalid={validation.country.hasError}
+                      validationMessage="Please select a country"
+                    >
+                      <SearchSelect
+                        placeholder="Select a country"
+                        value={
+                          formData.countryCode
+                            ? {
+                                value: formData.countryCode,
+                                label: formData.country,
+                              }
+                            : null
+                        }
+                        onChange={(inputData) => {
+                          phoneRef.current?.setCountry(
+                            (inputData?.value as string).toLowerCase()
+                          );
 
-                        setFormData((data) => ({
-                          ...data,
-                          countryCode: inputData?.value as string,
-                          country: Object.entries(countries).find(
-                            (country) => country[0] === inputData?.value
-                          )![1].name,
-                        }));
-                      }}
-                      styles={{
-                        container: (baseStyles) => {
-                          return { ...baseStyles, color: "#151515" };
-                        },
-                      }}
-                      options={Object.entries(countries)
-                        .filter((country) => {
-                          return country[1].continent === formData.region;
-                        })
-                        .map((country) => {
-                          return { label: country[1].name, value: country[0] };
-                        })}
-                    />
+                          setFormData((data) => ({
+                            ...data,
+                            countryCode: inputData?.value as string,
+                            country: Object.entries(countries).find(
+                              (country) => country[0] === inputData?.value
+                            )![1].name,
+                            stateProvince: null,
+                            stateProvinceCode: null,
+                          }));
+                        }}
+                        styles={{
+                          container: (baseStyles) => {
+                            return { ...baseStyles, color: "#151515" };
+                          },
+                        }}
+                        options={Object.entries(countries)
+                          .filter((country) => {
+                            return country[1].continent === formData.region;
+                          })
+                          .map((country) => {
+                            return {
+                              label: country[1].name,
+                              value: country[0],
+                            };
+                          })}
+                      />
+                    </FormItemWrapper>
                     <br />
-                  </FormItemWrapper>
+                  </>
                 )}
 
-                {formData.countryCode === "US" && (
+                {State.getStatesOfCountry(formData.countryCode).length > 0 && (
                   <>
-                    <FormItemWrapper label="State">
+                    <FormItemWrapper
+                      label="State/Province"
+                      markAsRequired
+                      invalid={validation.stateProvince.hasError}
+                      validationMessage="Please select a State/Province"
+                    >
                       <SearchSelect
-                        value={{ value: formData.state, label: formData.state }}
+                        placeholder="Select a state"
+                        value={
+                          formData.stateProvinceCode
+                            ? {
+                                value: formData.stateProvinceCode,
+                                label: formData.stateProvince,
+                              }
+                            : null
+                        }
                         onChange={(inputData) => {
                           setFormData((data) => ({
                             ...data,
-                            state: inputData!.value,
+                            stateProvince: State.getStateByCodeAndCountry(
+                              inputData!.value as string,
+                              formData.countryCode
+                            )!.name,
+                            stateProvinceCode: inputData!.value,
                           }));
                         }}
-                        options={states.map((state) => ({
+                        options={State.getStatesOfCountry(
+                          formData.countryCode
+                        ).map((state) => ({
                           label: state.name,
-                          value: state.name,
+                          value: state.isoCode,
                         }))}
                         styles={{
                           container: (baseStyles) => {
@@ -426,8 +505,10 @@ export const LocationsTemplate = ({
                 {formData.country && (
                   <>
                     <Input
+                      markAsRequired
                       label="City"
                       type="text"
+                      invalid={validation.city.hasError}
                       validationMessage="Cannot be empty"
                       onChange={(evt) => {
                         setFormData((data) => ({
@@ -441,7 +522,6 @@ export const LocationsTemplate = ({
                     <Input
                       label="Street"
                       type="text"
-                      validationMessage="Cannot be empty"
                       onChange={(evt) => {
                         setFormData((data) => ({
                           ...data,
@@ -473,6 +553,18 @@ export const LocationsTemplate = ({
                         </div>
                       </div>
                     </FormItemWrapper>
+                    <br />
+                    <Input
+                      label="Company Location Name"
+                      type="text"
+                      onChange={(evt) => {
+                        setFormData((data) => ({
+                          ...data,
+                          companyLocationName: evt.target.value,
+                        }));
+                      }}
+                      value={formData.companyLocationName || ""}
+                    />
                     <br />
 
                     <TagSelectorFormComponent

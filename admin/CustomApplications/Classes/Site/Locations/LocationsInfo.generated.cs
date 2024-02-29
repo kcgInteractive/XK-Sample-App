@@ -63,23 +63,13 @@ namespace Site.Location
         }
 
         /// <summary>
-        /// Company location name.
-        /// </summary>
-        [DatabaseField]
-        public virtual string CompanyLocationName
-        {
-            get => ValidationHelper.GetString(GetValue(nameof(CompanyLocationName)), String.Empty);
-            set => SetValue(nameof(CompanyLocationName), value);
-        }
-
-        /// <summary>
         /// Region.
         /// </summary>
         [DatabaseField]
         public virtual string Region
         {
             get => ValidationHelper.GetString(GetValue(nameof(Region)), String.Empty);
-            set => SetValue(nameof(Region), value, String.Empty);
+            set => SetValue(nameof(Region), value);
         }
 
         /// <summary>
@@ -89,7 +79,7 @@ namespace Site.Location
         public virtual string CountryCode
         {
             get => ValidationHelper.GetString(GetValue(nameof(CountryCode)), String.Empty);
-            set => SetValue(nameof(CountryCode), value, String.Empty);
+            set => SetValue(nameof(CountryCode), value);
         }
 
         /// <summary>
@@ -99,17 +89,7 @@ namespace Site.Location
         public virtual string Country
         {
             get => ValidationHelper.GetString(GetValue(nameof(Country)), String.Empty);
-            set => SetValue(nameof(Country), value, String.Empty);
-        }
-
-        /// <summary>
-        /// State.
-        /// </summary>
-        [DatabaseField]
-        public virtual string State
-        {
-            get => ValidationHelper.GetString(GetValue(nameof(State)), String.Empty);
-            set => SetValue(nameof(State), value, String.Empty);
+            set => SetValue(nameof(Country), value);
         }
 
         /// <summary>
@@ -119,7 +99,37 @@ namespace Site.Location
         public virtual string City
         {
             get => ValidationHelper.GetString(GetValue(nameof(City)), String.Empty);
-            set => SetValue(nameof(City), value, String.Empty);
+            set => SetValue(nameof(City), value);
+        }
+
+        /// <summary>
+        /// State province.
+        /// </summary>
+        [DatabaseField]
+        public virtual string State_Province
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(State_Province)), String.Empty);
+            set => SetValue(nameof(State_Province), value, String.Empty);
+        }
+
+        /// <summary>
+        /// State province code.
+        /// </summary>
+        [DatabaseField]
+        public virtual string State_ProvinceCode
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(State_ProvinceCode)), String.Empty);
+            set => SetValue(nameof(State_ProvinceCode), value, String.Empty);
+        }
+
+        /// <summary>
+        /// Company location name.
+        /// </summary>
+        [DatabaseField]
+        public virtual string CompanyLocationName
+        {
+            get => ValidationHelper.GetString(GetValue(nameof(CompanyLocationName)), String.Empty);
+            set => SetValue(nameof(CompanyLocationName), value, String.Empty);
         }
 
         /// <summary>

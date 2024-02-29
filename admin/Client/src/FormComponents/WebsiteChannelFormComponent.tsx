@@ -17,7 +17,7 @@ export const WebsiteChannelFormComponent = (
 ) => {
   return (
     <Select
-      onChange={(val) => props.onChange?.(val)}
+      onChange={(val) => props.onChange?.(val!)}
       label="Select Channel"
       invalid={props.invalid}
       validationMessage={props.validationMessage}

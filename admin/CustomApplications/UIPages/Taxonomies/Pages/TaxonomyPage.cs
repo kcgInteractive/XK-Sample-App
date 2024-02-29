@@ -84,40 +84,54 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     [PageCommand]
     public async Task<ICommandResponse> SaveTaxonomy(TaxonomyCategory data)
     {
-        taxonomyProvider.Set(
-            new TaxonomyInfo
-            {
-                DisplayName = data.DisplayName,
-                Value = data.Value,
-                ParentValue = data.ParentValue,
-                ParentGUID = Guid.Parse(data.ParentGUID),
-                Description = data.Description,
-                GUID = Guid.NewGuid()
-            }
-        );
+        try
+        {
+            taxonomyProvider.Set(
+                new TaxonomyInfo
+                {
+                    DisplayName = data.DisplayName,
+                    Value = data.Value,
+                    ParentValue = data.ParentValue,
+                    ParentGUID = Guid.Parse(data.ParentGUID),
+                    Description = data.Description,
+                    GUID = Guid.NewGuid()
+                }
+            );
 
-        return Response().AddSuccessMessage("Created Taxonomy");
+            return Response().AddSuccessMessage("Created Taxonomy");
+        }
+        catch (Exception e)
+        {
+            return Response().AddErrorMessage(e.Message);
+        }
     }
 
     [PageCommand]
     public async Task<ICommandResponse> SaveTaxonomies(IEnumerable<TaxonomyCategory> data)
     {
-        foreach (TaxonomyCategory item in data)
+        try
         {
-            taxonomyProvider.Set(
-                new TaxonomyInfo
-                {
-                    DisplayName = item.DisplayName,
-                    Value = item.Value,
-                    ParentValue = item.ParentValue,
-                    ParentGUID = Guid.Parse(item.ParentGUID),
-                    Description = item.Description,
-                    GUID = Guid.NewGuid()
-                }
-            );
-        }
+            foreach (TaxonomyCategory item in data)
+            {
+                taxonomyProvider.Set(
+                    new TaxonomyInfo
+                    {
+                        DisplayName = item.DisplayName,
+                        Value = item.Value,
+                        ParentValue = item.ParentValue,
+                        ParentGUID = Guid.Parse(item.ParentGUID),
+                        Description = item.Description,
+                        GUID = Guid.NewGuid()
+                    }
+                );
+            }
 
-        return Response().AddSuccessMessage("Term Created");
+            return Response().AddSuccessMessage("Term Created");
+        }
+        catch (Exception e)
+        {
+            return Response().AddErrorMessage(e.Message);
+        }
     }
 
     [PageCommand]
@@ -176,16 +190,23 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     [PageCommand]
     public async Task<ICommandResponse> DeleteTaxonomies(IEnumerable<TaxonomyCategory> data)
     {
-        foreach (TaxonomyCategory item in data)
+        try
         {
-            TaxonomyInfo taxonomy = taxonomyProvider
-                .Get()
-                .WhereEquals("GUID", item.GUID)
-                .FirstOrDefault();
+            foreach (TaxonomyCategory item in data)
+            {
+                TaxonomyInfo taxonomy = taxonomyProvider
+                    .Get()
+                    .WhereEquals("GUID", item.GUID)
+                    .FirstOrDefault();
 
-            taxonomyProvider.Delete(taxonomy);
+                taxonomyProvider.Delete(taxonomy);
+            }
+
+            return Response().AddSuccessMessage("Term Deleted");
         }
-
-        return Response().AddSuccessMessage("Term Deleted");
+        catch (Exception e)
+        {
+            return Response().AddErrorMessage(e.Message);
+        }
     }
 }

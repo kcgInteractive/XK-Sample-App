@@ -43,7 +43,8 @@ public class Location
 
     public string? Country { get; set; }
 
-    public string? State { get; set; }
+    public string? StateProvince { get; set; }
+    public string? StateProvinceCode { get; set; }
 
     public string? City { get; set; }
     public string? Street { get; set; }
@@ -112,7 +113,8 @@ public class LocationsPage : Page<PageTemplateClientProperties>
                     Region = location.Region,
                     CountryCode = location.CountryCode,
                     Country = location.Country,
-                    State = location.State,
+                    StateProvince = location.State_Province,
+                    StateProvinceCode = location.State_ProvinceCode,
                     City = location.City,
                     Street = location.Street,
                     Phone = location.Phone,
@@ -159,7 +161,8 @@ public class LocationsPage : Page<PageTemplateClientProperties>
                     Region = data.Region,
                     CountryCode = data.CountryCode,
                     Country = data.Country,
-                    State = data.State,
+                    State_Province = data.StateProvince,
+                    State_ProvinceCode = data.StateProvinceCode,
                     City = data.City,
                     Street = data.Street,
                     Phone = data.Phone,
@@ -196,7 +199,8 @@ public class LocationsPage : Page<PageTemplateClientProperties>
                         Region = data.Region,
                         CountryCode = data.CountryCode,
                         Country = data.Country,
-                        State = data.State,
+                        StateProvince = data.State_Province,
+                        StateProvinceCode = data.State_ProvinceCode,
                         City = data.City,
                         Street = data.Street,
                         Phone = data.Phone,
@@ -226,7 +230,8 @@ public class LocationsPage : Page<PageTemplateClientProperties>
             location.Region = data.Region;
             location.CountryCode = data.CountryCode;
             location.Country = data.Country;
-            location.State = data.State;
+            location.State_Province = data.StateProvince;
+            location.State_ProvinceCode = data.StateProvinceCode;
             location.City = data.City;
             location.Street = data.Street;
             location.Phone = data.Phone;
