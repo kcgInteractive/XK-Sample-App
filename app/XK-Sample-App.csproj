@@ -48,10 +48,10 @@
         <RemoveDir Directories="node_modules" />
     </Target>
   <ItemGroup>
-    <PackageReference Include="kentico.xperience.admin" Version="28.0.3" />
-    <PackageReference Include="kentico.xperience.azurestorage" Version="28.0.3" />
-    <PackageReference Include="kentico.xperience.imageprocessing" Version="28.0.3" />
-    <PackageReference Include="kentico.xperience.webapp" Version="28.0.3" />
+    <PackageReference Include="kentico.xperience.admin" Version="28.3.1" />
+    <PackageReference Include="kentico.xperience.azurestorage" Version="28.3.1" />
+    <PackageReference Include="kentico.xperience.imageprocessing" Version="28.3.1" />
+    <PackageReference Include="kentico.xperience.webapp" Version="28.3.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\admin\AdminCustomization.csproj" />

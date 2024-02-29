@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<site.taxonomy>
+  <DisplayName>automotive</DisplayName>
+  <GUID>a88ed4c9-2d9b-40f7-9751-8e186c8172f9</GUID>
+  <ParentGUID>1bd79cb1-7cdb-4a16-9501-eda29bb4413f</ParentGUID>
+  <ParentValue>----markets</ParentValue>
+  <Value>------automotive</Value>
+</site.taxonomy>

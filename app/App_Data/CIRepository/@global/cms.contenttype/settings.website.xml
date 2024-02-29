@@ -7,6 +7,18 @@
       <field column="ContentItemDataID" columntype="integer" enabled="true" guid="2eb8837d-7993-40b8-af74-b6ae6e0432bb" isPK="true" />
       <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="4575a4e4-404d-4543-bcc1-9a7345268d89" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
       <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="2b7638a7-97fe-4bc0-a701-a0b077295dac" isunique="true" system="true" />
+      <field column="ParentID" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="3a73cac2-d459-4ae9-b969-a2cafbe30e77" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Text</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>
+            <![CDATA[Custom.UIFormComponents.WebsiteChannelFormComponent]]>
+          </controlname>
+        </settings>
+      </field>
     </form>
   </ClassFormDefinition>
   <ClassGUID>84fa458a-0942-4c74-81e2-c367597b97fc</ClassGUID>

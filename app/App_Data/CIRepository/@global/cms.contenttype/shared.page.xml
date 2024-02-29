@@ -18,6 +18,18 @@
           <controlname>Kentico.Administration.Checkbox</controlname>
         </settings>
       </field>
+      <field allowempty="true" column="Media" columnprecision="0" columntype="assets" enabled="true" guid="bb2c4264-9bb9-4c71-857a-645bf11c5e77" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Image</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <AllowedExtensions>_INHERITED_</AllowedExtensions>
+          <controlname>Kentico.Administration.AssetSelector</controlname>
+          <MaximumAssets>1</MaximumAssets>
+        </settings>
+      </field>
     </form>
   </ClassFormDefinition>
   <ClassGUID>db14ae9c-141d-4308-88e6-ee6641efbb9b</ClassGUID>

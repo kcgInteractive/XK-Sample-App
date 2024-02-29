@@ -40,7 +40,7 @@
           <fielddescriptionashtml>False</fielddescriptionashtml>
         </properties>
       </field>
-      <field column="ContactGroupDescription" columnprecision="0" enabled="true" guid="3f7580bb-217b-4754-b33e-f558d2f10fc3" visible="true" order="9">
+      <field column="ContactGroupDescription" columnprecision="0" enabled="true" guid="99c12065-9aa0-4dce-835d-949a31f4162e" visible="true" order="9">
         <settings>
           <controlname>Kentico.Administration.TextArea</controlname>
           <CopyButtonVisible>False</CopyButtonVisible>

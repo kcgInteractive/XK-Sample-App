@@ -67,3 +67,11 @@ Whenever macro expressions are saved in the administration, the system automatic
 `dotnet run --no-build -- --kxp-resign-macros --sign-all`
 
 [Re-Salt Reference](https://docs.kentico.com/developers-and-admins/configuration/macro-expressions/macro-signatures)
+
+## Command to Update Database Version
+
+`dotnet run --no-build --kxp-update`
+
+[Database Version Reference](https://docs.kentico.com/developers-and-admins/installation/update-xperience-by-kentico-projects#update-the-database)
+
+## [Algolia Integration](https://github.com/Kentico/xperience-by-kentico-algolia?tab=readme-ov-file)

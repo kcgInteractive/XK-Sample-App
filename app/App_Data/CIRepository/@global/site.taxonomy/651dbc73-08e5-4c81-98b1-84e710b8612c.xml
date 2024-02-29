@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<site.taxonomy>
+  <DisplayName>power generation</DisplayName>
+  <GUID>651dbc73-08e5-4c81-98b1-84e710b8612c</GUID>
+  <ParentGUID>1bd79cb1-7cdb-4a16-9501-eda29bb4413f</ParentGUID>
+  <ParentValue>----markets</ParentValue>
+  <Value>------power generation</Value>
+</site.taxonomy>

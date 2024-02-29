@@ -48,5 +48,11 @@ namespace Company
 		/// Description.
 		/// </summary>
 		public string Description { get; set; }
+
+
+		/// <summary>
+		/// Tags.
+		/// </summary>
+		public string Tags { get; set; }
 	}
 }

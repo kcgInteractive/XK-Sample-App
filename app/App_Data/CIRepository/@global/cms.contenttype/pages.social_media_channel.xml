@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttype>
+  <ClassContentTypeType>Website</ClassContentTypeType>
+  <ClassDisplayName>social_media_channel</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="e41f525f-7d6b-4c7d-912c-e7c925991e5f" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="fba2659b-e68b-4dba-86ca-c0a064596810" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="68ea7ece-1f23-4bab-b178-664b5bafd916" isunique="true" system="true" />
+      <field column="Social_Medial_Channel" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="571d793a-0a96-4583-936d-42323589dbfa" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Social Media Channel</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.DropDownSelector</controlname>
+          <Options>
+<![CDATA[
+Linkedin;LinkedIn
+facebook;Facebook
+twitter;Twitter
+]]>
+          </Options>
+          <Placeholder>Choose Social Media Channel</Placeholder>
+        </settings>
+      </field>
+      <field column="URL" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="09c8fe33-7556-40ff-93d5-5a85addefd43" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>URL</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>168f555a-13a7-4b1f-9cf2-a47f19f6d029</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassIconClass>xp-market</ClassIconClass>
+  <ClassName>pages.social_media_channel</ClassName>
+  <ClassTableName>Pages_social_media_channel</ClassTableName>
+  <ClassType>Content</ClassType>
+  <ClassWebPageHasUrl>False</ClassWebPageHasUrl>
+</cms.contenttype>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<site.taxonomy>
+  <DisplayName>petrochemical</DisplayName>
+  <GUID>889648e8-a4c4-4706-90e4-fcf432789f6e</GUID>
+  <ParentGUID>1bd79cb1-7cdb-4a16-9501-eda29bb4413f</ParentGUID>
+  <ParentValue>----markets</ParentValue>
+  <Value>------petrochemical</Value>
+</site.taxonomy>

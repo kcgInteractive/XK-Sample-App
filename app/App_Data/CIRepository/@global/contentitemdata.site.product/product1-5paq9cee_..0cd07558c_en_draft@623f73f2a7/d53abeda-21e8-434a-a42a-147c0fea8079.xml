@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.site.product>
+  <ContentItemDataCommonDataID>
+    <GUID>1c620a5b-5953-4af9-b3d8-1a30cd07558c</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Product1-5paq9cee</CodeName>
+      <GUID>4e714de2-eec1-4c94-a87e-8efada03e7ad</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>d53abeda-21e8-434a-a42a-147c0fea8079</ContentItemDataGUID>
+  <ProductName>Product</ProductName>
+  <Short_Description>One</Short_Description>
+</contentitemdata.site.product>

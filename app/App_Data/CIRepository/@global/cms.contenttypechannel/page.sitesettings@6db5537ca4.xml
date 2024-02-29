@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttypechannel>
+  <Parent>
+    <CodeName>page.sitesettings</CodeName>
+    <GUID>eef85c2b-1b6a-434f-96e4-5b3b8758fadb</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="cms.channel_Koch-Glitsch">
+      <ContentTypeChannelChannelID>
+        <CodeName>Koch-Glitsch</CodeName>
+        <GUID>9ff9e686-3647-4b14-91f3-806fc9797244</GUID>
+        <ObjectType>cms.channel</ObjectType>
+      </ContentTypeChannelChannelID>
+    </Binding>
+  </Bindings>
+</cms.contenttypechannel>

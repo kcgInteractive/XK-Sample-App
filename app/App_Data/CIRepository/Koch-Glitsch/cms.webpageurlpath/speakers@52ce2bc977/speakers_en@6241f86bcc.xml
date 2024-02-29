@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageurlpath>
+  <WebPageUrlPath>Speakers</WebPageUrlPath>
+  <WebPageUrlPathContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>f5bf57ab-6e90-48c8-ab63-d2da61219bd0</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </WebPageUrlPathContentLanguageID>
+  <WebPageUrlPathGUID>9f8d916d-d196-460b-aed8-fc41d8d9c8d7</WebPageUrlPathGUID>
+  <WebPageUrlPathHash>
+    <![CDATA[906A7DAA9792604CCB131D2C1F6382542C3CCCC23C80663F9F902AEBF29EB7B4]]>
+  </WebPageUrlPathHash>
+  <WebPageUrlPathIsDraft>False</WebPageUrlPathIsDraft>
+  <WebPageUrlPathIsLatest>True</WebPageUrlPathIsLatest>
+  <WebPageUrlPathWebPageItemID>
+    <CodeName>Speakers-1sk1n8le</CodeName>
+    <GUID>18a31797-01ef-4b79-9026-ae94aee719d6</GUID>
+    <ObjectType>cms.webpageitem</ObjectType>
+  </WebPageUrlPathWebPageItemID>
+  <WebPageUrlPathWebsiteChannelID>
+    <GUID>5c471aae-4b1e-4555-a7fe-77c2e3ba1dda</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>Koch-Glitsch</CodeName>
+      <GUID>9ff9e686-3647-4b14-91f3-806fc9797244</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageUrlPathWebsiteChannelID>
+</cms.webpageurlpath>

@@ -64,7 +64,7 @@
           <controlname>Kentico.Administration.Checkbox</controlname>
         </settings>
       </field>
-      <field column="ContactGroupIsRecipientList" guid="ddca40fe-9ef4-4c98-9afc-fd00072b2db5" />
+      <field column="ContactGroupIsRecipientList" guid="ddca40fe-9ef4-4c98-9afc-fd00072b2db5" order="10" />
     </form>
   </FormDefinition>
   <FormDisplayName>Edit basic properties</FormDisplayName>
