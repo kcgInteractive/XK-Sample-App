@@ -148,7 +148,7 @@ public class LocationsPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public async Task<ICommandResponse> SaveLocation(Location data)
+    public ICommandResponse SaveLocation(Location data)
     {
         try
         {
@@ -217,7 +217,7 @@ public class LocationsPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public async Task<ICommandResponse> EditLocation(Location data)
+    public ICommandResponse EditLocation(Location data)
     {
         try
         {
@@ -248,7 +248,7 @@ public class LocationsPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public async Task<ICommandResponse> DeleteLocation(Location data)
+    public ICommandResponse DeleteLocation(Location data)
     {
         try
         {

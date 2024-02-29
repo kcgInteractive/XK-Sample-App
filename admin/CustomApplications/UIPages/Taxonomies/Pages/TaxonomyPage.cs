@@ -82,7 +82,7 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public async Task<ICommandResponse> SaveTaxonomy(TaxonomyCategory data)
+    public ICommandResponse SaveTaxonomy(TaxonomyCategory data)
     {
         try
         {
@@ -107,7 +107,7 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public async Task<ICommandResponse> SaveTaxonomies(IEnumerable<TaxonomyCategory> data)
+    public ICommandResponse SaveTaxonomies(IEnumerable<TaxonomyCategory> data)
     {
         try
         {
@@ -160,7 +160,7 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public async Task<ICommandResponse> EditTaxonomies(IEnumerable<TaxonomyCategory> data)
+    public ICommandResponse EditTaxonomies(IEnumerable<TaxonomyCategory> data)
     {
         try
         {
@@ -188,7 +188,7 @@ public class TaxonomiesPage : Page<PageTemplateClientProperties>
     }
 
     [PageCommand]
-    public async Task<ICommandResponse> DeleteTaxonomies(IEnumerable<TaxonomyCategory> data)
+    public ICommandResponse DeleteTaxonomies(IEnumerable<TaxonomyCategory> data)
     {
         try
         {

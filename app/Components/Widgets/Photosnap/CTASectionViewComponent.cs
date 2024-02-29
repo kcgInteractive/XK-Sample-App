@@ -78,9 +78,7 @@ public class CTASectionProperties : IWidgetProperties
 
 public class CTASectionViewComponent : ViewComponent
 {
-    public async Task<IViewComponentResult> InvokeAsync(
-        ComponentViewModel<CTASectionProperties> widgetModel
-    )
+    public IViewComponentResult Invoke(ComponentViewModel<CTASectionProperties> widgetModel)
     {
         var widgeGUID = widgetModel.Properties.Data.FirstOrDefault().Identifier;
         var builder = new ContentItemQueryBuilder();

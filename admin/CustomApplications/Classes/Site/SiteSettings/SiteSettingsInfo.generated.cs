@@ -29,7 +29,7 @@ namespace SiteSettingsModule
         public static readonly ObjectTypeInfo TYPEINFO = new ObjectTypeInfo(typeof(SiteSettingsInfoProvider), OBJECT_TYPE, "Site.SiteSettings", "SettingsID", null, "GUID", null, null, null, null, null)
         {
             TouchCacheDependencies = true,
-             ContinuousIntegrationSettings = {Enabled = true}
+   
         };
 
         /// <summary>
