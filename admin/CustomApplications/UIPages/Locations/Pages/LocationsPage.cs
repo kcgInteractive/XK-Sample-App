@@ -101,7 +101,10 @@ public class LocationsPage : Page<PageTemplateClientProperties>
             }
         );
 
-        IEnumerable<LocationsInfo> locationInfo = locationProvider.Get().GetEnumerableTypedResult();
+        IEnumerable<LocationsInfo> locationInfo = locationProvider
+            .Get()
+            .OrderByAscending("Region")
+            .GetEnumerableTypedResult();
         IEnumerable<Location> locations = locationInfo.Select(
             (location) =>
             {
@@ -168,7 +171,9 @@ public class LocationsPage : Page<PageTemplateClientProperties>
                     City = data.City,
                     Street = data.Street,
                     Phone = data.Phone,
-                    Tags = data.Tags
+                    Tags = data.Tags,
+                    LocationCodename =
+                        $"{data.Region} | {data.CountryCode} |{(data.StateProvince != null ? data.StateProvince + " | " : " ")}{data.City} {data.Street}"
                 }
             );
 
@@ -188,6 +193,7 @@ public class LocationsPage : Page<PageTemplateClientProperties>
         {
             IEnumerable<LocationsInfo> locationInfo = await locationProvider
                 .Get()
+                .OrderByAscending("Region")
                 .GetEnumerableTypedResultAsync();
 
             IEnumerable<Location> locationData = locationInfo.Select(
@@ -240,6 +246,8 @@ public class LocationsPage : Page<PageTemplateClientProperties>
             location.Street = data.Street;
             location.Phone = data.Phone;
             location.Tags = data.Tags;
+            location.LocationCodename =
+                $"{data.Region} | {data.CountryCode} | {(data.StateProvince != null ? data.StateProvince + " | " : " ")}{data.City} {data.Street}";
 
             locationProvider.Set(location);
 

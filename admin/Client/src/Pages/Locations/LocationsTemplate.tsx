@@ -163,11 +163,7 @@ export const LocationsTemplate = ({
           },
         }}
       >
-        {`Are you sure you want to delete '${
-          formData.companyLocationName
-            ? formData.companyLocationName
-            : createTitleName(formData)
-        }' ?`}
+        {`Are you sure you want to delete '${createTitleName(formData)}' ?`}
       </Dialog>
       <Column width={40}>
         <Paper>
@@ -284,10 +280,7 @@ export const LocationsTemplate = ({
                             renderNode={() => {
                               return (
                                 <Title
-                                  title={
-                                    location?.companyLocationName ||
-                                    createTitleName(location)
-                                  }
+                                  title={createTitleName(location)}
                                   activeNodeID={
                                     (activeNode as Location).locationGUID
                                   }
