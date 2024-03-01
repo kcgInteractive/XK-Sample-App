@@ -9,3 +9,4 @@ node_modules/
 package-lock.json
 appsettings.Development.json
 appsettings.Stage.json
+appsettings.Production.json
