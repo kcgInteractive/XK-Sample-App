@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.settings.website>
+  <ContentItemDataCommonDataID>
+    <GUID>10c4ec75-4493-4e11-87ac-55a650ba9534</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Settings-tvp9ojge</CodeName>
+      <GUID>0b16fbd6-dbc5-43d7-b6be-fc293d07c168</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>47a3653c-611b-4ea6-ad3d-bd87145b15e2</ContentItemDataGUID>
+  <ParentID />
+</contentitemdata.settings.website>

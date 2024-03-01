@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemChannelID>
+    <CodeName>Photosnap</CodeName>
+    <GUID>ca1743fb-f454-4369-afbe-844f2af4aed0</GUID>
+    <ObjectType>cms.channel</ObjectType>
+  </ContentItemChannelID>
+  <ContentItemContentTypeID>
+    <CodeName>Shared.Page</CodeName>
+    <GUID>db14ae9c-141d-4308-88e6-ee6641efbb9b</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>23dbba4e-b2af-4b56-9460-48067bbd0df1</ContentItemGUID>
+  <ContentItemIsReusable>False</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Home-tixwyg9l</ContentItemName>
+</cms.contentitem>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<media.file>
+  <FileCreatedByUserID>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </FileCreatedByUserID>
+  <FileCreatedWhen>2024-02-13 13:07:56Z</FileCreatedWhen>
+  <FileDescription />
+  <FileExtension>.svg</FileExtension>
+  <FileGUID>4fc1d794-6075-43b9-927f-144d93c45e66</FileGUID>
+  <FileLibraryID>
+    <CodeName>Media</CodeName>
+    <GUID>34e8ba8d-573a-4376-961f-c5290f5f71a9</GUID>
+    <ObjectType>media.library</ObjectType>
+  </FileLibraryID>
+  <FileMimeType>image/svg+xml</FileMimeType>
+  <FileModifiedByUserID>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </FileModifiedByUserID>
+  <FileName>designo-logo</FileName>
+  <FilePath>designo-logo.svg</FilePath>
+  <FileSize>5874</FileSize>
+  <FileTitle />
+</media.file>

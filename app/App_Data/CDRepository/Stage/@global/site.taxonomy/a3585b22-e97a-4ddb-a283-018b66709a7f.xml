@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<site.taxonomy>
+  <DisplayName>pharmaceutical</DisplayName>
+  <GUID>a3585b22-e97a-4ddb-a283-018b66709a7f</GUID>
+  <ParentGUID>1bd79cb1-7cdb-4a16-9501-eda29bb4413f</ParentGUID>
+  <ParentValue>----markets</ParentValue>
+  <Value>------pharmaceutical</Value>
+</site.taxonomy>

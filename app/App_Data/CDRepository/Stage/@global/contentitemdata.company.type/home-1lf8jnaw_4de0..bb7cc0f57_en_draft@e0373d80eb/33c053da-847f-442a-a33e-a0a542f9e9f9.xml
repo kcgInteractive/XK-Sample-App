@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.company.type>
+  <CompanyID>4</CompanyID>
+  <CompanyName>Koch</CompanyName>
+  <ContentItemDataCommonDataID>
+    <GUID>4de0913a-af66-419a-8e4a-417bb7cc0f57</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home-1lf8jnaw</CodeName>
+      <GUID>15542547-91f9-4b1c-adba-45ac32aef94f</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>33c053da-847f-442a-a33e-a0a542f9e9f9</ContentItemDataGUID>
+  <Description>Description</Description>
+  <Tags />
+</contentitemdata.company.type>

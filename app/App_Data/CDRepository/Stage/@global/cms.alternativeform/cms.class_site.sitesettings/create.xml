@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.alternativeform>
+  <FormClassID>
+    <CodeName>Site.SiteSettings</CodeName>
+    <GUID>cc3dc3ca-0ccd-4c2e-a380-b4a6a6e13a68</GUID>
+    <ObjectType>cms.class</ObjectType>
+  </FormClassID>
+  <FormDefinition>
+    <form>
+      <field column="SettingsID" guid="e6044613-da09-4602-a29f-1bfc7e9d7001" enabled="" />
+      <field column="ChannelName" enabled="true" guid="2aa6c838-129c-4c96-ab63-f4ff607b78e6" visible="true">
+        <settings>
+          <controlname>
+            <![CDATA[Custom.UIFormComponents.WebsiteChannelFormComponent]]>
+          </controlname>
+        </settings>
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Channel name</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+      </field>
+    </form>
+  </FormDefinition>
+  <FormDisplayName>Create Site setting</FormDisplayName>
+  <FormGUID>4ab38264-e6cc-422c-9532-2a20007e9ab7</FormGUID>
+  <FormIsCustom>True</FormIsCustom>
+  <FormName>create</FormName>
+</cms.alternativeform>

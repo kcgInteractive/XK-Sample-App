@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<site.taxonomy>
+  <DisplayName>Applications</DisplayName>
+  <GUID>9c6157f7-24e9-4566-9f17-8bbb6151180d</GUID>
+  <ParentGUID>821400c7-d992-4c41-804c-92b8a6c018ed</ParentGUID>
+  <ParentValue>--john-zink</ParentValue>
+  <Value>----applications</Value>
+</site.taxonomy>

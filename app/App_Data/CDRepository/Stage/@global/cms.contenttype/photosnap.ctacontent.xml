@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttype>
+  <ClassContentTypeType>Reusable</ClassContentTypeType>
+  <ClassDisplayName>PhotosnapCTAContent</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="bd6e3158-0ce3-47c7-8cf2-ed3c57d4ee7b" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="a579a203-8293-4e50-9b34-d1621da11a57" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="0c984628-397a-4c23-b77c-fd76892885a6" isunique="true" system="true" />
+      <field column="HeaderText" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="38b7ecb2-e2e4-4228-96a0-f8cb569210b9" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Header text</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field column="CTAText" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="657c8a5a-d1d8-4286-8307-9ef5f24cc0db" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>CTA text</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field column="ButtonText" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="99490e68-a2eb-4239-80a4-55c1dccaa65f" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Button text</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field column="Image" columnprecision="0" columntype="assets" enabled="true" guid="acea37af-b825-4226-8b1f-e8d3c2093a81" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Header image</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <AllowedExtensions>_INHERITED_</AllowedExtensions>
+          <controlname>Kentico.Administration.AssetSelector</controlname>
+          <MaximumAssets>1</MaximumAssets>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>864a954d-a1a2-4199-9aaf-c69013f03e83</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassIconClass>xp-invoice</ClassIconClass>
+  <ClassName>Photosnap.CTAContent</ClassName>
+  <ClassTableName>Photosnap_CTAContent</ClassTableName>
+  <ClassType>Content</ClassType>
+  <ClassWebPageHasUrl>False</ClassWebPageHasUrl>
+</cms.contenttype>

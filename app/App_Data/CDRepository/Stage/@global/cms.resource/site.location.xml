@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resource>
+  <ResourceDisplayName>Locations</ResourceDisplayName>
+  <ResourceGUID>a9ea7f67-44eb-4c31-8bd4-f09ff9d8a744</ResourceGUID>
+  <ResourceIsInDevelopment>False</ResourceIsInDevelopment>
+  <ResourceName>Site.Location</ResourceName>
+</cms.resource>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.photosnap.ctacontent>
+  <ButtonText>eqre</ButtonText>
+  <ContentItemDataCommonDataID>
+    <GUID>e4613478-07af-4b96-8ed8-8117fd974452</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Photosnap-7w16cs6w</CodeName>
+      <GUID>509a64eb-fd89-4e69-8c2c-ff608be31606</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>f38bb0f5-f6ac-43d6-95ff-cfdd4a6af13d</ContentItemDataGUID>
+  <CTAText>TEst</CTAText>
+  <HeaderText>Some Test</HeaderText>
+  <Image>
+    <![CDATA[[{"Identifier":"ce77433c-8db0-4d79-8679-c918542c4fd1","Name":"KochICT-site-BestofWichita-Feature-mobile.jpg","Size":710554,"Dimensions":{"Width":1500,"Height":1000}}]]]>
+  </Image>
+</contentitemdata.photosnap.ctacontent>

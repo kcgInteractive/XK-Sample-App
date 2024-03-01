@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.class>
+  <ClassDisplayName>Office</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="OfficeID" columntype="integer" enabled="true" guid="220c32a4-d83a-4a5b-8fea-e003858fefec" isPK="true" />
+      <field allowempty="true" column="OfficeType" columnprecision="0" columntype="integer" enabled="true" guid="3d477d1c-1e11-4010-96f5-ec9eee23b5aa" refobjtype="cms.websitechannel" reftype="Required">
+        <properties>
+          <defaultvalue>0</defaultvalue>
+        </properties>
+      </field>
+      <field column="OfficeDisplayName" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="909c8663-ca28-45e0-a445-9cc8e21af3ec" />
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>221def66-1e78-4574-a553-0503d379abf6</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassName>Acme.Office</ClassName>
+  <ClassResourceID>
+    <CodeName>AcmeModule</CodeName>
+    <GUID>ce6be5c3-6018-4edd-a65f-b1f878b5f26d</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ClassResourceID>
+  <ClassTableName>Acme_Office</ClassTableName>
+  <ClassType>Other</ClassType>
+</cms.class>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.shared.page>
+  <ContentItemDataCommonDataID>
+    <GUID>2e64a821-50df-40df-bc9a-cff1d238b4c7</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home-tixwyg9l</CodeName>
+      <GUID>23dbba4e-b2af-4b56-9460-48067bbd0df1</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>37f8c396-276b-4793-8898-a348e5330602</ContentItemDataGUID>
+  <IncludeNav>False</IncludeNav>
+</contentitemdata.shared.page>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitem>
+  <ContentItemContentTypeID>
+    <CodeName>Photosnap.CTAContent</CodeName>
+    <GUID>864a954d-a1a2-4199-9aaf-c69013f03e83</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </ContentItemContentTypeID>
+  <ContentItemGUID>4b8fa1e9-c469-4e24-b6e5-d2b9ea1b9bc0</ContentItemGUID>
+  <ContentItemIsReusable>True</ContentItemIsReusable>
+  <ContentItemIsSecured>False</ContentItemIsSecured>
+  <ContentItemName>Content-jpqgqzv4</ContentItemName>
+</cms.contentitem>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.test.example>
+  <ContentItemDataCommonDataID>
+    <GUID>09f66727-403f-410f-82e4-2752fe08a222</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Item2-ioraydes</CodeName>
+      <GUID>6b83b4e5-ff23-43b9-bd09-0bacd41af4d3</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>48875510-5cd1-43f5-aba9-7f8d03ac3c51</ContentItemDataGUID>
+  <Text>ts=est</Text>
+</contentitemdata.test.example>

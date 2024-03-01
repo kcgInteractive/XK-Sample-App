@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.class>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <DisplayNameColumn>DisplayName</DisplayNameColumn>
+      <GUIDColumn>GUID</GUIDColumn>
+      <ObjectType>Site.Taxonomy</ObjectType>
+      <UseGuidHashtable>False</UseGuidHashtable>
+      <UseIdHashtable>False</UseIdHashtable>
+      <UseNameHashtable>False</UseNameHashtable>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>Taxonomy</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="TaxonomyID" columntype="integer" enabled="true" guid="597af98d-f44d-4880-b8dc-49f3cc951b7d" isPK="true" />
+      <field column="ParentGUID" columnprecision="0" columntype="guid" enabled="true" guid="04edfe1b-554f-4a23-9346-4a5d67ab76a2" />
+      <field column="GUID" columnprecision="0" columntype="guid" enabled="true" guid="d32611e1-93f3-4e5b-9d54-ed6c38a58f80" />
+      <field column="DisplayName" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="dfded364-e729-43fe-b33c-502c1c2ca046" />
+      <field column="ParentValue" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="b94ead85-15e1-4bf2-ab39-1bd36a6fb9b1" />
+      <field column="Value" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="32ed994a-3a47-4ae7-8cfe-306b931062a7" />
+      <field allowempty="true" column="Description" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="bc9e1313-9c76-4655-8e0b-273c060e1c4f" />
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>fc7cc8d2-51f2-47ae-a2b2-0a12cafea643</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassName>Site.Taxonomy</ClassName>
+  <ClassResourceID>
+    <CodeName>Taxonomies</CodeName>
+    <GUID>2711a668-4306-4d8f-9a80-a969b202beb2</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ClassResourceID>
+  <ClassTableName>Site_Taxonomy</ClassTableName>
+  <ClassType>Other</ClassType>
+</cms.class>

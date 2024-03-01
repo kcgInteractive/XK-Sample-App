@@ -44,10 +44,10 @@ Prepare a configuration file that determines which types of objects are included
 `dotnet run --no-build -- --kxp-cd-config --path "./App_Data/CD_Configs/repository.config"`
 
 Store all supported objects from the database to a CD repository<br>
-`dotnet run --no-build -- --kxp-cd-store --repository-path "./App_Data/CDRepository" --config-path "./App_Data/CD_Configs/repository.config"`
+`dotnet run --no-build -- --kxp-cd-store --repository-path "./App_Data/CDRepository/Dev" --config-path "./App_Data/CD_Configs/repository.config"`
 
 Transfer objects from the CD repository to the database of your deployment target (Should be added to buildspec.yml)<br>
-`dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository"`
+`dotnet run --kxp-cd-restore --repository-path "./App_Data/CDRepository/Dev"`
 
 [CI/CD Reference](https://docs.xperience.io/xp/developers-and-admins/ci-cd)
 

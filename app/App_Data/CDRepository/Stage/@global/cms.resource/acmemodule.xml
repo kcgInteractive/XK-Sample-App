@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resource>
+  <ResourceDisplayName>Acme</ResourceDisplayName>
+  <ResourceGUID>ce6be5c3-6018-4edd-a65f-b1f878b5f26d</ResourceGUID>
+  <ResourceIsInDevelopment>False</ResourceIsInDevelopment>
+  <ResourceName>AcmeModule</ResourceName>
+</cms.resource>

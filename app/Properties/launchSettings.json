@@ -15,36 +15,30 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+
     "Development": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:21981",
+      "applicationUrl": "http://localhost:3000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+
     "Stage": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "applicationUrl": "http://localhost:21981",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Stage"
-      }
-    },
-    "Photosnap": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "applicationUrl": "http://localhost:5000",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "Audiophile": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "http://localhost:4000",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Stage"
+      }
+    },
+    "Production": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
       }
     }
   }

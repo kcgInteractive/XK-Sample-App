@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttype>
+  <ClassContentTypeType>Website</ClassContentTypeType>
+  <ClassDisplayName>SiteSettiings</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="b6560e79-bc5c-4efe-8dc0-de94d33f8be4" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="9b5bc1b3-9bae-4a06-b316-294db78167fe" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="c3ede548-99b7-42a1-a61c-bcab1996bc7d" isunique="true" system="true" />
+      <field column="brand_formal_name" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="491d6198-fdfa-4225-9dd7-c3535c74c52e" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Formal Name</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field column="brand_abbreviation" columnprecision="0" columnsize="8" columntype="text" enabled="true" guid="1ad081fe-0563-4966-9109-dcde6800b00e" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Abbreviation</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field column="brand_category" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="b9ff9307-b04c-4f21-90f3-c7c98b5e0689" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Category</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.DropDownSelector</controlname>
+          <Options>
+<![CDATA[
+ET&S;Commercial Equipment
+IP&S;Services
+hub;Hub
+]]>
+          </Options>
+          <Placeholder>Choose Category</Placeholder>
+        </settings>
+      </field>
+      <field column="Organization_Schema_Parent_Org" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="8a1613da-b26f-441f-a8a1-5bfa191b654b" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Parent Organization</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.DropDownSelector</controlname>
+          <Options>
+<![CDATA[
+kii;Koch Industries, Inc.
+kes;Koch Engineered Solutions
+kg;Koch-Glitsch
+jz;John Zink Hamworthy
+]]>
+          </Options>
+          <Placeholder>Select parent org</Placeholder>
+        </settings>
+      </field>
+      <field column="Brand_Short_Description" columnprecision="0" columnsize="400" columntype="text" enabled="true" guid="96d1e944-e1c2-40b4-a746-71537d25dffe" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Short Description</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextArea</controlname>
+          <CopyButtonVisible>False</CopyButtonVisible>
+          <MaxRowsNumber>5</MaxRowsNumber>
+          <MinRowsNumber>3</MinRowsNumber>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_long_description" columnprecision="0" columnsize="1200" columntype="text" enabled="true" guid="15b51b63-6c3d-4b55-89b3-aa03e1ab8c2a" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Long Description</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <ConfigurationName>Kentico.Administration.StructuredContent</ConfigurationName>
+          <controlname>Kentico.Administration.RichTextEditor</controlname>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_logo_PNG" columnprecision="0" columntype="assets" enabled="true" guid="8d647279-fb41-4b01-926a-4ed60c164535" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Logo (PNG)</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <AllowedExtensions>png</AllowedExtensions>
+          <controlname>Kentico.Administration.AssetSelector</controlname>
+          <MaximumAssets>1</MaximumAssets>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_logo_SVG" columnprecision="0" columntype="longtext" enabled="true" guid="576f8570-a0e8-4f53-ab5d-07f61e3bfab1" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Logo (SVG)</fieldcaption>
+          <fielddescription>svg inline code</fielddescription>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextArea</controlname>
+          <CopyButtonVisible>False</CopyButtonVisible>
+          <MaxRowsNumber>5</MaxRowsNumber>
+          <MinRowsNumber>3</MinRowsNumber>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_primary_color" columnprecision="0" columnsize="6" columntype="text" enabled="true" guid="fb1a541b-f9ac-4776-ac23-340f1353dfe3" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Primary Color</fieldcaption>
+          <fielddescription>hex value (minus the #)</fielddescription>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+          <WatermarkText>000000</WatermarkText>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_secondary_color" columnprecision="0" columnsize="6" columntype="text" enabled="true" guid="6efcf26a-17c1-494a-b06d-17c5a7cb51da" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Secondary Color</fieldcaption>
+          <fielddescription>hex color (minus the #)</fielddescription>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+          <WatermarkText>000000</WatermarkText>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_display_font" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="3ebbe94c-5a7d-4b1e-a5a3-1788491e399c" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Display Font</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+          <WatermarkText>azo-sans-web,sans-serif</WatermarkText>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_body_font" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="2e73cb65-d01d-4d6e-a0a9-3704b257556e" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Body Font</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+          <WatermarkText>poppins,sans-serif;</WatermarkText>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_caption_font" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="5206ceb9-e907-4fc1-a213-92892ca0e0aa" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Brand Caption Font</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+          <WatermarkText>azo-sans-web,sans-serif</WatermarkText>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_GTM" columnprecision="0" columnsize="20" columntype="text" enabled="true" guid="16169252-32da-43c1-a623-8d92f2b842aa" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>GTM Account</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_ga4" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="2b497941-ed3a-4519-b893-b5a7cd438f5d" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>GA-4 Account</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_onetrust_id" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="51286a32-de7f-4360-b3b1-0f0851621dde" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>OneTrust ID</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field allowempty="true" column="koch_careers_avature_id" columnprecision="0" columnsize="12" columntype="text" enabled="true" guid="145f612f-c12b-4049-80e9-69ae25ce9ed2" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Careers Avature ID</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+          <WatermarkText>6310</WatermarkText>
+        </settings>
+      </field>
+      <field allowempty="true" column="brand_salesforce_account" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="f9c73ef3-ef56-46b9-8356-df350b3b02a1" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Salesforce Account</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field allowempty="true" column="Facebook_Account" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="10f8e8c6-0451-4d1b-afc1-c47154e15895" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Facebook Account</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field allowempty="true" column="LinkedIn_Account" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="6966f760-7e85-46b5-b4c1-d5b00902c9bd" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>LinkedIn Account</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>eef85c2b-1b6a-434f-96e4-5b3b8758fadb</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassIconClass>xp-briefcase</ClassIconClass>
+  <ClassName>page.sitesettings</ClassName>
+  <ClassTableName>Page_sitesettings</ClassTableName>
+  <ClassType>Content</ClassType>
+  <ClassWebPageHasUrl>False</ClassWebPageHasUrl>
+</cms.contenttype>
