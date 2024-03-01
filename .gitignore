@@ -10,3 +10,4 @@ package-lock.json
 appsettings.Development.json
 appsettings.Stage.json
 appsettings.Production.json
+CD_Commands.txt
