@@ -55,6 +55,7 @@
   <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
   <ClassIconClass>xp-invoice</ClassIconClass>
   <ClassName>Photosnap.CTAContent</ClassName>
+  <ClassShortName>PhotosnapCTAContent</ClassShortName>
   <ClassTableName>Photosnap_CTAContent</ClassTableName>
   <ClassType>Content</ClassType>
   <ClassWebPageHasUrl>False</ClassWebPageHasUrl>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<site.taxonomy>
+  <DisplayName>Test</DisplayName>
+  <GUID>1bdd0f7a-f8db-407e-82dd-c098a319fa1c</GUID>
+  <ParentGUID>abf9b513-f52d-469c-8901-2b65613021a4</ParentGUID>
+  <ParentValue>--koch engineered solutions</ParentValue>
+  <Value>----test</Value>
+</site.taxonomy>

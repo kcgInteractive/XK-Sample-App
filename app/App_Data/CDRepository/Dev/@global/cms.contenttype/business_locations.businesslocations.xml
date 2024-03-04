@@ -34,6 +34,7 @@
   <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
   <ClassIconClass>xp-building</ClassIconClass>
   <ClassName>business_locations.BusinessLocations</ClassName>
+  <ClassShortName>businesslocationsBusinessLocations</ClassShortName>
   <ClassTableName>Business_locations_BusinessLocations</ClassTableName>
   <ClassType>Content</ClassType>
   <ClassWebPageHasUrl>False</ClassWebPageHasUrl>

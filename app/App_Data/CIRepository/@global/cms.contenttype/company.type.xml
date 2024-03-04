@@ -56,6 +56,7 @@
   <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
   <ClassIconClass>xp-organisational-scheme</ClassIconClass>
   <ClassName>Company.Type</ClassName>
+  <ClassShortName>CompanyType</ClassShortName>
   <ClassTableName>Company_Type</ClassTableName>
   <ClassType>Content</ClassType>
   <ClassWebPageHasUrl>False</ClassWebPageHasUrl>

@@ -32,6 +32,7 @@
   <ClassGUID>9b4f80b4-907c-4eab-9ad0-41fbdee708dc</ClassGUID>
   <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
   <ClassName>Production.Item</ClassName>
+  <ClassShortName>ProductionItem</ClassShortName>
   <ClassTableName>Production_Item</ClassTableName>
   <ClassType>Content</ClassType>
   <ClassWebPageHasUrl>False</ClassWebPageHasUrl>

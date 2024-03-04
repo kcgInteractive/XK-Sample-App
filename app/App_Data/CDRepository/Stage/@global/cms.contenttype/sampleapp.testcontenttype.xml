@@ -22,6 +22,7 @@
   <ClassGUID>967e50ab-8cc3-4aeb-86fd-553fe362ea2e</ClassGUID>
   <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
   <ClassName>SampleApp.TestContentType</ClassName>
+  <ClassShortName>SampleAppTestContentType</ClassShortName>
   <ClassTableName>SampleApp_TestContentType</ClassTableName>
   <ClassType>Content</ClassType>
   <ClassWebPageHasUrl>False</ClassWebPageHasUrl>

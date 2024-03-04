@@ -23,6 +23,7 @@
   <ClassGUID>c205a509-bab3-40c1-83fa-dc42cdd801d4</ClassGUID>
   <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
   <ClassName>Test.Example</ClassName>
+  <ClassShortName>TestExample</ClassShortName>
   <ClassTableName>Test_Type</ClassTableName>
   <ClassType>Content</ClassType>
   <ClassWebPageHasUrl>False</ClassWebPageHasUrl>

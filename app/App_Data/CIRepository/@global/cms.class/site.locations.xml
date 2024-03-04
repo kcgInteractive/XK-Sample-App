@@ -15,7 +15,6 @@
       <field column="LocationsID" columntype="integer" enabled="true" guid="f8883486-ccd7-41ae-9268-ab2bcc8be003" isPK="true" />
       <field column="ChannelGUID" columnprecision="0" columntype="guid" enabled="true" guid="3f7e6f38-2ddb-42bf-9e6d-2954c05a9ba3" />
       <field column="LocationGUID" columnprecision="0" columntype="guid" enabled="true" guid="2fbcd8f2-65d4-4ee5-850d-c45f710f8ec9" />
-      <field column="LocationCodename" columnprecision="0" columntype="longtext" enabled="true" guid="f4bfd5de-ef38-4104-8786-58901dc2a6c5" />
       <field column="Region" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="42abdce0-b5bf-4d08-86e8-754cbab01ae2" />
       <field column="CountryCode" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="408d78ae-245d-4b6e-af8b-203aa203e38e" />
       <field column="Country" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="31841fa9-07b3-412f-8fbd-f97682c901e1" />
