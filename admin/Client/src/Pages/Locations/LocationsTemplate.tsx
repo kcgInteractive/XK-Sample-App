@@ -118,7 +118,6 @@ export const LocationsTemplate = ({
     "GetAllLocations",
     {
       after: (response) => {
-        console.log(response);
         setLocations(response!.locations);
       },
     }
@@ -270,6 +269,7 @@ export const LocationsTemplate = ({
                             onNodeClick={() => {
                               setActiveNode(location);
                               setFormData(location);
+
                               setIsCreating(false);
                               setIsEditing(true);
                             }}
@@ -570,7 +570,7 @@ export const LocationsTemplate = ({
                         }));
                       }}
                       hasDependencies={false}
-                      guid={"28287532-56e1-467c-af38-d830c5142fb6"}
+                      guid={formData.locationGUID}
                       componentName={"@sample/web-admin/TagSelector"}
                       name={"Tag Selector"}
                       fieldValues={{}}

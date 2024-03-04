@@ -68,15 +68,13 @@ export const TagSelectorFormComponent = ({
   onChange,
   value,
 }: TagSelectorFormComponentProps) => {
-  const [selectedTags, setSelectedTags] = useState(
-    value ? JSON.parse(value) : {}
-  );
-  const [nodes, setNodes] = useState<TagNode[]>();
+  const [nodes, setNodes] = useState<TagNode[]>([]);
 
   useEffect(() => {
-    const mappedNodes = createTagTree(tags);
-    console.log(mappedNodes);
-    setNodes(mappedNodes);
+    if (nodes.length === 0) {
+      const mappedNodes = createTagTree(tags);
+      setNodes(mappedNodes);
+    }
   }, []);
 
   return (
@@ -85,13 +83,11 @@ export const TagSelectorFormComponent = ({
         <TreeSelect
           showClear
           filter
-          value={selectedTags}
+          value={value ? JSON.parse(value) : null}
           onChange={(e) => {
             if (e.value) {
-              setSelectedTags(e.value);
               onChange?.(JSON.stringify(e.value));
             } else {
-              setSelectedTags({});
               onChange?.(JSON.stringify({}));
             }
           }}
