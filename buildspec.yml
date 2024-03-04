@@ -21,11 +21,12 @@ phases:
       - npm install webpack-cli webpack
   build:
     commands:
+      - echo Build started on `date`
+      - echo Connecting database...
       - dotnet kentico-xperience-dbmanager -- -s "${DB_SERVER}" -d "${DB_NAME}" -u "${DB_USER}" -a "${DB_PASSWORD}" -p "${DB_PASSWORD}" --license-file "./license.txt" --hash-string-salt "${SALT}" --use-existing-database
       - dotnet build -c Release
       - dotnet run --configuration Release --no-build --kxp-update --skip-confirmation
       - dotnet run --configuration Release --no-build --kxp-cd-restore --repository-path "./App_Data/CDRepository/${CD_REPO}"
-      - echo Build started on `date`
 
   post_build:
     commands:
